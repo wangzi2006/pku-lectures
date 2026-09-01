@@ -71,22 +71,30 @@ def page_images(html: str, page_url: str) -> list[str]:
 def candidate_links(source: dict[str, Any], html: str, limit: int = 18) -> list[str]:
     soup = BeautifulSoup(html, "html.parser")
     host = urlsplit(source["url"]).netloc
-    scored: list[tuple[int, str]] = []
-    for anchor in soup.select("a[href]"):
+    scored: dict[str, tuple[int, int]] = {}
+    for position, anchor in enumerate(soup.select("a[href]")):
         label = normalize_text(anchor.get_text(" "))
         url = canonical_url(urljoin(source["url"], anchor.get("href", "")))
         if not url.startswith("http") or urlsplit(url).netloc != host:
             continue
+        if url == canonical_url(source["url"]):
+            continue
         combined = f"{label} {url}"
         if REVIEW_WORDS.search(combined) and source.get("reviewMining"):
             continue
+        # Event listings are normally newest-first. Explicit dates are the
+        # strongest signal; keeping the original DOM order then preserves the
+        # publisher's chronology instead of accidentally sorting by URL.
         score = 2 if LINK_WORDS.search(combined) else 0
-        score += 1 if DATE_HINT.search(combined) else 0
+        score += 4 if DATE_HINT.search(combined) else 0
         if score == 0 and 8 <= len(label) <= 160 and len(urlsplit(url).path.strip("/")) >= 5:
             score = 1
         if score:
-            scored.append((score, url))
-    return [url for _, url in sorted(set(scored), reverse=True)[:limit]]
+            previous = scored.get(url)
+            if previous is None or score > previous[0]:
+                scored[url] = (score, position)
+    ordered = sorted(scored.items(), key=lambda item: (-item[1][0], item[1][1]))
+    return [url for url, _ in ordered[:limit]]
 
 
 def in_window(item: dict[str, Any], days: int) -> bool:

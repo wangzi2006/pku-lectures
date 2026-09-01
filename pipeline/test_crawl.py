@@ -20,6 +20,27 @@ class CrawlPolicyTests(unittest.TestCase):
         order = list(crawl.round_robin([(first, ["m1", "m2"]), (second, ["h1", "h2"])]))
         self.assertEqual([url for _, url in order], ["m1", "h1", "m2", "h2"])
 
+    def test_candidate_links_prefer_dates_and_preserve_listing_order(self) -> None:
+        source = {
+            "url": "https://example.com/lectures/index.html",
+            "reviewMining": False,
+        }
+        html = """
+        <nav><a href="/submission.html">学术报告提交要求说明</a></nav>
+        <main>
+          <a href="/event-new.html">2026.09.04 人工智能赋能生命科学</a>
+          <a href="/event-old.html">2026.09.03 核酸操控</a>
+        </main>
+        """
+        self.assertEqual(
+            crawl.candidate_links(source, html),
+            [
+                "https://example.com/event-new.html",
+                "https://example.com/event-old.html",
+                "https://example.com/submission.html",
+            ],
+        )
+
     def test_next_id_ignores_legacy_hashes(self) -> None:
         number = crawl.next_lecture_number(
             [], [{"id": "L006"}, {"id": "LABC123"}], [{"lectureId": "L005"}]
