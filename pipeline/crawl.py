@@ -181,6 +181,7 @@ def crawl(days: int, max_review: int) -> None:
     published = read_json("lectures.json", [])
     decisions = read_json("decisions.json", [])
     seen_pages = read_json("seen-pages.json", [])
+    seen_count_before_run = len(seen_pages)
     seen_urls = {canonical_url(item["url"]) for item in seen_pages if item.get("url")}
     batch_date = datetime.now(BEIJING).strftime("%Y-%m-%d")
     already_new_today = [
@@ -339,10 +340,18 @@ def crawl(days: int, max_review: int) -> None:
     write_json("candidates.json", merged)
     write_json("seen-pages.json", seen_pages[-5000:])
     write_review_issue(merged, max_review, batch_date)
+    outcomes: dict[str, int] = {}
+    for record in seen_pages[seen_count_before_run:]:
+        outcome = record.get("outcome", "unknown")
+        outcomes[outcome] = outcomes.get(outcome, 0) + 1
+    outcome_text = "，".join(
+        f"{name} {count}" for name, count in sorted(outcomes.items())
+    )
     print(
         f"完成：分析 {api_calls} 个页面，新增 {len(new_items)} 条，候选共 {len(merged)} 条。",
         flush=True,
     )
+    print(f"筛选明细：{outcome_text or '没有新页面'}。", flush=True)
 
 
 def write_review_issue(
@@ -357,7 +366,7 @@ def write_review_issue(
     lines = [
         f"## 每日讲座审核 · {datetime.now(BEIJING):%Y-%m-%d}",
         "",
-        f"本次最多展示 {max_review} 条。请直接在 Issue 中评论：",
+        f"本次展示 {len(pending)} 条合格候选（上限 {max_review} 条）。请直接评论：",
         "",
         "```text",
         "收录：L001 L002",

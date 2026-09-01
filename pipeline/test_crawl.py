@@ -99,6 +99,7 @@ class CrawlPolicyTests(unittest.TestCase):
         self.assertIn("### L007", body)
         self.assertNotIn("### L008", body)
         self.assertIn("置信度 0.80", body)
+        self.assertIn("本次展示 1 条合格候选（上限 10 条）", body)
 
 
 if __name__ == "__main__":

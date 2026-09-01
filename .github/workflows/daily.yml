@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       max_review:
-        description: 本次审核候选上限
+        description: 合格候选上限（不保证凑满；最多分析 30 页）
         required: true
         default: '30'
 
