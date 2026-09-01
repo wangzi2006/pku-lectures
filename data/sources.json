@@ -1,0 +1,134 @@
+[
+  {
+    "id": "pku-lecture-preview",
+    "name": "北京大学讲座预告",
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturepre%2Findex",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["综合"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "校级聚合页，优先核验。"
+  },
+  {
+    "id": "bicmr",
+    "name": "北京国际数学研究中心",
+    "url": "https://bicmr.pku.edu.cn/cn/",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["概率", "数学", "数学物理"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "概率与随机过程相关栏目尽量完整收录。"
+  },
+  {
+    "id": "pku-math",
+    "name": "北京大学数学科学学院",
+    "url": "https://math.pku.edu.cn/",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["概率", "统计", "数学"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "非概率专业报告须考虑本科生可听性或讲者重要性。"
+  },
+  {
+    "id": "qiuzhen-preview",
+    "name": "清华大学求真书院讲座预告",
+    "url": "https://qzc.tsinghua.edu.cn/syjx/jzyg.htm",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["概率", "数学", "理论计算机"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "校外但骑行可达，执行较高质量门槛。"
+  },
+  {
+    "id": "qiuzhen-reviews",
+    "name": "清华大学求真书院讲座回顾",
+    "url": "https://qzc.tsinghua.edu.cn/syjx/jzhg.htm",
+    "kind": "review-archive",
+    "tier": 1,
+    "topics": ["数学"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "已确认与同站讲座预告栏目配对；仅用于反向发现系列、主办方与预告渠道，不生成未来讲座。"
+  },
+  {
+    "id": "pku-library-hour",
+    "name": "北京大学图书馆一小时讲座",
+    "url": "https://lib.pku.edu.cn/portal/cn/xxzc/yixiaoshi",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["通识", "人文社科", "信息素养"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "本科生友好型通识来源。"
+  },
+  {
+    "id": "pku-library-reading",
+    "name": "北京大学图书馆阅读活动",
+    "url": "https://www.lib.pku.edu.cn/portal/cn/hdjl/ydfw/ydhd",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["人文社科", "通识"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "排除纯展览、竞赛和长期课程。"
+  },
+  {
+    "id": "pku-future",
+    "name": "北京大学未来技术学院讲座",
+    "url": "https://future.pku.edu.cn/kxyj/jz/index.htm",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["生命科学", "物理", "工程"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "优先重要来访与跨学科报告。"
+  },
+  {
+    "id": "pku-nbic",
+    "name": "北京大学国家生物医学成像科学中心",
+    "url": "https://nbic.pku.edu.cn/xwdt/",
+    "kind": "mixed",
+    "tier": 1,
+    "topics": ["生命科学", "物理", "医学"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "同时扫描预告与高质量回顾；回顾只用于发现预告源。"
+  },
+  {
+    "id": "pku-psychology",
+    "name": "北京大学心理与认知科学学院",
+    "url": "https://psy.pku.edu.cn/",
+    "kind": "mixed",
+    "tier": 1,
+    "topics": ["心理", "认知科学"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "面向本科生或重要来访优先。"
+  },
+  {
+    "id": "pku-aais",
+    "name": "北京大学人工智能研究院",
+    "url": "https://www.aais.pku.edu.cn/",
+    "kind": "mixed",
+    "tier": 1,
+    "topics": ["计算机与 AI"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "排除招生、招聘和课程；校级重要来访可纳入。"
+  },
+  {
+    "id": "pku-bio",
+    "name": "北京大学生命科学学院近期讲座",
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_jz/31/31_3.html",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["生命科学"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "仅本科生友好、跨学科或重要来访。"
+  }
+]

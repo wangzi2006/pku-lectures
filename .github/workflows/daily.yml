@@ -1,0 +1,88 @@
+name: 每日抓取与审核
+
+on:
+  schedule:
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+    inputs:
+      max_review:
+        description: 本次审核候选上限
+        required: true
+        default: '30'
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+      AI_SOFT_BUDGET_CNY: '35'
+      AI_HARD_BUDGET_CNY: '45'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装抓取依赖
+        run: pip install -r pipeline/requirements.txt
+
+      - name: 抓取未来十四天
+        run: python pipeline/crawl.py --days 14 --max-review ${{ github.event_name == 'workflow_dispatch' && inputs.max_review || '10' }}
+
+      - name: 从讲座回顾发现预告来源
+        run: python pipeline/discover_sources.py
+
+      - name: 检查月度 AI 预算
+        id: budget
+        run: python pipeline/budget.py >> "$GITHUB_OUTPUT"
+
+      - name: 提交数据变化
+        run: |
+          git config user.name "pku-lectures-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "data: daily lecture update"
+            git push
+          fi
+
+      - name: 创建每日审核 Issue
+        run: |
+          REVIEW_DATE=$(TZ=Asia/Shanghai date +%F)
+          TITLE="每日讲座审核 · ${REVIEW_DATE}"
+          EXISTING=$(gh issue list --state open --search "${TITLE} in:title" --json number --jq 'length')
+          if grep -q '^### L' data/review-issue.md && [ "$EXISTING" = "0" ]; then
+            gh issue create --title "$TITLE" --body-file data/review-issue.md --label "lecture-review" || \
+              gh issue create --title "$TITLE" --body-file data/review-issue.md
+          fi
+
+      - name: 创建来源审核 Issue
+        run: |
+          if grep -q '^### S' data/source-review-issue.md; then
+            EXISTING=$(gh issue list --state open --search '来源发现审核 in:title' --json number --jq 'length')
+            if [ "$EXISTING" = "0" ]; then
+              gh issue create --title "来源发现审核" --body-file data/source-review-issue.md --label "source-review" || \
+              gh issue create --title "来源发现审核" --body-file data/source-review-issue.md
+            fi
+          fi
+
+      - name: 提醒 AI 预算
+        if: steps.budget.outputs.status != 'ok'
+        run: |
+          EXISTING=$(gh issue list --state open --search 'AI 月度预算提醒 in:title' --json number --jq 'length')
+          if [ "$EXISTING" = "0" ]; then
+            gh issue create \
+              --title "AI 月度预算提醒" \
+              --body "本月保守估算已使用 ¥${{ steps.budget.outputs.estimated_cny }}。35 元为软提醒；达到 45 元后抓取器会停止新的 GLM 调用。"
+          fi

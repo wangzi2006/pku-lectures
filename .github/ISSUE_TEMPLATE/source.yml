@@ -1,0 +1,36 @@
+name: 推荐一个长期来源
+description: 推荐稳定发布讲座预告的网站、公众号或系列活动
+title: "[来源推荐] "
+labels: [source-suggestion]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 来源名称
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 网站、公众号主页或示例原文
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: 来源类型
+      options:
+        - 官网讲座预告
+        - 微信公众号
+        - 学生社团
+        - 讲座回顾（用于反查预告来源）
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 这个来源通常发布什么
+      description: 最好附 1–3 条过往高质量讲座作为依据。
+    validations:
+      required: true

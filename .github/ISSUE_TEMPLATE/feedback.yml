@@ -1,0 +1,51 @@
+name: 我听了这场讲座
+description: 用五个维度帮助校准未来的筛选与推荐
+title: "[听后反馈] "
+labels: [attended-feedback]
+body:
+  - type: input
+    id: lecture
+    attributes:
+      label: 讲座标题或网站条目
+    validations:
+      required: true
+  - type: dropdown
+    id: gain
+    attributes:
+      label: 总体收获
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: dropdown
+    id: undergrad
+    attributes:
+      label: 本科生友好度
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: dropdown
+    id: density
+    attributes:
+      label: 内容密度
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: dropdown
+    id: delivery
+    attributes:
+      label: 讲者表达
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: dropdown
+    id: match
+    attributes:
+      label: 与预告描述相符程度
+      options: ["1", "2", "3", "4", "5"]
+    validations:
+      required: true
+  - type: textarea
+    id: comment
+    attributes:
+      label: 补充评价
+      description: 哪类人最适合听？哪些判断与实际不符？

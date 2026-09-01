@@ -1,0 +1,21 @@
+name: 更正或移除信息
+description: 报告时间、地点、报名状态变化，或申请移除条目
+title: "[更正] "
+labels: [correction]
+body:
+  - type: input
+    id: lecture
+    attributes:
+      label: 讲座页面或原始来源
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 需要更正或移除的内容
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: 最新通知链接（如有）

@@ -1,0 +1,13 @@
+[
+  {
+    "id": "SDFPKU001",
+    "status": "pending",
+    "name": "北京大学数字金融 Workshop",
+    "candidateUrl": "https://idf.pku.edu.cn/jzhy/szjrWorkshop/index.htm",
+    "discoveredFrom": "https://idf.pku.edu.cn/jzhy/szjrWorkshop/index.htm",
+    "parentSource": "北大官网讲座回顾反查",
+    "evidence": "同一官方栏目同时发布 Workshop 讲座预告与讲座回顾，可由高质量回顾稳定追溯未来预告。",
+    "discoveredAt": "2026-09-01T12:00:00+08:00",
+    "notes": "经济与金融不属于核心方向，若批准加入，仍应只推本科生可听、方法性强或讲者非常重要的场次。"
+  }
+]

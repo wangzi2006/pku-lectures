@@ -1,0 +1,38 @@
+name: 提交一场讲座
+description: 提交未来 14 天、北京大学附近或高质量线上的公开讲座
+title: "[讲座提交] "
+labels: [submission]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: 讲座标题
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 原始预告或报名链接
+      description: 优先提供主办方官网或公众号原文，不要只提供截图。
+    validations:
+      required: true
+  - type: input
+    id: datetime
+    attributes:
+      label: 时间
+      placeholder: 2026-09-09 19:00–21:00
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: 地点
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 为什么值得收录
+      description: 可说明本科生友好性、讲者重要性、主题稀缺性或概率方向相关性。
+    validations:
+      required: true
