@@ -78,7 +78,7 @@ export default function Home() {
                 未名讲座
               </strong>
               <span className="hidden text-[11px] tracking-[0.12em] text-muted-foreground sm:block">
-                未来十四天 · 值得去现场
+                北大及周边 · 未来 14 天
               </span>
             </span>
           </a>
@@ -108,14 +108,14 @@ export default function Home() {
           <div>
             <p className="mb-2 flex items-center gap-2 text-xs font-semibold tracking-[0.14em] text-primary uppercase">
               <Sparkles className="size-3.5" />
-              今日讲座雷达
+              每日 07:00 更新
             </p>
             <h1 className="max-w-3xl font-serif text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
-              别让值得听的讲座，
-              <span className="text-primary">消失在信息流里。</span>
+              未来 14 天的
+              <span className="text-primary">公开讲座</span>
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground sm:text-base">
-              聚合北京大学及骑行可达范围内的公开讲座，经来源核验、去重与人工审核后呈现。
+              北京大学校内及东门骑行约 30 分钟范围；条目经人工审核后发布。
             </p>
           </div>
           <div className="grid grid-cols-3 gap-px overflow-hidden rounded-xl border bg-border text-center shadow-xs">
@@ -164,7 +164,7 @@ export default function Home() {
             <div className="mb-4 flex items-center justify-between">
               <div>
                 <h2 className="font-serif text-xl font-semibold" id="lecture-list-title">
-                  接下来值得听
+                  已审核讲座
                 </h2>
                 <p className="mt-0.5 text-xs text-muted-foreground">
                   已发布条目 · 未来 14 天
@@ -234,7 +234,7 @@ export default function Home() {
                         {lecture.summary}
                       </p>
                       <div className="rounded-lg border-l-2 border-accent bg-accent/45 px-3 py-2.5 text-sm leading-5">
-                        <span className="font-semibold text-accent-foreground">为什么值得听：</span>
+                        <span className="font-semibold text-accent-foreground">推荐理由：</span>
                         {lecture.reason}
                       </div>
                     </CardContent>
@@ -296,19 +296,19 @@ export default function Home() {
               <CardHeader>
                 <CalendarDays className="mb-3 size-6 opacity-80" />
                 <CardTitle className="font-serif text-xl font-semibold">
-                  每天一次，替你找讲座
+                  数据更新
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-sm leading-6 text-primary-foreground/78">
-                  官网信息每天早晨更新；来源不确定或质量难判断的活动，会进入人工审核。
+                  官网每天 07:00 抓取。时间、开放范围或质量不确定的条目进入 GitHub Issue 审核。
                 </p>
               </CardContent>
             </Card>
 
             <Card className="border-0 bg-card shadow-sm ring-border">
               <CardHeader>
-                <CardTitle className="font-serif text-lg font-semibold">收录原则</CardTitle>
+                <CardTitle className="font-serif text-lg font-semibold">筛选标准</CardTitle>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-3 text-sm text-muted-foreground">
@@ -334,10 +334,10 @@ export default function Home() {
 
             <Card className="border-0 bg-card shadow-sm ring-border">
               <CardHeader>
-                <CardTitle className="font-serif text-lg font-semibold">一起校准</CardTitle>
+                <CardTitle className="font-serif text-lg font-semibold">听后反馈</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-sm leading-6 text-muted-foreground">
-                <p>听过一场后，用五个 1–5 分告诉系统实际质量；反馈首期只用于筛选校准。</p>
+                <p>五个 1–5 分维度，用于校准后续筛选；首期不公开个人评价。</p>
                 <a
                   className="inline-flex items-center gap-1 font-semibold text-primary hover:underline"
                   href="https://github.com/wangzi2006/pku-lectures/issues/new?template=feedback.yml"
