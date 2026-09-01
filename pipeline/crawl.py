@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 from dateutil.parser import isoparse
 
 from common import DATA, canonical_url, iso_now, normalize_text, read_json, stable_id, title_key, write_json
-from glm import extract_event
+from glm import API_URL, MODEL, GLMAPIError, api_key, extract_event, verify_api
 from policy import route
 
 BEIJING = timezone(timedelta(hours=8))
@@ -29,7 +29,7 @@ USER_AGENT = "pku-lectures/0.1 (+https://github.com/wangzi2006/pku-lectures)"
 
 
 def fetch(url: str) -> str:
-    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+    response = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=(5, 20))
     response.raise_for_status()
     response.encoding = response.apparent_encoding or response.encoding
     return response.text
@@ -95,9 +95,11 @@ def update_usage(input_tokens: int, output_tokens: int) -> None:
         usage = {"month": month, "inputTokens": 0, "outputTokens": 0, "estimatedCny": 0}
     usage["inputTokens"] = int(usage.get("inputTokens", 0)) + input_tokens
     usage["outputTokens"] = int(usage.get("outputTokens", 0)) + output_tokens
-    # Conservative list prices: $0.15/M input, $0.50/M output, CNY/USD 7.3.
+    input_price = float(os.getenv("AI_INPUT_CNY_PER_MILLION", "0"))
+    output_price = float(os.getenv("AI_OUTPUT_CNY_PER_MILLION", "0"))
     usage["estimatedCny"] = round(
-        (usage["inputTokens"] * 0.15 + usage["outputTokens"] * 0.5) / 1_000_000 * 7.3,
+        (usage["inputTokens"] * input_price + usage["outputTokens"] * output_price)
+        / 1_000_000,
         4,
     )
     usage["lastUpdatedAt"] = iso_now()
@@ -120,25 +122,38 @@ def crawl(days: int, max_review: int) -> None:
     }
     new_items: list[dict[str, Any]] = []
     tokens = {"input": 0, "output": 0}
+    api_calls = 0
+    max_api_calls = int(os.getenv("MAX_AI_CALLS", str(max(4, min(30, max_review * 3)))))
+    consecutive_api_failures = 0
 
-    if not os.getenv("ZAI_API_KEY"):
-        print("ZAI_API_KEY is absent; preserving seeded/manual candidates and skipping AI extraction.")
+    if not api_key():
+        print("未配置 BIGMODEL_API_KEY/ZAI_API_KEY；保留现有候选并跳过 AI 抽取。", flush=True)
         write_review_issue(candidates, max_review)
         return
     if not budget_allows_ai():
-        print("AI hard budget reached; skipping extraction.")
+        print("已达到 AI 硬预算，跳过抽取。", flush=True)
         write_review_issue(candidates, max_review)
         return
 
-    for source in sources:
+    print(f"校验智谱 API：{API_URL}，模型：{MODEL}", flush=True)
+    verify_api()
+    print(f"API 校验通过；本次最多分析 {max_api_calls} 个页面。", flush=True)
+
+    for source_index, source in enumerate(sources, start=1):
+        if api_calls >= max_api_calls:
+            break
         if source.get("kind") == "review-archive":
             continue
+        print(f"[{source_index}/{len(sources)}] 抓取来源：{source['name']}", flush=True)
         try:
             listing = fetch(source["url"])
         except requests.RequestException as exc:
-            print(f"WARN listing {source['name']}: {exc}")
+            print(f"WARN 来源页 {source['name']}：{exc}", flush=True)
             continue
         for url in candidate_links(source, listing):
+            if api_calls >= max_api_calls:
+                print(f"已达到本次 API 调用上限 {max_api_calls}，停止分析新页面。", flush=True)
+                break
             if url in known_urls or len(new_items) >= max_review * 3:
                 continue
             try:
@@ -146,11 +161,24 @@ def crawl(days: int, max_review: int) -> None:
                 text = page_text(html)
                 if len(text) < 120 or not (LINK_WORDS.search(text) and DATE_HINT.search(text)):
                     continue
+            except requests.RequestException as exc:
+                print(f"WARN 页面抓取 {url}：{exc}", flush=True)
+                continue
+
+            api_calls += 1
+            print(f"  AI 分析 {api_calls}/{max_api_calls}：{url}", flush=True)
+            try:
                 item, call_usage = extract_event(source["name"], url, text, page_images(html, url))
                 tokens["input"] += call_usage["input"]
                 tokens["output"] += call_usage["output"]
-            except (requests.RequestException, RuntimeError, ValueError, KeyError) as exc:
-                print(f"WARN detail {url}: {exc}")
+                consecutive_api_failures = 0
+            except GLMAPIError as exc:
+                print(f"WARN AI 分析 {url}：{exc}", flush=True)
+                if exc.fatal:
+                    raise
+                consecutive_api_failures += 1
+                if consecutive_api_failures >= 3:
+                    raise RuntimeError("智谱 API 连续失败 3 次，提前停止以避免长时间等待") from exc
                 continue
             if not item.get("isEvent") or not in_window(item, days):
                 continue
@@ -179,7 +207,10 @@ def crawl(days: int, max_review: int) -> None:
     merged = sorted(candidates + new_items, key=lambda item: item.get("startAt", ""))
     write_json("candidates.json", merged)
     write_review_issue(merged, max_review)
-    print(f"Added {len(new_items)} candidates; {len(merged)} pending records in total.")
+    print(
+        f"完成：分析 {api_calls} 个页面，新增 {len(new_items)} 条，候选共 {len(merged)} 条。",
+        flush=True,
+    )
 
 
 def write_review_issue(candidates: list[dict[str, Any]], max_review: int) -> None:

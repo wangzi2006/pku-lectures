@@ -35,11 +35,14 @@
 
 ## 配置 GLM
 
-1. 在 Z.AI 开放平台创建 API Key。
+1. 在国内智谱 BigModel 开放平台创建 API Key。
 2. 打开仓库 **Settings → Secrets and variables → Actions**。
 3. 新建 Repository secret，名称为 `ZAI_API_KEY`，值为 API Key。
 
-预算默认按公开标价保守估算：月度软提醒 35 元，达到 45 元停止非必要 AI 调用，低于用户设定的 50 元上限。真实 Key 只能放在 GitHub Secret，不要写进 Issue、代码或聊天。
+默认使用国内端点 `https://open.bigmodel.cn/api/paas/v4/chat/completions` 和免费模型
+`glm-4.7-flash`。如需切换，可修改工作流中的 `BIGMODEL_API_URL` 与 `GLM_MODEL`。
+
+预算根据工作流内配置的每百万 Token 单价估算：月度软提醒 35 元，达到 45 元停止非必要 AI 调用，低于用户设定的 50 元上限。真实 Key 只能放在 GitHub Secret，不要写进 Issue、代码或聊天。
 
 ## 自动化
 
