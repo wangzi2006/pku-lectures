@@ -24,14 +24,15 @@ jobs:
     timeout-minutes: 20
     env:
       GH_TOKEN: ${{ github.token }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
-      BIGMODEL_API_URL: https://open.bigmodel.cn/api/paas/v4/chat/completions
-      GLM_MODEL: glm-4.7-flash
-      GLM_ENABLE_IMAGES: 'false'
-      MAX_AI_CALLS: '30'
+      AI_PROVIDER: deepseek
+      AI_API_URL: https://api.deepseek.com/chat/completions
+      AI_MODEL: deepseek-v4-flash
+      AI_ENABLE_IMAGES: 'false'
       PYTHONUNBUFFERED: '1'
-      AI_INPUT_CNY_PER_MILLION: '0'
-      AI_OUTPUT_CNY_PER_MILLION: '0'
+      AI_INPUT_CNY_PER_MILLION: '3'
+      AI_OUTPUT_CNY_PER_MILLION: '9'
       AI_SOFT_BUDGET_CNY: '35'
       AI_HARD_BUDGET_CNY: '45'
     steps:

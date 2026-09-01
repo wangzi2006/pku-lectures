@@ -31,16 +31,17 @@
 拒绝来源：SEFGH5678
 ```
 
-首期所有条目均需人工审核。GLM 只抽取事实和给出独立维度分数，是否进入审核及最终发布由固定规则和人工决定。
+首期所有条目均需人工审核。模型只抽取事实和给出独立维度分数，是否进入审核及最终发布由固定规则和人工决定。
 
-## 配置 GLM
+## 配置模型
 
-1. 在国内智谱 BigModel 开放平台创建 API Key。
+1. 在 DeepSeek 开放平台充值并创建 API Key。
 2. 打开仓库 **Settings → Secrets and variables → Actions**。
-3. 新建 Repository secret，名称为 `ZAI_API_KEY`，值为 API Key。
+3. 新建 Repository secret，名称为 `DEEPSEEK_API_KEY`，值为 API Key。
 
-默认使用国内端点 `https://open.bigmodel.cn/api/paas/v4/chat/completions` 和免费模型
-`glm-4.7-flash`。如需切换，可修改工作流中的 `BIGMODEL_API_URL` 与 `GLM_MODEL`。
+默认使用 `deepseek-v4-flash` 非思考模式。工作流按高峰价格保守估算费用；每天
+07:00 的实际调用处于 DeepSeek 非高峰时段。原有 `ZAI_API_KEY` 可保留，以后用于
+智谱视觉模型或备用抽取。
 
 预算根据工作流内配置的每百万 Token 单价估算：月度软提醒 35 元，达到 45 元停止非必要 AI 调用，低于用户设定的 50 元上限。真实 Key 只能放在 GitHub Secret，不要写进 Issue、代码或聊天。
 

@@ -12,7 +12,16 @@ from bs4 import BeautifulSoup
 from dateutil.parser import isoparse
 
 from common import DATA, canonical_url, iso_now, normalize_text, read_json, stable_id, title_key, write_json
-from glm import API_URL, MODEL, GLMAPIError, api_key, extract_event, verify_api
+from llm import (
+    AIAPIError,
+    API_URL,
+    MODEL,
+    PROVIDER_NAME,
+    api_key,
+    extract_event,
+    key_name,
+    verify_api,
+)
 from policy import route
 
 BEIJING = timezone(timedelta(hours=8))
@@ -127,7 +136,7 @@ def crawl(days: int, max_review: int) -> None:
     consecutive_api_failures = 0
 
     if not api_key():
-        print("未配置 BIGMODEL_API_KEY/ZAI_API_KEY；保留现有候选并跳过 AI 抽取。", flush=True)
+        print(f"未配置 {key_name()}；保留现有候选并跳过 AI 抽取。", flush=True)
         write_review_issue(candidates, max_review)
         return
     if not budget_allows_ai():
@@ -135,7 +144,7 @@ def crawl(days: int, max_review: int) -> None:
         write_review_issue(candidates, max_review)
         return
 
-    print(f"校验智谱 API：{API_URL}，模型：{MODEL}", flush=True)
+    print(f"校验 {PROVIDER_NAME} API：{API_URL}，模型：{MODEL}", flush=True)
     verify_api()
     print(f"API 校验通过；本次最多分析 {max_api_calls} 个页面。", flush=True)
 
@@ -172,13 +181,15 @@ def crawl(days: int, max_review: int) -> None:
                 tokens["input"] += call_usage["input"]
                 tokens["output"] += call_usage["output"]
                 consecutive_api_failures = 0
-            except GLMAPIError as exc:
+            except AIAPIError as exc:
                 print(f"WARN AI 分析 {url}：{exc}", flush=True)
                 if exc.fatal:
                     raise
                 consecutive_api_failures += 1
                 if consecutive_api_failures >= 3:
-                    raise RuntimeError("智谱 API 连续失败 3 次，提前停止以避免长时间等待") from exc
+                    raise RuntimeError(
+                        f"{PROVIDER_NAME} API 连续失败 3 次，提前停止以避免长时间等待"
+                    ) from exc
                 continue
             if not item.get("isEvent") or not in_window(item, days):
                 continue
