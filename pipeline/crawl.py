@@ -97,6 +97,20 @@ def candidate_links(source: dict[str, Any], html: str, limit: int = 18) -> list[
     return [url for url, _ in ordered[:limit]]
 
 
+def candidate_link_hints(source: dict[str, Any], html: str) -> dict[str, str]:
+    """Keep visible listing text for detail pages that are poster-only."""
+    soup = BeautifulSoup(html, "html.parser")
+    host = urlsplit(source["url"]).netloc
+    hints: dict[str, str] = {}
+    for anchor in soup.select("a[href]"):
+        url = canonical_url(urljoin(source["url"], anchor.get("href", "")))
+        if url.startswith("http") and urlsplit(url).netloc == host:
+            label = normalize_text(anchor.get_text(" "))
+            if label and (url not in hints or len(label) > len(hints[url])):
+                hints[url] = label
+    return hints
+
+
 def in_window(item: dict[str, Any], days: int) -> bool:
     try:
         start = isoparse(item["startAt"])
@@ -207,6 +221,7 @@ def crawl(days: int, max_review: int) -> None:
 
     queues: list[tuple[dict[str, Any], list[str]]] = []
     queued_urls: set[str] = set()
+    listing_hints: dict[str, str] = {}
     event_sources = [source for source in sources if source.get("kind") != "review-archive"]
     for source_index, source in enumerate(event_sources, start=1):
         print(f"[{source_index}/{len(event_sources)}] 读取来源：{source['name']}", flush=True)
@@ -216,11 +231,13 @@ def crawl(days: int, max_review: int) -> None:
             print(f"WARN 来源页 {source['name']}：{exc}", flush=True)
             continue
         urls = []
+        source_hints = candidate_link_hints(source, listing)
         for url in candidate_links(source, listing):
             if url in known_urls or url in seen_urls or url in queued_urls:
                 continue
             urls.append(url)
             queued_urls.add(url)
+            listing_hints[url] = source_hints.get(url, "")
         if urls:
             queues.append((source, urls))
 
@@ -231,12 +248,16 @@ def crawl(days: int, max_review: int) -> None:
         try:
             html = fetch(url)
             text = page_text(html)
-            if len(text) < 120 or not (LINK_WORDS.search(text) and DATE_HINT.search(text)):
+            hint = listing_hints.get(url, "")
+            analysis_text = normalize_text(f"列表页信息：{hint} 详情页信息：{text}")
+            if len(analysis_text) < 120 or not (
+                LINK_WORDS.search(analysis_text) and DATE_HINT.search(analysis_text)
+            ):
                 seen_pages.append(
                     {
                         "url": url,
                         "sourceName": source["name"],
-                        "contentHash": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+                        "contentHash": hashlib.sha256(analysis_text.encode("utf-8")).hexdigest(),
                         "analyzedAt": iso_now(),
                         "outcome": "insufficient-signal",
                     }
@@ -253,7 +274,9 @@ def crawl(days: int, max_review: int) -> None:
             flush=True,
         )
         try:
-            item, call_usage = extract_event(source["name"], url, text, page_images(html, url))
+            item, call_usage = extract_event(
+                source["name"], url, analysis_text, page_images(html, url)
+            )
             tokens["input"] += call_usage["input"]
             tokens["output"] += call_usage["output"]
             consecutive_api_failures = 0
@@ -272,7 +295,7 @@ def crawl(days: int, max_review: int) -> None:
         seen_record = {
             "url": url,
             "sourceName": source["name"],
-            "contentHash": hashlib.sha256(text.encode("utf-8")).hexdigest(),
+            "contentHash": hashlib.sha256(analysis_text.encode("utf-8")).hexdigest(),
             "analyzedAt": iso_now(),
             "outcome": "non-event",
         }

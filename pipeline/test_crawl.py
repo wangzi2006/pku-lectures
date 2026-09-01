@@ -40,6 +40,12 @@ class CrawlPolicyTests(unittest.TestCase):
                 "https://example.com/submission.html",
             ],
         )
+        self.assertEqual(
+            crawl.candidate_link_hints(source, html)[
+                "https://example.com/event-new.html"
+            ],
+            "2026.09.04 人工智能赋能生命科学",
+        )
 
     def test_next_id_ignores_legacy_hashes(self) -> None:
         number = crawl.next_lecture_number(
