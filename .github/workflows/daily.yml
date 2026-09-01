@@ -70,8 +70,10 @@ jobs:
         run: |
           REVIEW_DATE=$(TZ=Asia/Shanghai date +%F)
           TITLE="每日讲座审核 · ${REVIEW_DATE}"
-          EXISTING=$(gh issue list --state open --search "${TITLE} in:title" --json number --jq 'length')
-          if grep -q '^### L' data/review-issue.md && [ "$EXISTING" = "0" ]; then
+          EXISTING=$(gh issue list --state open --search "${TITLE} in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file data/review-issue.md
+          elif grep -q '^### L' data/review-issue.md; then
             gh issue create --title "$TITLE" --body-file data/review-issue.md --label "lecture-review" || \
               gh issue create --title "$TITLE" --body-file data/review-issue.md
           fi

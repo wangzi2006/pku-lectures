@@ -43,7 +43,7 @@ def deterministic_score(item: dict[str, Any], source: dict[str, Any]) -> float:
     quality = float(item.get("qualityScore", 0))
     undergrad = float(item.get("undergradScore", 0))
     prominence = float(item.get("prominenceScore", 0))
-    confidence = float(item.get("confidence", 0))
+    confidence = max(0.0, min(1.0, float(item.get("confidence", 0))))
     text = " ".join(str(item.get(key, "")) for key in ("title", "titleZh", "summary")).lower()
     probability = any(word in text for word in PROBABILITY_WORDS)
     external = item.get("campus") == "校外"

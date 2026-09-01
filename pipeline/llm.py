@@ -30,7 +30,8 @@ isEvent, title, titleZh, speaker, startAt, endAt, location, campus,
 distanceKm, topic, subtopics, flags, summary, reason, registrationUrl,
 eventType, isPaid, audience, relevanceScore, qualityScore, undergradScore,
 prominenceScore, confidence。
-分数均为 0 到 5 的独立判断；不要决定是否发布。
+relevanceScore、qualityScore、undergradScore、prominenceScore 均为 0 到 5；
+confidence 必须为 0 到 1 的小数。不要决定是否发布。
 startAt/endAt 必须是带 +08:00 的 ISO 8601；不能确认未来时间则 isEvent=false。
 summary 为 100-180 个汉字，reason 为一句话。原题不是中文时保留 title 并给 titleZh。
 campus 只能为 校内/校外/线上；audience 只能为 public/pku-students/internal-only/unknown。

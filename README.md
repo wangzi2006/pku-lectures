@@ -47,7 +47,8 @@
 
 ## 自动化
 
-- `每日抓取与审核`：北京时间每天 07:00；手动首次运行默认展示 30 条，日常为 10 条。
+- `每日抓取与审核`：北京时间每天 07:00；各来源轮流取样，日常最多提供 10 条新候选。
+- 同一页面只分析一次；同日重复运行会刷新已有审核 Issue，不会重复创建。
 - `应用讲座审核`：仅接受仓库所有者的审核评论。
 - `部署 GitHub Pages`：`main` 分支变化后自动构建部署。
 
@@ -72,6 +73,7 @@ python pipeline/crawl.py --days 14 --max-review 30
 - `data/candidates.json`：待审核讲座。
 - `data/lectures.json`：网站公开讲座。
 - `data/decisions.json`：保留收录/拒绝快照，供阈值回测。
+- `data/seen-pages.json`：已分析页面记录，用于避免跨日重复抓取。
 - `data/feedback.json`：由“我听了这场讲座” Issue Form 自动保存五维反馈；首期仅用于内部校准，不在网站公开展示个人评价。
 
 代码采用 MIT License。讲座文字、商标和链接内容的权利归各原始发布方所有。

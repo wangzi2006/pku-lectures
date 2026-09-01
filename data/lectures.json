@@ -25,17 +25,17 @@
     "qualityScore": 4,
     "undergradScore": 3,
     "prominenceScore": 3,
-    "confidence": 5,
-    "policyScore": 20.6,
-    "id": "L452BFBB651",
+    "confidence": 1.0,
+    "policyScore": 4.12,
+    "id": "L001",
     "status": "published",
     "sourceName": "北京国际数学研究中心",
     "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/83-3998.html",
     "verifiedAt": "2026-09-01T06:18:36+00:00",
-    "reviewNotes": "规则分 20.60，进入人工审核"
+    "reviewNotes": "规则分 4.12，进入人工审核"
   },
   {
-    "id": "L001",
+    "id": "L002",
     "status": "published",
     "title": "Summer School on Complex Analysis: Interplay of Dynamics, Geometry, and Probability",
     "titleZh": "复分析暑期学校：动力系统、几何与概率的交汇",
@@ -96,17 +96,17 @@
     "qualityScore": 4,
     "undergradScore": 3,
     "prominenceScore": 3,
-    "confidence": 4,
-    "policyScore": 16.48,
-    "id": "L4A7FF02D22",
+    "confidence": 0.8,
+    "policyScore": 3.296,
+    "id": "L003",
     "status": "published",
     "sourceName": "北京国际数学研究中心",
     "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/35-3999.html",
     "verifiedAt": "2026-09-01T06:18:45+00:00",
-    "reviewNotes": "规则分 16.48，进入人工审核"
+    "reviewNotes": "规则分 3.30，进入人工审核"
   },
   {
-    "id": "L002",
+    "id": "L004",
     "status": "published",
     "title": "Chemistry Driven Microscopy: from improved imaging to applications",
     "titleZh": "化学驱动的显微成像：从成像改进到实际应用",
@@ -138,7 +138,7 @@
     "reviewNotes": "需复核是否免报名、是否对全校开放。"
   },
   {
-    "id": "L003",
+    "id": "L005",
     "status": "published",
     "title": "Shedding Light on Perovskites: Spectroscopic Insights into Stable Optoelectronics",
     "titleZh": "照亮钙钛矿：稳定光电子器件的光谱学洞见",
@@ -195,13 +195,13 @@
     "qualityScore": 4,
     "undergradScore": 3,
     "prominenceScore": 3,
-    "confidence": 4,
-    "policyScore": 16.48,
-    "id": "L3659AD8FB2",
+    "confidence": 0.8,
+    "policyScore": 3.296,
+    "id": "L006",
     "status": "published",
     "sourceName": "北京国际数学研究中心",
     "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/46-3995.html",
     "verifiedAt": "2026-09-01T06:18:40+00:00",
-    "reviewNotes": "规则分 16.48，进入人工审核"
+    "reviewNotes": "规则分 3.30，进入人工审核"
   }
 ]

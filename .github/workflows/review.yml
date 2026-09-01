@@ -47,7 +47,7 @@ jobs:
 
       - name: 回复处理结果
         if: steps.commit.outputs.changed == 'true'
-        run: gh issue comment ${{ github.event.issue.number }} --body "审核结果已写入数据；网站部署完成后会自动更新。"
+        run: gh issue comment ${{ github.event.issue.number }} --body "审核结果已写入；网站正在自动部署，通常 1–2 分钟后更新，无需其他操作。"
 
   apply-source:
     if: >-
