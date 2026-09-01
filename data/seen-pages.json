@@ -1,1 +1,233 @@
-[]
+[
+  {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturevideo%2Findex",
+    "sourceName": "北京大学讲座预告",
+    "contentHash": "b0d295732f40def1f0c60d0eaf42c739faf332eb12b4059ad090fba51e4d4335",
+    "analyzedAt": "2026-09-01T06:42:35+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/3-341.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "41b768fd24fbf3d966e3db1ed3141fd352ee7407be2e88646ec609b6374997d4",
+    "analyzedAt": "2026-09-01T06:42:38+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://qzc.tsinghua.edu.cn/info/1074/8265.htm",
+    "sourceName": "清华大学求真书院讲座预告",
+    "contentHash": "4e821a884d3ed0e85be4ded2dbab5b5d93f8a253e4b6bc9535fc2fd07c46fb50",
+    "analyzedAt": "2026-09-01T06:42:41+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://lib.pku.edu.cn/portal/zy/dzzy/chuzhanbaogao/tijiaoyaoqiu",
+    "sourceName": "北京大学图书馆一小时讲座",
+    "contentHash": "dca78a73b328f2539dab96b337d1e18aa867f3741e1b047deb83f619592ba2f3",
+    "analyzedAt": "2026-09-01T06:42:45+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.lib.pku.edu.cn/portal/zy/dzzy/chuzhanbaogao/tijiaoyaoqiu",
+    "sourceName": "北京大学图书馆阅读活动",
+    "contentHash": "dca78a73b328f2539dab96b337d1e18aa867f3741e1b047deb83f619592ba2f3",
+    "analyzedAt": "2026-09-01T06:42:49+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/e9263ed08ef9472c8477792d99ec5ba9.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "2afa86159faaa12f04d7c026a3dc07655664cc00e6b1106b96368dfe3a92a496",
+    "analyzedAt": "2026-09-01T06:42:52+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/fbc087d4754e48a29bfa29857dc5883e.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "da791ecceb997ccb31bc2b20c7108a2a064e5757ce5273dfaf298a98ec9493a5",
+    "analyzedAt": "2026-09-01T06:42:56+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20001.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "4a804d281289415396d2fc638fec3325c20461f29b50d93bfb09f8d9628dde70",
+    "analyzedAt": "2026-09-01T06:43:00+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_jz/7/7.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "f5ed8048d8ed39b091d58369e685e5a49c6dc7a6a3cfeb47580984c5be2f9e99",
+    "analyzedAt": "2026-09-01T06:43:03+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturepre%2Findex&categoryid=41",
+    "sourceName": "北京大学讲座预告",
+    "contentHash": "03e9791a386a6826259c7d65d942a013c52b76725c5ddfe5e859089cb819dbd1",
+    "analyzedAt": "2026-09-01T06:43:06+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/17-3983.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "617f650f66b101fb309912d1df8dd203a61e0c3be47e0311f374ad80eab4f43a",
+    "analyzedAt": "2026-09-01T06:43:10+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://qzc.tsinghua.edu.cn/info/1074/8247.htm",
+    "sourceName": "清华大学求真书院讲座预告",
+    "contentHash": "870748ea5fc9b03adfb57a71dcab65e33a968fb0307952117675745fac9b39b4",
+    "analyzedAt": "2026-09-01T06:43:14+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://lib.pku.edu.cn/portal/cn/zy/dzzy/chuzhanbaogao/tijiaoyaoqiu",
+    "sourceName": "北京大学图书馆一小时讲座",
+    "contentHash": "dca78a73b328f2539dab96b337d1e18aa867f3741e1b047deb83f619592ba2f3",
+    "analyzedAt": "2026-09-01T06:43:17+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.lib.pku.edu.cn/portal/cn/zy/dzzy/chuzhanbaogao/tijiaoyaoqiu",
+    "sourceName": "北京大学图书馆阅读活动",
+    "contentHash": "dca78a73b328f2539dab96b337d1e18aa867f3741e1b047deb83f619592ba2f3",
+    "analyzedAt": "2026-09-01T06:43:22+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/d8b0b8d44de444c294fabe9391dd0df9.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "4f3c5bba5077963f8a9733b27fa6c39e6ef8ebe3ee24976832b0d5aa39c521ef",
+    "analyzedAt": "2026-09-01T06:43:24+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/bfc79cde83a8457fa1656a878d83e9dc.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "c920d0c9a970d2e35795bad89eb3d77f0d5a2c3d1a130161bb3bdebcc01b6809",
+    "analyzedAt": "2026-09-01T06:43:27+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/19991.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "f688cd43dc50377a25392ccffdd6a7e7acfb45618909e3a31a8d34c6294002b7",
+    "analyzedAt": "2026-09-01T06:43:30+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_jz/31/31.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "99e9c285d1b35704d0929c3a305c0f46f85c421258e04405c3a8a434e6ebfc4f",
+    "analyzedAt": "2026-09-01T06:43:33+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturepre%2Findex&categoryid=39",
+    "sourceName": "北京大学讲座预告",
+    "contentHash": "03e9791a386a6826259c7d65d942a013c52b76725c5ddfe5e859089cb819dbd1",
+    "analyzedAt": "2026-09-01T06:43:35+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/page/68.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "8a9b390b17ed6a642a688b2941560f8b18f358b3d9d2abdaf3a1899dc643bb54",
+    "analyzedAt": "2026-09-01T06:43:38+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://qzc.tsinghua.edu.cn/info/1074/8236.htm",
+    "sourceName": "清华大学求真书院讲座预告",
+    "contentHash": "fc0fb68803c4eb5522c385cc51a2583300e743ee3adb90a13d9b36f31fe4b9c6",
+    "analyzedAt": "2026-09-01T06:43:40+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.pku.edu.cn/portal/cn/xxzc/xctg/yuedubaogao",
+    "sourceName": "北京大学图书馆一小时讲座",
+    "contentHash": "147b455c258bbc6afd7c608333794bd630bd76b26ffbf5e01118606989593065",
+    "analyzedAt": "2026-09-01T06:43:44+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.lib.pku.edu.cn/portal/cn/xxzc/xctg/yuedubaogao",
+    "sourceName": "北京大学图书馆阅读活动",
+    "contentHash": "147b455c258bbc6afd7c608333794bd630bd76b26ffbf5e01118606989593065",
+    "analyzedAt": "2026-09-01T06:43:48+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/c1e1f4d70d064ae591dcd5f0c3a6d854.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "3987efb0a4f8eec5e6fea5dcd51fc8f8cbb749c268fd5e4a161b34dfdf0c5d8f",
+    "analyzedAt": "2026-09-01T06:43:50+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/82297eddf2334d3b95ebbf4341515633.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "fef3f900a21da05fd2e38178b6e527deb0ea5c223566c45a64c2181aceb4e6ce",
+    "analyzedAt": "2026-09-01T06:43:54+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/19781.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "e7a2b006543aa49df8103392b0deb648d0246d7899d3e4f2809162bbc289ed46",
+    "analyzedAt": "2026-09-01T06:43:57+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_jz/29/29.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "9ddc392480c61d12b672439b10b332cd3aa8c0976c3b3c475aaab4136e52f8fa",
+    "analyzedAt": "2026-09-01T06:44:01+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://resource.pku.edu.cn/index.php?r=lecturepre%2Findex&categoryid=37",
+    "sourceName": "北京大学讲座预告",
+    "contentHash": "03e9791a386a6826259c7d65d942a013c52b76725c5ddfe5e859089cb819dbd1",
+    "analyzedAt": "2026-09-01T06:44:03+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/lists/18.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "0f99c68de6791113769080148b961dac3ed14d2728b73cc126e37f1627bbe808",
+    "analyzedAt": "2026-09-01T06:44:05+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://qzc.tsinghua.edu.cn/info/1074/8232.htm",
+    "sourceName": "清华大学求真书院讲座预告",
+    "contentHash": "1c195dfb89a276bc37b45b51e75ab1eb5df54255a8157b6b3eac7a42f1e3fc9f",
+    "analyzedAt": "2026-09-01T06:44:09+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://lib.pku.edu.cn/portal/cn/hdjl/fwyy/baogaoting",
+    "sourceName": "北京大学图书馆一小时讲座",
+    "contentHash": "e407056dc8c28ca70847f255a1b93da1b3ceeba0c465cf25a289adfd4177e150",
+    "analyzedAt": "2026-09-01T06:44:13+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.lib.pku.edu.cn/portal/cn/xxzc/xctg/dushujiangzuo",
+    "sourceName": "北京大学图书馆阅读活动",
+    "contentHash": "2d09b13d540fbe1bed7f5bf00344b7d1901643f53042153c63df2d3a9dfbdff6",
+    "analyzedAt": "2026-09-01T06:44:17+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/b93788c1a8134b4bae645bc3b29a5611.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "70c8445cc373c8eb9da57217787a921900d9cc3959ad333666d810f95d02fa88",
+    "analyzedAt": "2026-09-01T06:44:18+00:00",
+    "outcome": "non-event"
+  }
+]

@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "title": "Unconventional T Cell Recognition",
+    "titleZh": "非常规T细胞识别",
+    "speaker": "Jamie Rossjohn",
+    "startAt": "2026-09-11T13:00:00+08:00",
+    "endAt": "2026-09-11T14:30:00+08:00",
+    "location": "Youcai Deng Hall, School of Life Sciences",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "生命科学",
+    "subtopics": [
+      "免疫学",
+      "T细胞"
+    ],
+    "flags": [
+      "近期讲座"
+    ],
+    "summary": "本次讲座由北京大学生命科学学院主办，邀请Jamie Rossjohn教授主讲，主题为“Unconventional T Cell Recognition”，即非常规T细胞识别。讲座将深入探讨非常规T细胞在免疫系统中的识别机制，涉及T细胞受体与抗原的相互作用，以及这些细胞在疾病中的作用。讲座时间为2026年9月11日13:00至14:30，地点在金光生命科学大楼的Youcai Deng Hall，面向校内师生开放。该讲座有助于听众了解免疫学前沿研究，激发科研兴趣。",
+    "reason": "网页明确列出该讲座的标题、主讲人、时间、地点，且为近期讲座，信息完整。",
+    "registrationUrl": "",
+    "eventType": "学术讲座",
+    "isPaid": false,
+    "audience": "public",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 4,
+    "prominenceScore": 4,
+    "confidence": 0.9,
+    "policyScore": 4.05,
+    "id": "L007",
+    "status": "pending",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "sourceUrl": "https://www.bio.pku.edu.cn/homes/Index/news_jz/29/29.html",
+    "verifiedAt": "2026-09-01T06:44:01+00:00",
+    "discoveredAt": "2026-09-01T06:44:01+00:00",
+    "discoveredOn": "2026-09-01",
+    "reviewNotes": "规则分 4.05，进入人工审核"
+  }
+]
