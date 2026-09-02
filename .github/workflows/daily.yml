@@ -2,7 +2,10 @@ name: 每日抓取与审核
 
 on:
   schedule:
-    - cron: '0 23 * * *'
+    # GitHub Actions is busiest at the start of each hour; off-minute
+    # schedules are less likely to be delayed or dropped.
+    - cron: '13 23 * * *'  # 07:13 Asia/Shanghai
+    - cron: '13 0 * * *'   # 08:13 Asia/Shanghai backup/catch-up
   workflow_dispatch:
     inputs:
       max_review:

@@ -66,6 +66,41 @@ class CrawlPolicyTests(unittest.TestCase):
         item["confidence"] = 1
         self.assertEqual(score_with_five, policy.deterministic_score(item, source))
 
+    def test_humanities_outweigh_noncore_stem_with_equal_dimensions(self) -> None:
+        base = {
+            "title": "本科生学术讲座",
+            "relevanceScore": 4,
+            "qualityScore": 4,
+            "undergradScore": 4,
+            "prominenceScore": 4,
+            "confidence": 1,
+            "campus": "校内",
+        }
+        source = {"tier": 1}
+        humanities = {**base, "topic": "人文社科"}
+        biology = {**base, "topic": "生命科学"}
+        self.assertGreater(
+            policy.deterministic_score(humanities, source),
+            policy.deterministic_score(biology, source),
+        )
+
+    def test_probability_keeps_core_priority(self) -> None:
+        base = {
+            "relevanceScore": 4,
+            "qualityScore": 4,
+            "undergradScore": 4,
+            "prominenceScore": 4,
+            "confidence": 1,
+            "campus": "校内",
+        }
+        source = {"tier": 1}
+        probability = {**base, "title": "Probability Seminar", "topic": "概率"}
+        humanities = {**base, "title": "文明史讲座", "topic": "人文社科"}
+        self.assertGreater(
+            policy.deterministic_score(probability, source),
+            policy.deterministic_score(humanities, source),
+        )
+
     def test_issue_only_contains_current_batch(self) -> None:
         old_data = crawl.DATA
         with tempfile.TemporaryDirectory() as directory:

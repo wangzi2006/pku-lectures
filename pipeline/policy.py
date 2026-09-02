@@ -22,6 +22,23 @@ PROBABILITY_WORDS = {
     "马尔可夫",
 }
 
+HUMANITIES_TOPICS = {"人文社科", "通识", "文学", "历史", "哲学", "艺术", "法学", "社会科学"}
+HUMANITIES_WORDS = {
+    "文学",
+    "历史",
+    "哲学",
+    "艺术",
+    "考古",
+    "语言学",
+    "社会学",
+    "人类学",
+    "政治学",
+    "法学",
+    "文化",
+    "文明",
+}
+NONCORE_STEM_TOPICS = {"物理", "生命科学", "医学", "化学", "工程", "计算机与 ai"}
+
 
 def hard_exclusion(item: dict[str, Any]) -> str | None:
     text = " ".join(
@@ -46,11 +63,18 @@ def deterministic_score(item: dict[str, Any], source: dict[str, Any]) -> float:
     confidence = max(0.0, min(1.0, float(item.get("confidence", 0))))
     text = " ".join(str(item.get(key, "")) for key in ("title", "titleZh", "summary")).lower()
     probability = any(word in text for word in PROBABILITY_WORDS)
+    topic = str(item.get("topic", "")).strip().lower()
+    humanities = topic in {value.lower() for value in HUMANITIES_TOPICS} or any(
+        word in text for word in HUMANITIES_WORDS
+    )
+    noncore_stem = topic in NONCORE_STEM_TOPICS
     external = item.get("campus") == "校外"
 
     score = relevance * 0.24 + quality * 0.28 + undergrad * 0.2 + prominence * 0.18
     score += (6 - min(int(source.get("tier", 3)), 5)) * 0.18
     score += 0.7 if probability else 0
+    score += 0.55 if humanities else 0
+    score -= 0.45 if noncore_stem else 0
     score -= 0.65 if external else 0
     score *= max(0.45, confidence)
     return round(score, 3)
