@@ -483,5 +483,94 @@
       "discoveredOn": "2026-09-01",
       "reviewNotes": "规则分 4.05，进入人工审核"
     }
+  },
+  {
+    "lectureId": "L014",
+    "decision": "published",
+    "decidedAt": "2026-09-03T04:20:49+00:00",
+    "snapshot": {
+      "title": "Until the End of Time",
+      "titleZh": "直到时间的尽头",
+      "speaker": "Brian Greene",
+      "startAt": "2026-09-06T19:30:00+08:00",
+      "endAt": null,
+      "location": "求真书院明哲斋求真讲堂",
+      "campus": "校内",
+      "distanceKm": null,
+      "topic": "通识",
+      "subtopics": [
+        "宇宙",
+        "时间",
+        "物理"
+      ],
+      "flags": [
+        "讲座预告"
+      ],
+      "summary": "本次讲座由著名物理学家Brian Greene主讲，题为《直到时间的尽头》。讲座将借助旅行者一号拍摄的地球“暗淡蓝点”照片，从宇宙视角审视地球的脆弱存在，并延伸至从大爆炸到遥远未来的时间尺度，探讨人类在宇宙故事中短暂而璀璨的位置。这是一场视觉丰富的旅程，帮助听众理解我们在宇宙展开中的角色。",
+      "reason": "讲座由知名物理学家Brian Greene主讲，题目宏阔，符合书院通识讲座定位。",
+      "registrationUrl": "",
+      "eventType": "讲座",
+      "isPaid": false,
+      "audience": "public",
+      "relevanceScore": 4,
+      "qualityScore": 4,
+      "undergradScore": 4,
+      "prominenceScore": 5,
+      "confidence": 0.9,
+      "policyScore": 4.707,
+      "id": "L014",
+      "status": "published",
+      "sourceName": "清华大学求真书院讲座预告",
+      "sourceUrl": "https://qzc.tsinghua.edu.cn/info/1193/8320.htm",
+      "verifiedAt": "2026-09-03T04:17:39+00:00",
+      "discoveredAt": "2026-09-03T04:17:39+00:00",
+      "discoveredOn": "2026-09-03",
+      "reviewNotes": "规则分 4.71，进入人工审核"
+    }
+  },
+  {
+    "lectureId": "L013",
+    "decision": "published",
+    "decidedAt": "2026-09-03T04:20:49+00:00",
+    "snapshot": {
+      "title": "High-Accuracy Sampling for Diffusion Models and Log-Concave Distributions",
+      "titleZh": "扩散模型与对数凹分布的高精度采样",
+      "speaker": "Fan Chen (Massachusetts Institute of Technology)",
+      "startAt": "2026-09-14T10:00:00+08:00",
+      "endAt": "2026-09-14T12:00:00+08:00",
+      "location": "Room 9, Quan Zhai, BICMR",
+      "campus": "校内",
+      "distanceKm": null,
+      "topic": "概率/统计",
+      "subtopics": [
+        "扩散模型",
+        "高精度采样",
+        "随机算法"
+      ],
+      "flags": [
+        "ICML 2026 outstanding paper",
+        "CoLT 2026"
+      ],
+      "summary": "本次报告由麻省理工学院的Fan Chen主讲，介绍高精度采样的算法框架。该框架基于无偏随机查询，应用于扩散模型采样和对数凹分布采样。对于扩散模型，仅需polylog(1/δ)步即可获得δ误差，而分数估计精度仅需约Õ(δ)的L2误差，较以往结果有指数级改进。对于对数凹分布，利用次指数尾随机梯度可实现polylog(1/δ)的查询复杂度，且与凸优化问题中噪声导致的polylog复杂度形成对比。该成果获得ICML 2026杰出论文奖等荣誉。",
+      "reason": "报告属于概率统计与计算机科学交叉前沿，具有重要学术价值。",
+      "registrationUrl": "https://bicmr.pku.edu.cn/cn/content/show/45-4000.html",
+      "eventType": "学术报告",
+      "isPaid": false,
+      "audience": "public",
+      "relevanceScore": 4,
+      "qualityScore": 5,
+      "undergradScore": 3,
+      "prominenceScore": 4,
+      "confidence": 0.95,
+      "policyScore": 5.016,
+      "id": "L013",
+      "status": "published",
+      "sourceName": "北京国际数学研究中心",
+      "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/45-4000.html",
+      "verifiedAt": "2026-09-03T04:17:36+00:00",
+      "discoveredAt": "2026-09-03T04:17:36+00:00",
+      "discoveredOn": "2026-09-03",
+      "reviewNotes": "规则分 5.02，进入人工审核"
+    }
   }
 ]
