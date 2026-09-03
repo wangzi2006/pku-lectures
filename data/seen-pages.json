@@ -1048,5 +1048,138 @@
     "contentHash": "6c8cb958452c9636f6dc4a16732b86dce1859401cabfd868ac4cf548265e5d18",
     "analyzedAt": "2026-09-02T00:30:13+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/2a3a168b4b1c41faac7837628e404f3f.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "229360ddafdf93da95b11d42ef8162d1309a5f647489df12a5bf7650b1c05b40",
+    "analyzedAt": "2026-09-03T01:07:41+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/a22b23dc88234e5997057a93515b8403.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "058d8cec627d03cdde1267daf533114cff84e209bb167a975148005a006ca4cf",
+    "analyzedAt": "2026-09-03T01:07:44+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news/21/21.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "7f84a3ec312ea5f5bc7d9e596db7e52dbd2efc2014d9f1763b2646903a96a5de",
+    "analyzedAt": "2026-09-03T01:08:07+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/4275378187c941fabe9bb093053a1629.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "d5722649020904b7f83ca9f48557141bfa9b408b78cf827503ad62ecc6b9291f",
+    "analyzedAt": "2026-09-03T01:08:10+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/0d039a10d46243e1b2f02da468c13973.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "9ca4de11974e43aed7700538a9c7e9d86047b0571335573c7ff451d86d3f9191",
+    "analyzedAt": "2026-09-03T01:08:13+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news/22/22.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "5c8b168c5ac3e1e5e8cd587c3b5e059f5dfd0790c9638d3907f3ee7b1a24cf17",
+    "analyzedAt": "2026-09-03T01:08:16+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/1a699df8c2ea4e0e9911312964d6e366.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "1e7322592d0a4c3123da856817f6b95116ca261181bf8eae7603d92dbe3760e0",
+    "analyzedAt": "2026-09-03T01:08:19+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/4faa8628103c41acb652429f91ba950e.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "d004c2b8f19292f9d979c16842af07d071030b5d08cd5467e0984e6f6568e466",
+    "analyzedAt": "2026-09-03T01:08:23+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/8d18e8bdb851480687896dfcb9a1b542.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "e830732b74d3dbbebe1b2e2db3f1602e5648362c6620007ccfb88f260b62d6be",
+    "analyzedAt": "2026-09-03T01:08:28+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/278fa86565a94bd58cbdd63948850fc2.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "2d12136ce7667167143e0d80ac133f4fdff7c4dc66537938352964be29e805ef",
+    "analyzedAt": "2026-09-03T01:08:32+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/9d26275c27b342cfbc9b53f4ee5906db.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "0a1f5f4080c5b7c60f524d790a11a89ec6cb70b56feb04cce76c4c7222836530",
+    "analyzedAt": "2026-09-03T01:08:35+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/dbf4f9068fdf4c66b426df2f15c0b6d9.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "a163734f11b1b677f1545730f1e4234d3c637a93a69d977670e090ae34649b3f",
+    "analyzedAt": "2026-09-03T01:08:39+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/49688ef8570a442293b7a7303baddee2.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "136ef7e9eb8a6d2d40a4e5d35220591de70e73ae46c44f25439e2ac7c973b901",
+    "analyzedAt": "2026-09-03T01:08:44+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/0a155443e90b4a139c0b3c6efed9ebab.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "8be40cde876a1e9f6b9279b9df27726251381bd7991b6e60b709b48990e96818",
+    "analyzedAt": "2026-09-03T01:08:49+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/42b6522f322d41438ce11ebee166b84b.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "65d925c994f09fbd765951fab29ba85e1ad4b22c00e0ac40f4388862d5209704",
+    "analyzedAt": "2026-09-03T01:08:56+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/szll/gcxln/index.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "ca33d9efb0b336b6293a468dd0b5fb4258b58053c93b6b34caf71a86f919e9c7",
+    "analyzedAt": "2026-09-03T01:09:07+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://future.pku.edu.cn/szll/bshn/index.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "6a115e1d1c27360f9f00b771a5b2d0ab4093d1288b8b2dcd430986758c94c871",
+    "analyzedAt": "2026-09-03T01:09:08+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://future.pku.edu.cn/zsypy/yjspyzspy/index.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "d1d9dce92113a83ca38d9006d18ef5f7331a0e3674e3678b498bdd8ae9289cb5",
+    "analyzedAt": "2026-09-03T01:09:10+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://future.pku.edu.cn/zsypy/zyxwzspy/index.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "4f38af02cf816b6ce87cfcc61b8cdfc666b3e0461a8fad5b0b155cb250301a4a",
+    "analyzedAt": "2026-09-03T01:09:11+00:00",
+    "outcome": "insufficient-signal"
   }
 ]
