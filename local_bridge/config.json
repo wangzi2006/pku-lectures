@@ -3,16 +3,5 @@
   "werssBaseUrl": "http://127.0.0.1:8001",
   "dailyIssueCap": 10,
   "lookbackDays": 21,
-  "feeds": [
-    {
-      "id": "MP_WXS_3072335459",
-      "name": "PKU学生创新学社",
-      "enabled": true
-    },
-    {
-      "id": "MP_WXS_3079142433",
-      "name": "北京大学",
-      "enabled": true
-    }
-  ]
+  "sourcesPath": "../data/sources.json"
 }

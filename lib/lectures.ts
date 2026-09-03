@@ -39,6 +39,7 @@ export type LectureSource = {
   notes: string;
   ownerApproved?: boolean;
   transport?: string;
+  feedId?: string;
 };
 
 const aliases = topicsConfig.aliases as Record<string, string[]>;

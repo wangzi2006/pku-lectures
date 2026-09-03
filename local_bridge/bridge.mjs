@@ -63,6 +63,12 @@ export function articleIsRelevant(article) {
   return ARTICLE_WORDS.test(`${article.title} ${article.summary}`);
 }
 
+export function catalogFeeds(sources) {
+  return sources.filter(
+    (source) => source.enabled !== false && source.kind === "wechat" && source.feedId,
+  );
+}
+
 function shanghaiDay(date = new Date()) {
   return new Date(date.getTime() + SHANGHAI_OFFSET_MS).toISOString().slice(0, 10);
 }
@@ -173,10 +179,15 @@ export async function run({ configPath, statePath, dryRun = false }) {
   const repository = String(config.repository || "wangzi2006/pku-lectures");
   const cap = Math.max(1, Number(config.dailyIssueCap || 10));
   const cutoff = Date.now() - Number(config.lookbackDays || 21) * 86_400_000;
+  const sourcesPath = path.resolve(
+    path.dirname(configPath),
+    String(config.sourcesPath || "../data/sources.json"),
+  );
+  const feeds = catalogFeeds(readJson(sourcesPath, []));
   const articles = [];
-  for (const feed of (config.feeds || []).filter((item) => item.enabled !== false)) {
-    const xml = await request(`${baseUrl}/rss/${encodeURIComponent(feed.id)}?limit=100`);
-    articles.push(...parseFeed(xml, feed.id, feed.name).filter(
+  for (const feed of feeds) {
+    const xml = await request(`${baseUrl}/rss/${encodeURIComponent(feed.feedId)}?limit=100`);
+    articles.push(...parseFeed(xml, feed.feedId, feed.name).filter(
       (article) => article.publishedAt.getTime() >= cutoff && articleIsRelevant(article)
     ));
   }

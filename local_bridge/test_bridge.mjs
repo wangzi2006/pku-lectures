@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { articleIsRelevant, issueBody, parseFeed } from "./bridge.mjs";
+import { articleIsRelevant, catalogFeeds, issueBody, parseFeed } from "./bridge.mjs";
 
 const rss = `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>测试</title><item>
@@ -27,4 +27,14 @@ test("creates a body compatible with the Issue form", () => {
 
 test("ignores a plain newsletter", () => {
   assert.equal(articleIsRelevant({ title: "九月月报", summary: "校园新闻汇总" }), false);
+});
+
+test("uses only enabled WeChat sources with a WeRSS feed ID", () => {
+  const sources = [
+    { name: "A", kind: "wechat", enabled: true, feedId: "MP_A" },
+    { name: "B", kind: "wechat", enabled: true },
+    { name: "C", kind: "event-list", enabled: true, feedId: "MP_C" },
+    { name: "D", kind: "wechat", enabled: false, feedId: "MP_D" },
+  ];
+  assert.deepEqual(catalogFeeds(sources).map((source) => source.feedId), ["MP_A"]);
 });

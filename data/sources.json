@@ -208,6 +208,7 @@
     "reviewMining": false,
     "ownerApproved": true,
     "transport": "local-collector",
+    "feedId": "MP_WXS_3072335459",
     "examplePublishedAt": "2024-11-08",
     "notes": "Owner 指定来源；示例文章《倒计时1天 | 内容创作者大会等你来！》用于图片型公众号回归测试。"
   },
@@ -222,6 +223,7 @@
     "reviewMining": false,
     "ownerApproved": true,
     "transport": "local-collector",
+    "feedId": "MP_WXS_3079142433",
     "notes": "北京大学校级官方公众号；由本机 WeRSS 监控，公开目录暂以学校官网作为来源入口。"
   }
 ]
