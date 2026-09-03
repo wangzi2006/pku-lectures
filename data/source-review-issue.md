@@ -7,6 +7,8 @@
 ### S001 · 北京大学数字金融 Workshop
 - 候选来源：https://idf.pku.edu.cn/jzhy/szjrWorkshop/index.htm
 - 发现自：[讲座回顾](https://idf.pku.edu.cn/jzhy/szjrWorkshop/index.htm)
+- 推荐者：自动发现
+- 类型：官网或预告渠道
 - 线索：同一官方栏目同时发布 Workshop 讲座预告与讲座回顾，可由高质量回顾稳定追溯未来预告。
 - 建议：经济与金融不属于核心方向，若批准加入，仍应只推本科生可听、方法性强或讲者非常重要的场次。
 
