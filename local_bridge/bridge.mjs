@@ -64,9 +64,13 @@ export function articleIsRelevant(article) {
 }
 
 export function catalogFeeds(sources) {
-  return sources.filter(
-    (source) => source.enabled !== false && source.kind === "wechat" && source.feedId,
-  );
+  const ranks = { high: 0, normal: 1, low: 2 };
+  return sources
+    .filter((source) => source.enabled !== false && source.kind === "wechat" && source.feedId)
+    .sort((left, right) =>
+      (ranks[left.crawlPriority] ?? ranks.normal) -
+      (ranks[right.crawlPriority] ?? ranks.normal)
+    );
 }
 
 function shanghaiDay(date = new Date()) {

@@ -55,6 +55,7 @@ export default function SourcesPage() {
                 <div className="flex flex-wrap gap-1.5">
                   <Badge variant="secondary">{kindLabels[source.kind]}</Badge>
                   <Badge variant="outline">第 {source.tier} 级</Badge>
+                  {source.crawlPriority === 'high' ? <Badge variant="outline">重点监控</Badge> : null}
                   {source.reviewMining ? <Badge variant="outline">回顾反查</Badge> : null}
                 </div>
                 <CardTitle className="font-serif text-lg leading-snug">

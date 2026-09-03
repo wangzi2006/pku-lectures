@@ -31,10 +31,12 @@ test("ignores a plain newsletter", () => {
 
 test("uses only enabled WeChat sources with a WeRSS feed ID", () => {
   const sources = [
-    { name: "A", kind: "wechat", enabled: true, feedId: "MP_A" },
+    { name: "A", kind: "wechat", enabled: true, feedId: "MP_A", crawlPriority: "normal" },
+    { name: "E", kind: "wechat", enabled: true, feedId: "MP_E", crawlPriority: "low" },
+    { name: "F", kind: "wechat", enabled: true, feedId: "MP_F", crawlPriority: "high" },
     { name: "B", kind: "wechat", enabled: true },
     { name: "C", kind: "event-list", enabled: true, feedId: "MP_C" },
     { name: "D", kind: "wechat", enabled: false, feedId: "MP_D" },
   ];
-  assert.deepEqual(catalogFeeds(sources).map((source) => source.feedId), ["MP_A"]);
+  assert.deepEqual(catalogFeeds(sources).map((source) => source.feedId), ["MP_F", "MP_A", "MP_E"]);
 });

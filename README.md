@@ -72,7 +72,7 @@ Owner 还可以新建“Owner 系统设置”Issue，通过评论调整硬排除
 
 本地采集器使用 Docker Desktop 与私有 WeRSS。电脑无需全天在线：启动后补抓离线期间文章，白天每 2 小时检查一次；授权失效时需重新扫码。
 
-本机桥接位于 `local_bridge/`：读取 `data/sources.json` 中已启用且配置了 `feedId` 的公众号，只把公众号名、标题、发布日期和微信原文链接提交到 GitHub；跨次去重，每天最多 10 条。Token 由 `install.ps1` 交互式读取，经 Windows 当前用户加密后保存在本机，不进入仓库或日志。桥接任务在登录时及每天 08:27–20:27 每两小时运行一次。
+本机桥接位于 `local_bridge/`：读取 `data/sources.json` 中已启用且配置了 `feedId` 的公众号，只把公众号名、标题、发布日期和微信原文链接提交到 GitHub；跨次去重，每天最多 10 条。`crawlPriority` 只控制读取次序，不绕过内容筛选；当前优先处理 `PKU学生创新学社` 和 `P-Lib official`。Token 由 `install.ps1` 交互式读取，经 Windows 当前用户加密后保存在本机，不进入仓库或日志。桥接任务在登录时及每天 08:27–20:27 每两小时运行一次。
 
 批准新的公众号来源后，还需在本机 WeRSS 中订阅，并把其 WeRSS ID 写入该来源的 `feedId`；完成前它会显示在公开目录中，但不会被本机监控。桥接输出“没有需要新提交的公众号文章”只表示桥接正常，不代表 WeRSS 已成功抓到文章。
 
@@ -92,7 +92,7 @@ pip install -r pipeline/requirements-wechat.txt
 
 ## Owner 可编辑配置
 
-- `data/sources.json`：正式来源、启用状态、等级、主题与来源类型。
+- `data/sources.json`：正式来源、启用状态、等级、主题、来源类型与公众号读取优先级。
 - `config/policy.json`：硬排除词、评分权重、加减分和门槛。
 - `config/topics.json`：规范标签、显示顺序和旧标签别名。
 - `config/regions.json`：粗粒度区域、来源默认校区和地点匹配规则。

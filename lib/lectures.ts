@@ -40,6 +40,7 @@ export type LectureSource = {
   ownerApproved?: boolean;
   transport?: string;
   feedId?: string;
+  crawlPriority?: 'high' | 'normal' | 'low';
 };
 
 const aliases = topicsConfig.aliases as Record<string, string[]>;
