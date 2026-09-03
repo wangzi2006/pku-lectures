@@ -1181,5 +1181,26 @@
     "contentHash": "4f38af02cf816b6ce87cfcc61b8cdfc666b3e0461a8fad5b0b155cb250301a4a",
     "analyzedAt": "2026-09-03T01:09:11+00:00",
     "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/45-4000.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "99fc62dbf1e335c37715a9c4ae3665d7207b3fa9ee7405d3ef12f49702a00dba",
+    "analyzedAt": "2026-09-03T04:17:36+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://qzc.tsinghua.edu.cn/info/1193/8320.htm",
+    "sourceName": "清华大学求真书院讲座预告",
+    "contentHash": "9a3e0ad1e6d897f2ff5d2f8020d651f72498e09b83aa99a44b88b0354d3f313a",
+    "analyzedAt": "2026-09-03T04:17:39+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/3-363.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "dca341204e9d9176955ad496f7be9c77aed3e45a9e184acf96547c24b7dd7840",
+    "analyzedAt": "2026-09-03T04:17:43+00:00",
+    "outcome": "non-event"
   }
 ]
