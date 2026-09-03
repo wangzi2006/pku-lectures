@@ -3,15 +3,15 @@
     "issue": 5,
     "author": "wangzi2006",
     "issueUrl": "https://github.com/wangzi2006/pku-lectures/issues/5",
-    "lecture": "Singular Mean-Field Limits via Multiscale Mollification Metrics （https://bicmr.pku.edu.cn/cn/content/show/83-3998.html）",
+    "lecture": "Singular Mean-Field Limits via Multiscale Mollification Metrics （`https://bicmr.pku.edu.cn/cn/content/show/83-3998.html`）",
     "ratings": {
-      "undergrad": 4,
       "density": 1,
-      "match": 5,
       "delivery": 1,
-      "gain": 1
+      "gain": 1,
+      "match": 5,
+      "undergrad": 4
     },
     "comment": "_No response_",
-    "updatedAt": "2026-09-03T04:23:37+00:00"
+    "updatedAt": "2026-09-03T04:24:08+00:00"
   }
 ]
