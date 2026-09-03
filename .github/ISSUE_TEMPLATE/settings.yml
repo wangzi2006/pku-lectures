@@ -1,0 +1,24 @@
+name: Owner 系统设置
+description: 由仓库 Owner 通过评论调整来源、硬排除词和标签
+title: "[系统设置] "
+labels: [owner-settings]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        创建 Issue 后，由 Owner 评论一条或多条命令：
+
+        ```text
+        新增硬排除：培训营
+        移除硬排除：宣讲会 竞赛
+        启用来源：pku-history
+        停用来源：pku-bio
+        设置来源等级：pku-aais 3
+        新增标签：数字人文
+        删除标签：旧标签
+        ```
+  - type: textarea
+    id: reason
+    attributes:
+      label: 调整说明
+      description: 可记录本次修改目的；真正的修改由 Owner 评论命令触发。

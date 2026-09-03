@@ -1,0 +1,33 @@
+name: 提交公众号文章
+description: 提交含讲座、论坛、分享会、圆桌或大会信息的微信文章
+title: "[公众号文章] "
+labels: [wechat-submission]
+body:
+  - type: input
+    id: account
+    attributes:
+      label: 公众号名称
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: 公众号文章链接
+      placeholder: https://mp.weixin.qq.com/s/...
+    validations:
+      required: true
+  - type: input
+    id: metadata
+    attributes:
+      label: 文章标题和发布日期
+      placeholder: 倒计时1天｜内容创作者大会等你来！；2024-11-08
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 文章截图
+      description: 如果正文或活动信息主要在图片中，请直接拖入截图；Bot 会执行中文 OCR。
+  - type: textarea
+    id: notes
+    attributes:
+      label: 补充文字或说明
+      description: 可补充时间、地点、讲者或为什么值得审核。

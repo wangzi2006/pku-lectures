@@ -1,4 +1,5 @@
 'use client';
+/* oxlint-disable next/no-html-link-for-pages -- GitHub Pages publishes the static route as sources.html. */
 
 import {
   ArrowUpRight,
@@ -24,6 +25,7 @@ import lecturesData from '@/data/lectures.json';
 import {
   distanceLabel,
   formatLectureDate,
+  lectureTopics,
   type Lecture,
   topicOrder,
 } from '@/lib/lectures';
@@ -31,10 +33,12 @@ import {
 const lecturesSource = lecturesData as Lecture[];
 const buildTimestamp = new Date().getTime();
 const windowEndTimestamp = buildTimestamp + 14 * 24 * 60 * 60 * 1000;
-const pendingCount = candidatesData.filter((item) => item.status === 'pending').length;
+const pendingCount = (candidatesData as Array<{ status: string }>).filter(
+  (item) => item.status === 'pending',
+).length;
 const visibleTopics = topicOrder.filter(
   (topic) =>
-    topic === '全部' || lecturesSource.some((lecture) => lecture.topic === topic),
+    topic === '全部' || lecturesSource.some((lecture) => lectureTopics(lecture).includes(topic)),
 );
 
 export default function Home() {
@@ -54,7 +58,7 @@ export default function Home() {
       )
       .filter((lecture) => {
       const matchesTopic =
-        activeTopic === '全部' || lecture.topic === activeTopic;
+        activeTopic === '全部' || lectureTopics(lecture).includes(activeTopic);
       const matchesQuery =
         !normalized ||
         [lecture.title, lecture.speaker, lecture.location, lecture.summary]
@@ -100,6 +104,12 @@ export default function Home() {
           >
             提交讲座
           </a>
+          <a
+            className="hidden rounded-lg px-2 py-1.5 text-sm font-medium text-muted-foreground transition hover:bg-muted hover:text-foreground md:block"
+            href="./sources.html"
+          >
+            来源目录
+          </a>
         </div>
       </header>
 
@@ -108,21 +118,21 @@ export default function Home() {
           <div>
             <p className="mb-2 flex items-center gap-2 text-xs font-semibold tracking-[0.14em] text-primary uppercase">
               <Sparkles className="size-3.5" />
-              每日 07:00 更新
+              每日 07:13 更新
             </p>
             <h1 className="max-w-3xl font-serif text-3xl font-semibold leading-tight tracking-tight sm:text-5xl">
               未来 14 天的
               <span className="text-primary">公开讲座</span>
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground sm:text-base">
-              北京大学校内及东门骑行约 30 分钟范围；条目经人工审核后发布。
+              北京大学校内及周边区域；条目经人工审核后发布。
             </p>
           </div>
           <div className="grid grid-cols-3 gap-px overflow-hidden rounded-xl border bg-border text-center shadow-xs">
             {[
               ['14', '未来天数'],
-              ['07:00', '每日更新'],
-              ['≈ 6 km', '校外范围'],
+              ['07:13', '每日更新'],
+              ['周边区域', '校外范围'],
             ].map(([value, label]) => (
               <div className="min-w-24 bg-card px-4 py-3" key={label}>
                 <strong className="block font-serif text-lg">{value}</strong>
@@ -197,9 +207,15 @@ export default function Home() {
                   <Card className="border-0 shadow-[0_7px_28px_rgb(46_32_24/7%)] ring-border transition hover:-translate-y-0.5 hover:shadow-[0_12px_34px_rgb(46_32_24/10%)]">
                     <CardHeader>
                       <div className="mb-2 flex flex-wrap items-center gap-1.5">
-                        <Badge className="bg-accent text-accent-foreground" variant="secondary">
-                          {lecture.topic}
-                        </Badge>
+                        {lectureTopics(lecture).slice(0, 3).map((topic, index) => (
+                          <Badge
+                            className={index === 0 ? 'bg-accent text-accent-foreground' : ''}
+                            key={topic}
+                            variant={index === 0 ? 'secondary' : 'outline'}
+                          >
+                            {topic}
+                          </Badge>
+                        ))}
                         {lecture.flags.map((flag) => (
                           <Badge key={flag} variant="outline">
                             {flag}
@@ -301,7 +317,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm leading-6 text-primary-foreground/78">
-                  官网每天 07:00 抓取。时间、开放范围或质量不确定的条目进入 GitHub Issue 审核。
+                  官网每天 07:13 抓取，08:13 备用。时间、开放范围或质量不确定的条目进入 GitHub Issue 审核。
                 </p>
               </CardContent>
             </Card>
@@ -348,6 +364,7 @@ export default function Home() {
             </Card>
           </aside>
         </div>
+
       </div>
 
       <footer className="border-t bg-card">

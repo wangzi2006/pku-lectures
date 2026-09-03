@@ -23,7 +23,7 @@ from llm import (
     key_name,
     verify_api,
 )
-from policy import route
+from policy import apply_region, route
 
 BEIJING = timezone(timedelta(hours=8))
 LINK_WORDS = re.compile(
@@ -223,7 +223,11 @@ def crawl(days: int, max_review: int) -> None:
     queues: list[tuple[dict[str, Any], list[str]]] = []
     queued_urls: set[str] = set()
     listing_hints: dict[str, str] = {}
-    event_sources = [source for source in sources if source.get("kind") != "review-archive"]
+    event_sources = [
+        source
+        for source in sources
+        if source.get("kind") not in {"review-archive", "wechat"}
+    ]
     for source_index, source in enumerate(event_sources, start=1):
         print(f"[{source_index}/{len(event_sources)}] 读取来源：{source['name']}", flush=True)
         try:
@@ -293,6 +297,7 @@ def crawl(days: int, max_review: int) -> None:
             continue
 
         item["confidence"] = normalize_confidence(item.get("confidence"))
+        apply_region(item, source)
         seen_record = {
             "url": url,
             "sourceName": source["name"],

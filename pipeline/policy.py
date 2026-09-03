@@ -1,43 +1,18 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
-EXCLUDED_WORDS = {
-    "招生",
-    "招聘",
-    "宣讲会",
-    "竞赛",
-    "社团招新",
-    "付费",
-    "课程通知",
-    "培训班",
-}
+from common import read_config
 
-PROBABILITY_WORDS = {
-    "概率",
-    "随机",
-    "stochastic",
-    "probability",
-    "martingale",
-    "马尔可夫",
-}
+POLICY = read_config("policy.json", {})
+REGIONS = read_config("regions.json", {})
 
-HUMANITIES_TOPICS = {"人文社科", "通识", "文学", "历史", "哲学", "艺术", "法学", "社会科学"}
-HUMANITIES_WORDS = {
-    "文学",
-    "历史",
-    "哲学",
-    "艺术",
-    "考古",
-    "语言学",
-    "社会学",
-    "人类学",
-    "政治学",
-    "法学",
-    "文化",
-    "文明",
-}
-NONCORE_STEM_TOPICS = {"物理", "生命科学", "医学", "化学", "工程", "计算机与 ai"}
+EXCLUDED_WORDS = set(POLICY.get("excludedWords", []))
+PROBABILITY_WORDS = {word.lower() for word in POLICY.get("probabilityWords", [])}
+HUMANITIES_TOPICS = {word.lower() for word in POLICY.get("humanitiesTopics", [])}
+HUMANITIES_WORDS = {word.lower() for word in POLICY.get("humanitiesWords", [])}
+NONCORE_STEM_TOPICS = {word.lower() for word in POLICY.get("noncoreStemTopics", [])}
 
 
 def hard_exclusion(item: dict[str, Any]) -> str | None:
@@ -64,20 +39,44 @@ def deterministic_score(item: dict[str, Any], source: dict[str, Any]) -> float:
     text = " ".join(str(item.get(key, "")) for key in ("title", "titleZh", "summary")).lower()
     probability = any(word in text for word in PROBABILITY_WORDS)
     topic = str(item.get("topic", "")).strip().lower()
-    humanities = topic in {value.lower() for value in HUMANITIES_TOPICS} or any(
+    humanities = topic in HUMANITIES_TOPICS or any(
         word in text for word in HUMANITIES_WORDS
     )
     noncore_stem = topic in NONCORE_STEM_TOPICS
     external = item.get("campus") == "校外"
 
-    score = relevance * 0.24 + quality * 0.28 + undergrad * 0.2 + prominence * 0.18
+    weights = POLICY.get("weights", {})
+    bonuses = POLICY.get("bonuses", {})
+    score = (
+        relevance * float(weights.get("relevance", 0.24))
+        + quality * float(weights.get("quality", 0.28))
+        + undergrad * float(weights.get("undergrad", 0.2))
+        + prominence * float(weights.get("prominence", 0.18))
+    )
     score += (6 - min(int(source.get("tier", 3)), 5)) * 0.18
-    score += 0.7 if probability else 0
-    score += 0.55 if humanities else 0
-    score -= 0.45 if noncore_stem else 0
-    score -= 0.65 if external else 0
-    score *= max(0.45, confidence)
+    score += float(bonuses.get("probability", 0.7)) if probability else 0
+    score += float(bonuses.get("humanities", 0.55)) if humanities else 0
+    score += float(bonuses.get("noncoreStem", -0.45)) if noncore_stem else 0
+    score += float(bonuses.get("external", -0.65)) if external else 0
+    score *= max(float(POLICY.get("confidenceFloor", 0.45)), confidence)
     return round(score, 3)
+
+
+def apply_region(item: dict[str, Any], source: dict[str, Any]) -> None:
+    location = " ".join(
+        str(item.get(key, "")) for key in ("location", "title", "titleZh")
+    )
+    for rule in REGIONS.get("locationRules", []):
+        if re.search(str(rule.get("pattern", "")), location, re.I):
+            item["region"] = rule.get("region", "待核验")
+            item["campus"] = rule.get("campus", item.get("campus", "校外"))
+            return
+    default = REGIONS.get("sourceDefaults", {}).get(source.get("id"), {})
+    if default:
+        item["region"] = default.get("region", "待核验")
+        item["campus"] = default.get("campus", item.get("campus", "校外"))
+    else:
+        item["region"] = item.get("region") or "待核验"
 
 
 def route(item: dict[str, Any], source: dict[str, Any]) -> tuple[str, str]:
@@ -89,8 +88,13 @@ def route(item: dict[str, Any], source: dict[str, Any]) -> tuple[str, str]:
     item["policyScore"] = score
     is_probability = item.get("topic") == "概率"
     is_external = item.get("campus") == "校外"
-    threshold = 2.2 if is_probability else 3.05
-    threshold += 0.55 if is_external else 0
+    thresholds = POLICY.get("thresholds", {})
+    threshold = float(
+        thresholds.get("probability", 2.2)
+        if is_probability
+        else thresholds.get("default", 3.05)
+    )
+    threshold += float(thresholds.get("externalExtra", 0.55)) if is_external else 0
 
     if score < threshold:
         return "rejected", f"规则分 {score:.2f} 低于门槛 {threshold:.2f}"

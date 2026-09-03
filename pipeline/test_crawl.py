@@ -6,6 +6,9 @@ from pathlib import Path
 
 import crawl
 import policy
+import source_intake
+import source_review
+from common import next_numbered_id
 
 
 class CrawlPolicyTests(unittest.TestCase):
@@ -100,6 +103,35 @@ class CrawlPolicyTests(unittest.TestCase):
             policy.deterministic_score(probability, source),
             policy.deterministic_score(humanities, source),
         )
+
+    def test_announcements_and_competitions_are_not_hard_exclusions(self) -> None:
+        self.assertIsNone(policy.hard_exclusion({"title": "本科生竞赛宣讲会"}))
+
+    def test_source_region_prevents_qiuzhen_from_being_marked_on_campus(self) -> None:
+        item = {"location": "求真书院明哲斋", "campus": "校内"}
+        policy.apply_region(item, {"id": "qiuzhen-preview"})
+        self.assertEqual(item["region"], "清华校内")
+        self.assertEqual(item["campus"], "校外")
+
+    def test_source_review_accepts_short_numbered_id(self) -> None:
+        accepted, rejected = source_review.parse_comment("收录来源：S001")
+        self.assertEqual(accepted, {"S001"})
+        self.assertFalse(rejected)
+
+    def test_source_ids_remain_short_and_sequential(self) -> None:
+        self.assertEqual(
+            next_numbered_id("S", [{"id": "S001"}], [{"id": "s003"}]),
+            "S004",
+        )
+
+    def test_source_issue_form_sections_are_parsed(self) -> None:
+        values = source_intake.sections(
+            "### 来源名称\n北大中文人\n\n"
+            "### 网站、公众号主页或示例原文\nhttps://example.com\n\n"
+            "### 来源类型\n微信公众号\n"
+        )
+        self.assertEqual(values["name"], "北大中文人")
+        self.assertEqual(values["sourceType"], "微信公众号")
 
     def test_issue_only_contains_current_batch(self) -> None:
         old_data = crawl.DATA

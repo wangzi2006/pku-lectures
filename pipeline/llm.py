@@ -7,6 +7,8 @@ from typing import Any
 
 import requests
 
+from common import read_config
+
 PROVIDER = os.getenv("AI_PROVIDER", "deepseek").lower()
 
 if PROVIDER == "deepseek":
@@ -23,8 +25,9 @@ else:
     raise RuntimeError(f"不支持的 AI_PROVIDER：{PROVIDER}")
 
 REQUEST_TIMEOUT = (10, 45)
+TOPIC_CHOICES = "/".join(read_config("topics.json", {}).get("order", []))
 
-SYSTEM_PROMPT = """你是大学讲座信息抽取器。只根据给定网页内容提取事实，不猜测。
+SYSTEM_PROMPT = f"""你是大学讲座信息抽取器。只根据给定网页内容提取事实，不猜测。
 输出一个 JSON 对象，字段如下：
 isEvent, title, titleZh, speaker, startAt, endAt, location, campus,
 distanceKm, topic, subtopics, flags, summary, reason, registrationUrl,
@@ -35,12 +38,13 @@ confidence 必须为 0 到 1 的小数。不要决定是否发布。
 startAt/endAt 必须是带 +08:00 的 ISO 8601；不能确认未来时间则 isEvent=false。
 summary 为 100-180 个汉字，reason 为一句话。原题不是中文时保留 title 并给 titleZh。
 campus 只能为 校内/校外/线上；audience 只能为 public/pku-students/internal-only/unknown。
-topic 优先从 概率/统计/数学/数学物理/理论计算机/计算机与 AI/物理/生命科学/人文社科/通识 选择。
-示例 JSON：{"isEvent":false,"title":"","titleZh":"","speaker":"","startAt":null,
+topic 必须从 {TOPIC_CHOICES} 中选择一个最主要的标签；subtopics 必须是该列表中 0–3 个不同的次要标签。
+一场讲座确属交叉学科时不要遗漏次要标签；不得发明列表外标签。
+示例 JSON：{{"isEvent":false,"title":"","titleZh":"","speaker":"","startAt":null,
 "endAt":null,"location":"","campus":"线上","distanceKm":null,"topic":"通识",
 "subtopics":[],"flags":[],"summary":"","reason":"","registrationUrl":"",
 "eventType":"","isPaid":false,"audience":"unknown","relevanceScore":0,
-"qualityScore":0,"undergradScore":0,"prominenceScore":0,"confidence":0}。
+"qualityScore":0,"undergradScore":0,"prominenceScore":0,"confidence":0}}。
 只输出 JSON。"""
 
 

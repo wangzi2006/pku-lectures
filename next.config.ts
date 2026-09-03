@@ -5,7 +5,7 @@ const onGitHubPages = process.env.GITHUB_PAGES === 'true';
 const nextConfig: NextConfig = {
   output: 'export',
   assetPrefix: onGitHubPages ? '/pku-lectures/' : undefined,
-  trailingSlash: true,
+  trailingSlash: false,
 };
 
 export default nextConfig;

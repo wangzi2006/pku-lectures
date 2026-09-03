@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://wangzi2006.github.io/pku-lectures/'),
   title: '未名讲座｜北大及周边未来 14 天讲座',
   description:
-    '北京大学校内及东门骑行约 30 分钟范围内，经审核发布的未来 14 天公开讲座。',
+    '北京大学校内及周边区域，经审核发布的未来 14 天公开讲座。',
   icons: {
     icon: '/pku-lectures/favicon.svg',
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://wangzi2006.github.io/pku-lectures/',
     images: [
       {
-        url: '/pku-lectures/og.png',
+        url: 'https://wangzi2006.github.io/pku-lectures/og.png',
         width: 1733,
         height: 909,
         alt: '未名讲座：北大及周边未来 14 天讲座',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '未名讲座｜北大及周边未来 14 天讲座',
     description: '北京大学校内及周边，经审核发布的未来 14 天公开讲座。',
-    images: ['/pku-lectures/og.png'],
+    images: ['https://wangzi2006.github.io/pku-lectures/og.png'],
   },
 };
 

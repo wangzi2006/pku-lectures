@@ -1,0 +1,50 @@
+name: 应用 Owner 系统设置
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    if: >-
+      github.actor == github.repository_owner &&
+      contains(github.event.issue.title, '[系统设置]')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SETTINGS_COMMENT: ${{ github.event.comment.body }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 应用设置命令
+        run: python pipeline/config_review.py --comment "$SETTINGS_COMMENT"
+
+      - name: 提交设置变化
+        id: commit
+        run: |
+          git config user.name "pku-lectures-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add config/policy.json config/topics.json data/sources.json
+          if ! git diff --cached --quiet; then
+            git commit -m "config: apply owner settings #${{ github.event.issue.number }}"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 回复结果
+        if: steps.commit.outputs.changed == 'true'
+        run: gh issue comment ${{ github.event.issue.number }} --body "设置已写入；下一次抓取使用新规则，网站正在自动部署。"

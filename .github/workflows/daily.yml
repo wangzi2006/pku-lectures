@@ -84,10 +84,12 @@ jobs:
       - name: 创建来源审核 Issue
         run: |
           if grep -q '^### S' data/source-review-issue.md; then
-            EXISTING=$(gh issue list --state open --search '来源发现审核 in:title' --json number --jq 'length')
-            if [ "$EXISTING" = "0" ]; then
+            EXISTING=$(gh issue list --state open --search '来源发现审核 in:title' --json number --jq '.[0].number // empty')
+            if [ -n "$EXISTING" ]; then
+              gh issue edit "$EXISTING" --body-file data/source-review-issue.md
+            else
               gh issue create --title "来源发现审核" --body-file data/source-review-issue.md --label "source-review" || \
-              gh issue create --title "来源发现审核" --body-file data/source-review-issue.md
+                gh issue create --title "来源发现审核" --body-file data/source-review-issue.md
             fi
           fi
 
@@ -98,5 +100,5 @@ jobs:
           if [ "$EXISTING" = "0" ]; then
             gh issue create \
               --title "AI 月度预算提醒" \
-              --body "本月保守估算已使用 ¥${{ steps.budget.outputs.estimated_cny }}。35 元为软提醒；达到 45 元后抓取器会停止新的 GLM 调用。"
+              --body "本月保守估算已使用 ¥${{ steps.budget.outputs.estimated_cny }}。35 元为软提醒；达到 45 元后抓取器会停止新的 AI 调用。"
           fi

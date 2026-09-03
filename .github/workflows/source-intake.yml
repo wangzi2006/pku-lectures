@@ -1,0 +1,64 @@
+name: 保存来源推荐
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  save:
+    if: contains(github.event.issue.title, '[来源推荐]')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE_BODY: ${{ github.event.issue.body }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 保存待审来源
+        run: >-
+          python pipeline/source_intake.py
+          --issue "${{ github.event.issue.number }}"
+          --author "${{ github.actor }}"
+          --url "${{ github.event.issue.html_url }}"
+          --body "$SOURCE_BODY"
+
+      - name: 提交来源建议
+        id: commit
+        run: |
+          git config user.name "pku-lectures-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/source-suggestions.json data/source-review-issue.md
+          if ! git diff --cached --quiet; then
+            git commit -m "data: store source suggestion #${{ github.event.issue.number }}"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 创建或刷新统一来源审核 Issue
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          EXISTING=$(gh issue list --state open --search '来源发现审核 in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file data/source-review-issue.md
+          else
+            gh issue create --title "来源发现审核" --body-file data/source-review-issue.md --label "source-review" || \
+              gh issue create --title "来源发现审核" --body-file data/source-review-issue.md
+          fi
+
+      - name: 回复推荐人
+        if: steps.commit.outputs.changed == 'true'
+        run: gh issue comment ${{ github.event.issue.number }} --body "已进入统一来源审核队列。Owner 批准后，Bot 会自动加入正式来源目录。"

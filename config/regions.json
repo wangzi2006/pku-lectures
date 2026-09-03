@@ -1,0 +1,40 @@
+{
+  "regions": [
+    "北大校内",
+    "清华校内",
+    "中关村—海淀黄庄",
+    "五道口—知春路",
+    "圆明园—颐和园",
+    "线上",
+    "区域外",
+    "待核验"
+  ],
+  "sourceDefaults": {
+    "pku-lecture-preview": {"region": "北大校内", "campus": "校内"},
+    "bicmr": {"region": "北大校内", "campus": "校内"},
+    "pku-math": {"region": "北大校内", "campus": "校内"},
+    "qiuzhen-preview": {"region": "清华校内", "campus": "校外"},
+    "qiuzhen-reviews": {"region": "清华校内", "campus": "校外"},
+    "pku-library-hour": {"region": "北大校内", "campus": "校内"},
+    "pku-library-reading": {"region": "北大校内", "campus": "校内"},
+    "pku-future": {"region": "北大校内", "campus": "校内"},
+    "pku-nbic": {"region": "北大校内", "campus": "校内"},
+    "pku-psychology": {"region": "北大校内", "campus": "校内"},
+    "pku-aais": {"region": "北大校内", "campus": "校内"},
+    "pku-bio": {"region": "北大校内", "campus": "校内"},
+    "pku-history": {"region": "北大校内", "campus": "校内"},
+    "pku-philosophy": {"region": "北大校内", "campus": "校内"},
+    "pku-chinese-library": {"region": "北大校内", "campus": "校内"},
+    "pku-law": {"region": "北大校内", "campus": "校内"},
+    "pku-archaeology": {"region": "北大校内", "campus": "校内"},
+    "pku-sociology": {"region": "北大校内", "campus": "校内"}
+  },
+  "locationRules": [
+    {"pattern": "线上|腾讯会议|Zoom|直播", "region": "线上", "campus": "线上"},
+    {"pattern": "清华|求真|明哲斋", "region": "清华校内", "campus": "校外"},
+    {"pattern": "海淀黄庄|中关村", "region": "中关村—海淀黄庄", "campus": "校外"},
+    {"pattern": "五道口|知春路", "region": "五道口—知春路", "campus": "校外"},
+    {"pattern": "圆明园|颐和园", "region": "圆明园—颐和园", "campus": "校外"},
+    {"pattern": "北京大学|北大|镜春园|金光楼|人文学苑|红五楼|考古楼|凯原楼", "region": "北大校内", "campus": "校内"}
+  ]
+}

@@ -7,7 +7,7 @@ from urllib.parse import urljoin, urlsplit
 import requests
 from bs4 import BeautifulSoup
 
-from common import DATA, canonical_url, iso_now, normalize_text, read_json, stable_id, write_json
+from common import DATA, canonical_url, iso_now, next_numbered_id, normalize_text, read_json, write_json
 
 REVIEW_WORDS = re.compile(r"讲座回顾|活动回顾|学术回顾|纪要|侧记|review", re.I)
 ANNOUNCE_WORDS = re.compile(r"预告|报名|讲座|论坛|系列|主办|承办|公众号", re.I)
@@ -58,7 +58,7 @@ def discover() -> None:
                     continue
                 suggestions.append(
                     {
-                        "id": stable_id("S", candidate),
+                        "id": next_numbered_id("S", sources, suggestions),
                         "status": "pending",
                         "name": label or "从讲座回顾发现的预告渠道",
                         "candidateUrl": candidate,
@@ -80,11 +80,11 @@ def discover() -> None:
 def write_issue(suggestions: list[dict[str, Any]]) -> None:
     pending = [item for item in suggestions if item.get("status") == "pending"][:10]
     lines = [
-        "## 从讲座回顾反向发现的预告来源",
+        "## 待审核来源",
         "",
-        "这些条目不是未来讲座。它们是从高质量讲座回顾中发现的系列、主办方或预告链接，必须人工核验后才能加入正式来源。",
+        "这些条目不是未来讲座。它们来自公开推荐或讲座回顾反查，必须由 Owner 核验后才能加入正式来源。",
         "",
-        "审核命令：`收录来源：Sxxxx` 或 `拒绝来源：Sxxxx`。收录后先以第 3 级来源运行，经过校准再提高信任等级。",
+        "审核命令：`收录来源：S001` 或 `拒绝来源：S001`。收录后先以第 3 级来源运行，经过校准再提高信任等级。",
         "",
     ]
     for item in pending:
@@ -93,6 +93,8 @@ def write_issue(suggestions: list[dict[str, Any]]) -> None:
                 f"### {item['id']} · {item['name']}",
                 f"- 候选来源：{item['candidateUrl']}",
                 f"- 发现自：[讲座回顾]({item['discoveredFrom']})",
+                f"- 推荐者：{item.get('recommendedBy', '自动发现')}",
+                f"- 类型：{item.get('sourceType', '官网或预告渠道')}",
                 f"- 线索：{item.get('evidence', '')}",
                 f"- 建议：{item.get('notes', '')}",
                 "",

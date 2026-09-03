@@ -130,5 +130,85 @@
     "enabled": true,
     "reviewMining": false,
     "notes": "仅本科生友好、跨学科或重要来访。"
+  },
+  {
+    "id": "pku-history",
+    "name": "北京大学历史学系学术活动",
+    "url": "https://www.history.pku.edu.cn/xshb/index.htm",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["历史", "人文社科"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "优先讲座、圆桌和面向本科生的工作坊。"
+  },
+  {
+    "id": "pku-philosophy",
+    "name": "北京大学哲学系宗教学系学术信息",
+    "url": "https://phil.pku.edu.cn/",
+    "kind": "mixed",
+    "tier": 1,
+    "topics": ["哲学", "宗教学", "人文社科"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "周学术活动一览与单场预告并行抓取。"
+  },
+  {
+    "id": "pku-chinese-library",
+    "name": "北京大学中文系图书馆讲座信息",
+    "url": "https://lib.chinese.pku.edu.cn/",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["文学", "语言学", "人文社科"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "中文系讲座信息入口；若栏目长期不更新再降级。"
+  },
+  {
+    "id": "pku-law",
+    "name": "北京大学法学院精彩活动",
+    "url": "https://www.law.pku.edu.cn/xwzx/xzjz/index.htm",
+    "kind": "event-list",
+    "tier": 1,
+    "topics": ["法学", "社会科学", "人文社科"],
+    "enabled": true,
+    "reviewMining": false,
+    "notes": "排除高端培训和招生，只处理公开学术活动。"
+  },
+  {
+    "id": "pku-archaeology",
+    "name": "北京大学考古文博学院讲座会议",
+    "url": "https://archaeology.pku.edu.cn/",
+    "kind": "mixed",
+    "tier": 1,
+    "topics": ["考古", "历史", "人文社科"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "官网首页稳定展示讲座预告、会议与纪要。"
+  },
+  {
+    "id": "pku-sociology",
+    "name": "北京大学社会学系讲座信息",
+    "url": "https://fss.pku.edu.cn/",
+    "kind": "mixed",
+    "tier": 1,
+    "topics": ["社会科学", "社会学", "人类学"],
+    "enabled": true,
+    "reviewMining": true,
+    "notes": "先按混合栏目运行，根据命中率再调整入口。"
+  },
+  {
+    "id": "pku-student-innovation-wechat",
+    "name": "PKU学生创新学社",
+    "url": "https://mp.weixin.qq.com/s/nKYhiiCOnAa9kcUXQabgxA",
+    "kind": "wechat",
+    "tier": 1,
+    "topics": ["创新创业", "校园文化", "通识"],
+    "enabled": true,
+    "reviewMining": false,
+    "ownerApproved": true,
+    "transport": "local-collector",
+    "examplePublishedAt": "2024-11-08",
+    "notes": "Owner 指定来源；示例文章《倒计时1天 | 内容创作者大会等你来！》用于图片型公众号回归测试。"
   }
 ]

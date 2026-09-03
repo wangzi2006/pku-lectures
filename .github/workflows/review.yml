@@ -52,7 +52,8 @@ jobs:
   apply-source:
     if: >-
       github.actor == github.repository_owner &&
-      contains(github.event.issue.title, '来源发现审核')
+      (contains(github.event.issue.title, '来源发现审核') ||
+       contains(github.event.issue.title, '[来源推荐]'))
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
@@ -74,7 +75,7 @@ jobs:
         run: |
           git config user.name "pku-lectures-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sources.json data/source-suggestions.json
+          git add data/sources.json data/source-suggestions.json data/source-review-issue.md
           if ! git diff --cached --quiet; then
             git commit -m "data: apply source review #${{ github.event.issue.number }}"
             git push
@@ -84,3 +85,11 @@ jobs:
       - name: 回复处理结果
         if: steps.commit.outputs.changed == 'true'
         run: gh issue comment ${{ github.event.issue.number }} --body "来源审核已应用。新来源将从下一次每日抓取开始参与发现，但仍需讲座级人工审核。"
+
+      - name: 刷新统一来源审核 Issue
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          EXISTING=$(gh issue list --state open --search '来源发现审核 in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file data/source-review-issue.md
+          fi

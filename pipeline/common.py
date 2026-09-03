@@ -10,10 +10,18 @@ from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
+CONFIG = ROOT / "config"
 
 
 def read_json(name: str, default: Any) -> Any:
     path = DATA / name
+    if not path.exists():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def read_config(name: str, default: Any) -> Any:
+    path = CONFIG / name
     if not path.exists():
         return default
     return json.loads(path.read_text(encoding="utf-8"))
@@ -43,6 +51,19 @@ def canonical_url(url: str) -> str:
 def stable_id(prefix: str, value: str, length: int = 10) -> str:
     digest = hashlib.sha256(value.encode("utf-8")).hexdigest()[:length].upper()
     return f"{prefix}{digest}"
+
+
+def next_numbered_id(prefix: str, *collections: list[dict[str, Any]]) -> str:
+    """Return the next short, human-enterable ID such as S001."""
+    numbers: list[int] = []
+    pattern = re.compile(rf"{re.escape(prefix)}(\d+)", re.I)
+    for collection in collections:
+        for item in collection:
+            identifier = str(item.get("id", ""))
+            match = pattern.fullmatch(identifier)
+            if match:
+                numbers.append(int(match.group(1)))
+    return f"{prefix.upper()}{max(numbers, default=0) + 1:03d}"
 
 
 def normalize_text(value: str) -> str:

@@ -1,0 +1,77 @@
+name: 导入公众号文章
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  ingest:
+    if: >-
+      github.actor == github.repository_owner &&
+      contains(github.event.issue.title, '[公众号文章]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      AI_PROVIDER: deepseek
+      AI_API_URL: https://api.deepseek.com/chat/completions
+      AI_MODEL: deepseek-v4-flash
+      AI_ENABLE_IMAGES: 'false'
+      AI_INPUT_CNY_PER_MILLION: '3'
+      AI_OUTPUT_CNY_PER_MILLION: '9'
+      WECHAT_BODY: ${{ github.event.issue.body }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: 安装公众号与 OCR 依赖
+        run: pip install -r pipeline/requirements-wechat.txt
+
+      - name: 读取文章、图片 OCR 与预筛
+        run: >-
+          python pipeline/wechat_ingest.py
+          --body "$WECHAT_BODY"
+          --issue-url "${{ github.event.issue.html_url }}"
+
+      - name: 提交候选变化
+        id: commit
+        run: |
+          git config user.name "pku-lectures-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/candidates.json data/review-issue.md data/usage.json
+          if ! git diff --cached --quiet; then
+            git commit -m "data: ingest wechat article #${{ github.event.issue.number }}"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 创建或刷新每日审核 Issue
+        if: steps.commit.outputs.changed == 'true'
+        run: |
+          REVIEW_DATE=$(TZ=Asia/Shanghai date +%F)
+          TITLE="每日讲座审核 · ${REVIEW_DATE}"
+          EXISTING=$(gh issue list --state open --search "${TITLE} in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$EXISTING" ]; then
+            gh issue edit "$EXISTING" --body-file data/review-issue.md
+          elif grep -q '^### L' data/review-issue.md; then
+            gh issue create --title "$TITLE" --body-file data/review-issue.md --label "lecture-review" || \
+              gh issue create --title "$TITLE" --body-file data/review-issue.md
+          fi
+
+      - name: 回复提交结果
+        run: gh issue comment ${{ github.event.issue.number }} --body "公众号文章已处理。若识别出未来活动，它已进入当日讲座审核 Issue。"

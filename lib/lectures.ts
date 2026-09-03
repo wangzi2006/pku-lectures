@@ -1,3 +1,5 @@
+import topicsConfig from '@/config/topics.json';
+
 export type Lecture = {
   id: string;
   status: 'pending' | 'published' | 'rejected' | 'maybe';
@@ -22,20 +24,33 @@ export type Lecture = {
   undergradScore?: number;
   confidence?: number;
   reviewNotes?: string;
+  region?: string;
 };
 
-export const topicOrder = [
-  '全部',
-  '概率',
-  '统计',
-  '数学',
-  '数学物理',
-  '计算机与 AI',
-  '物理',
-  '生命科学',
-  '人文社科',
-  '通识',
-];
+export type LectureSource = {
+  id: string;
+  name: string;
+  url: string;
+  kind: 'event-list' | 'mixed' | 'review-archive' | 'wechat';
+  tier: number;
+  topics: string[];
+  enabled: boolean;
+  reviewMining: boolean;
+  notes: string;
+  ownerApproved?: boolean;
+  transport?: string;
+};
+
+const aliases = topicsConfig.aliases as Record<string, string[]>;
+export const topicOrder = ['全部', ...topicsConfig.order];
+
+export function lectureTopics(lecture: Lecture) {
+  const raw = [lecture.topic, ...lecture.subtopics];
+  const expanded = raw.flatMap((value) =>
+    aliases[value] || value.split(/[/、，,]/).map((part) => part.trim()),
+  );
+  return [...new Set(expanded.filter((value) => topicsConfig.order.includes(value)))];
+}
 
 export function formatLectureDate(iso: string) {
   const date = new Date(iso);
@@ -62,7 +77,8 @@ export function formatLectureDate(iso: string) {
 
 export function distanceLabel(lecture: Lecture) {
   if (lecture.campus === '线上') return '线上';
-  if (lecture.campus === '校内') return '校内';
+  if (lecture.region) return lecture.region;
+  if (lecture.campus === '校内') return '北大校内';
   return lecture.distanceKm == null
     ? '校外 · 距离待核验'
     : `校外约 ${lecture.distanceKm.toFixed(1)} km`;
