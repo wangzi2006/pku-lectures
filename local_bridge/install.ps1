@@ -25,11 +25,8 @@ $action = New-ScheduledTaskAction `
     -Argument "-NoProfile -NonInteractive -ExecutionPolicy Bypass -File `"$runPath`""
 
 $triggers = @(
-    New-ScheduledTaskTrigger -AtLogOn
+    New-ScheduledTaskTrigger -Daily -At "08:27"
 )
-foreach ($hour in 8, 10, 12, 14, 16, 18, 20) {
-    $triggers += New-ScheduledTaskTrigger -Daily -At ("{0:D2}:27" -f $hour)
-}
 
 $settings = New-ScheduledTaskSettingsSet `
     -AllowStartIfOnBatteries `
