@@ -33,6 +33,6 @@
 
 ## Current state
 
-- `main` deploys automatically to the public GitHub Pages URL in `README.md`.
-- The local WeRSS bridge is installed; a successful empty bridge run does not prove WeRSS fetched articles.
-- Next operational step: verify a real WeRSS article reaches a `[公众号文章]` Issue, then add more approved accounts.
+- Pages is configured to deploy the latest `main` after human pushes and successful daily/review/settings workflows. Push-trigger deployment of `a3ca3b5` is live-verified; the first `workflow_run` deployment still needs observation.
+- The local WeRSS task covers six approved accounts at 08:17 daily; the Windows bridge checks at 08:27. A successful empty bridge run does not prove WeRSS fetched articles.
+- Next operational checks: confirm the next daily/review/settings completion triggers Pages, and verify one real WeRSS article reaches a `[公众号文章]` Issue, enters lecture review, and appears on the public site after approval.
