@@ -4,6 +4,15 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Commits created with GITHUB_TOKEN do not emit another workflow-triggering
+  # push event, so deploy again after workflows that can change public data.
+  workflow_run:
+    workflows:
+      - 每日抓取与审核
+      - 应用讲座审核
+      - 应用 Owner 系统设置
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -16,9 +25,12 @@ concurrency:
 
 jobs:
   build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@v4
         with:
