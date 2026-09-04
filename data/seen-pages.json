@@ -1426,5 +1426,243 @@
     "contentHash": "2e3b01825e8002613af658bd60c92f825fe2a2193943a4dea83c621ce4cc4f6a",
     "analyzedAt": "2026-09-03T23:55:17+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xsgz/azbzwbsbkszxltzt/index.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "5df79c4edfdda80ace7c844566dea17cd4d72c0513f1df6ef52bee87c3a12427",
+    "analyzedAt": "2026-09-04T00:58:44+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/node/171921",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "364a37e90a2ddfff81da911e6c032e02925b6cd617034b8e971bdb23ab3d0849",
+    "analyzedAt": "2026-09-04T00:58:47+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43395.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "651fcef45fd58dd0a048f347289f030fb44f429e06e5d3427ffceba8a4fc5da3",
+    "analyzedAt": "2026-09-04T00:58:49+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://fss.pku.edu.cn/xbdt/xzxw/1055skb159973.htm",
+    "sourceName": "北京大学社会学系讲座信息",
+    "contentHash": "93225ac0e8a35bf579c8c184c5a07a40255de3baf2c35ee4d0ae2be7cdee497b",
+    "analyzedAt": "2026-09-04T00:58:51+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/yxxsjnzq/index.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "a6afadd4de27f94935f01b00cb7bdcaa22cb7e8391b431ce29cbada15e69ba79",
+    "analyzedAt": "2026-09-04T00:58:54+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/node/171919",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "08691c836f65c4abdb0499494d76a02d8c827658d6c279b4de847e43a50291b2",
+    "analyzedAt": "2026-09-04T00:58:58+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43485.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "4c255a8ef21c04ef76005f25e66366803b8183aaa6707e77193cd1f33676c251",
+    "analyzedAt": "2026-09-04T00:59:02+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://fss.pku.edu.cn/xbdt/xzxw/1055skb159929.htm",
+    "sourceName": "北京大学社会学系讲座信息",
+    "contentHash": "9b8b70c24b18446f7edafccd739924de2a6a699ce5ede5339b545d4a3564cdf1",
+    "analyzedAt": "2026-09-04T00:59:04+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/zyxjsjnzq/index.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "45d0c52071671683d2bef55e0c5665c0b9cdb9d9382d5db53192c864105694af",
+    "analyzedAt": "2026-09-04T00:59:06+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/node/171186",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "7b0bfe1db6d059ac0567dfa3b0d690b580bbaab96649019bd85ab0dc18d2425a",
+    "analyzedAt": "2026-09-04T00:59:10+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43465.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "490fe50b69f711857db75d41b7522a41e0c64f10f464a7efc3c51f1bbefb59ef",
+    "analyzedAt": "2026-09-04T00:59:13+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://fss.pku.edu.cn/tzgg/jzxx/1055skb157171.htm",
+    "sourceName": "北京大学社会学系讲座信息",
+    "contentHash": "b1454634c48a9331b4e01d8c595e55d6cb164bceee11001e17f67c1aec89536a",
+    "analyzedAt": "2026-09-04T00:59:14+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xzqk/cjp/index.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "92d0b24f74c6a52067377a875f4b18e7317ef0b74f16f106165d2b7dc9f2687c",
+    "analyzedAt": "2026-09-04T00:59:16+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/node/170787",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "34f8a48b30648c226d6cc581e3846010961a6a75f5ff99a314a8cb7205db98bd",
+    "analyzedAt": "2026-09-04T00:59:20+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43405.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "ad2228a472c651b0e5a5666d7307694c394dd1da2d37647565cd8d6f91496a79",
+    "analyzedAt": "2026-09-04T00:59:22+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://fss.pku.edu.cn/tzgg/jzxx/1055skb154753.htm",
+    "sourceName": "北京大学社会学系讲座信息",
+    "contentHash": "fd869f5e9706b2b234f71ad0c6bcb48a306bf9305f3c430db1c44c2ac1758c24",
+    "analyzedAt": "2026-09-04T00:59:23+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/xzxw/xzdt/0175dca9a13241619a786d5cdad4f42e.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "04659f604fe45b86cf86b965ccbf34e67385e8e8b8b567f111ac42f8ab1309b0",
+    "analyzedAt": "2026-09-04T00:59:26+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/lectures",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "e152b249afd11d838f7eb4715ba368a091c2f57192b61a668cd7f889426477b5",
+    "analyzedAt": "2026-09-04T00:59:30+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43385.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "4c5bbbb4c842e85e584a1015e382a642c611a86b30ef6fed6d3f7d79f08da14e",
+    "analyzedAt": "2026-09-04T00:59:32+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://fss.pku.edu.cn/tzgg/jzxx/1055skb152764.htm",
+    "sourceName": "北京大学社会学系讲座信息",
+    "contentHash": "5f43d4f16f5baa11bec4e3e6fe898b345dd3c0b66a81371169d1b0f2aaf47574",
+    "analyzedAt": "2026-09-04T00:59:32+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/xzxw/xzdt/d6ecfe6e036140a689de75f0209e9674.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "12ab3b43c11947e4deaabfda24759c826cbae257f2532709868ca138a151924f",
+    "analyzedAt": "2026-09-04T00:59:34+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/lectures/155060",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "b145b1ce4b38f7e001fbc2a2cf2c2285dbb299583589f4675ee9e6c6d20c5656",
+    "analyzedAt": "2026-09-04T00:59:39+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/43375.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "50f5836c2bffd5e7365c953fd0aec3e9b26fb67f8ddae95c3ed5d14c89738369",
+    "analyzedAt": "2026-09-04T00:59:42+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://fss.pku.edu.cn/tzgg/jzxx/1055skb149485.htm",
+    "sourceName": "北京大学社会学系讲座信息",
+    "contentHash": "11e10a64d771f12c0e83e6eaaa306b120d2d15bf19b2a78b173a021f7d00a516",
+    "analyzedAt": "2026-09-04T00:59:44+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/72eb833444fe48048366dc7c5be8f964.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "93c185c2b05fe13806f8587b52a8bf51ec0d64a81b8f6bf450bb92169c24e255",
+    "analyzedAt": "2026-09-04T00:59:46+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/lectures/155062",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "20bc0c8691e62b13e829aaa28676e60fb630478dafe561e1d51aa8fa26c25d20",
+    "analyzedAt": "2026-09-04T00:59:51+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/43295.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "4f9676ce29fcd03e44cc3736247cf21550168504438e9dd2453c8f8473e57af7",
+    "analyzedAt": "2026-09-04T00:59:53+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/d2cecd31ab894b3e81a553fc51c7da76.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "689eb5cb3a7b0b1730271578e75fa7bcf200f25b00fd4d0b79c87a2a9f20c6f4",
+    "analyzedAt": "2026-09-04T00:59:56+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/lectures/155064",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "3498cb170d900608718ec4848be951e5496c70bb6f71f931cbecd55627d448e2",
+    "analyzedAt": "2026-09-04T01:00:01+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/43245.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "cb681e5fdc90fe75066547a277dd0dcd65a005f5201465bdc47984527d0220be",
+    "analyzedAt": "2026-09-04T01:00:04+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/tzgg/680e0d40ccae48c0b35d06f4c14f0ad5.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "a2a9a45605c9ffeefb9cc4eaf994f3c14cea3b71cb44f21f2175fad191838f33",
+    "analyzedAt": "2026-09-04T01:00:07+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/lectures/155063",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "328961ed8102c56d223c1a0ce33af0fce9b68244172f4f2a70f360acbb6a8747",
+    "analyzedAt": "2026-09-04T01:00:13+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/43115.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "9853e2e2bada5cf87ba9dd6d262d58cc53dbaf5c1e357e3e107d2243352af4f7",
+    "analyzedAt": "2026-09-04T01:00:18+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/lectures/155065",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "765dd77434ba7975f37034c53af470018ee1d83a83adbf9bbca78f94a5470c06",
+    "analyzedAt": "2026-09-04T01:00:24+00:00",
+    "outcome": "outside-window"
   }
 ]
