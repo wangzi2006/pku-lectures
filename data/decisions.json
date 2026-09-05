@@ -699,5 +699,47 @@
       "discoveredOn": "2026-09-04",
       "reviewNotes": "规则分 4.50，进入人工审核"
     }
+  },
+  {
+    "lectureId": "L020",
+    "decision": "published",
+    "decidedAt": "2026-09-05T01:12:44+00:00",
+    "snapshot": {
+      "title": "On the Geometry of Large Sets",
+      "titleZh": "关于大集合的几何",
+      "speaker": "Antoine Song (California Institute of Technology)",
+      "startAt": "2026-09-09T09:00:00+08:00",
+      "endAt": "2026-09-09T10:00:00+08:00",
+      "location": "线上",
+      "campus": "线上",
+      "distanceKm": null,
+      "topic": "数学",
+      "subtopics": [
+        "纯数学",
+        "数学物理"
+      ],
+      "flags": [],
+      "summary": "该讲座由加州理工学院的Antoine Song教授主讲，主要讨论Talagrand凸性猜想的解决过程及其后续研究方向。讲座提出了该猜想的黎曼流形版本，并探讨非负Ricci曲率条件下的相关问题。讲座内容涉及几何分析领域，适合数学专业师生及研究者参加。",
+      "reason": "该讲座由知名学者主讲，内容涉及数学猜想的最新进展，具有较高学术价值。",
+      "registrationUrl": "",
+      "eventType": "讨论班",
+      "isPaid": false,
+      "audience": "public",
+      "relevanceScore": 4,
+      "qualityScore": 4,
+      "undergradScore": 3,
+      "prominenceScore": 4,
+      "confidence": 0.9,
+      "region": "线上",
+      "policyScore": 3.87,
+      "id": "L020",
+      "status": "published",
+      "sourceName": "北京国际数学研究中心",
+      "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/43-4003.html",
+      "verifiedAt": "2026-09-05T00:56:46+00:00",
+      "discoveredAt": "2026-09-05T00:56:46+00:00",
+      "discoveredOn": "2026-09-05",
+      "reviewNotes": "规则分 3.87，进入人工审核"
+    }
   }
 ]
