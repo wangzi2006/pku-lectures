@@ -741,5 +741,51 @@
       "discoveredOn": "2026-09-05",
       "reviewNotes": "规则分 3.87，进入人工审核"
     }
+  },
+  {
+    "lectureId": "L021",
+    "decision": "published",
+    "decidedAt": "2026-09-07T07:10:41+00:00",
+    "snapshot": {
+      "title": "工作坊预告｜数据科学在石器研究中的应用",
+      "titleZh": "",
+      "speaker": "Ben Marwick",
+      "startAt": "2026-09-10T13:00:00+08:00",
+      "endAt": "2026-09-11T12:00:00+08:00",
+      "location": "北京大学红五楼5212",
+      "campus": "校内",
+      "distanceKm": null,
+      "topic": "考古",
+      "subtopics": [
+        "计算机与 AI",
+        "概率",
+        "社会科学"
+      ],
+      "flags": [
+        "工作坊",
+        "英文授课"
+      ],
+      "summary": "本工作坊以石器研究为例，介绍数据科学方法在考古数据分析中的应用，旨在帮助参与者建立数据驱动的考古研究思维。课程涵盖数据整理、质量检查、可视化、统计比较和多变量分析，强调如何根据考古学问题选择分析方法，并将结果转化为对石器技术和人类行为的解释。主讲人Ben Marwick教授来自华盛顿大学，长期从事旧石器考古和考古数据科学研究，积极推动R语言和开放科学在考古实践中的应用。参与无需R基础，建议自带电脑并提前安装软件，资料已发布于GitHub。活动时间从9月10日下午持续至11日上午，地点在北京大学红五楼5212。",
+      "reason": "网页明确预告了2026年9月的数据科学在石器研究中的应用工作坊，含时间地点和主讲人。",
+      "registrationUrl": "https://github.com/benmarwick/PKU-archaeology-data-science-workshop-2026/tree/master",
+      "eventType": "工作坊",
+      "isPaid": false,
+      "audience": "public",
+      "relevanceScore": 4,
+      "qualityScore": 4,
+      "undergradScore": 3,
+      "prominenceScore": 3,
+      "confidence": 0.9,
+      "region": "北大校内",
+      "policyScore": 4.203,
+      "id": "L021",
+      "status": "published",
+      "sourceName": "北京大学考古文博学院讲座会议",
+      "sourceUrl": "https://archaeology.pku.edu.cn/info/1042/43615.htm",
+      "verifiedAt": "2026-09-07T04:30:22+00:00",
+      "discoveredAt": "2026-09-07T04:30:22+00:00",
+      "discoveredOn": "2026-09-07",
+      "reviewNotes": "规则分 4.20，进入人工审核"
+    }
   }
 ]
