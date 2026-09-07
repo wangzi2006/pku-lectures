@@ -1748,5 +1748,47 @@
     "contentHash": "8d5198ee817477c324ed761d6bbea5b816c111f73285c370bb029a9d9f721d18",
     "analyzedAt": "2026-09-07T01:00:26+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/43615.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "f23f505a52a6d2de9e34c7789bd13b27beb93e514b7e6a700affb022b797117b",
+    "analyzedAt": "2026-09-07T04:30:22+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43635.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "d049833c76f98d93b28a1fcb670951de306bc8099a789569622d351e2e3c49b3",
+    "analyzedAt": "2026-09-07T04:30:25+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43665.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "1e3c2d91a6587d34951bdd60ac839ec3894895caf71292a6839730f1a0c742e6",
+    "analyzedAt": "2026-09-07T04:30:28+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43655.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "0d624b8eb2b97aca4df9f9a3187e2959449830fdd08039aee2267460e80beba5",
+    "analyzedAt": "2026-09-07T04:30:30+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43645.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "3ae52ffa55ba9e26d52e98df62d67c022453ff6c9c55f6b6c11f8734a9afdd2d",
+    "analyzedAt": "2026-09-07T04:30:33+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1573/5407.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "af82dd30547ab83e53c0e7725f45fffaf6730c6a12343968ecb992589c9f9f21",
+    "analyzedAt": "2026-09-07T04:30:33+00:00",
+    "outcome": "insufficient-signal"
   }
 ]
