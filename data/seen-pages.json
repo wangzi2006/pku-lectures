@@ -1741,5 +1741,12 @@
     "contentHash": "7fa9ce8bde04756f7db16de8ccf547a0fff11b13048505282663d50763fdce94",
     "analyzedAt": "2026-09-05T00:57:12+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/8f9cb52f1bd742a7a65662febeb949ba.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "8d5198ee817477c324ed761d6bbea5b816c111f73285c370bb029a9d9f721d18",
+    "analyzedAt": "2026-09-07T01:00:26+00:00",
+    "outcome": "non-event"
   }
 ]
