@@ -1790,5 +1790,33 @@
     "contentHash": "af82dd30547ab83e53c0e7725f45fffaf6730c6a12343968ecb992589c9f9f21",
     "analyzedAt": "2026-09-07T04:30:33+00:00",
     "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/82-4006.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "1b8d3ad6d9068e62e730ee7f307b45ac692461afc2be3d59fc51f41f780e5e53",
+    "analyzedAt": "2026-09-08T01:10:53+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/ddd6f60fe5414f64b1c72077c17d0830.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "c7e4c9d634bcf51eb5b493bf7db0c7e5b119f9ab02d6e77b852f01c79ca05c34",
+    "analyzedAt": "2026-09-08T01:10:55+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19065.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "749eaaf913eb341c7b6be17293a1f8f8b60211fa819976927e93155671e2e1e8",
+    "analyzedAt": "2026-09-08T01:11:01+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19066.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "f880f72c095e815586afb6ba1214f8d88a885256b406dabc263b48b90592909a",
+    "analyzedAt": "2026-09-08T01:11:06+00:00",
+    "outcome": "pending"
   }
 ]
