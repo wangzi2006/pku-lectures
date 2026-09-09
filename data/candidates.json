@@ -220,5 +220,41 @@
     "discoveredAt": "2026-09-09T01:15:01+00:00",
     "discoveredOn": "2026-09-09",
     "reviewNotes": "规则分 3.91，进入人工审核"
+  },
+  {
+    "title": "Connecting and Compartmentalizing the Mitochondrial Collective",
+    "titleZh": "连接与区室化线粒体集体",
+    "speaker": "Suliana Manley",
+    "startAt": "2026-09-21T13:00:00+08:00",
+    "endAt": "2026-09-21T14:30:00+08:00",
+    "location": "金光101报告厅",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "生命科学",
+    "subtopics": [
+      "物理"
+    ],
+    "flags": [],
+    "summary": "本次讲座由北京大学生命科学学院主办，邀请了Suliana Manley作为主讲人。讲座题目为“Connecting and Compartmentalizing the Mitochondrial Collective”，将探讨线粒体在细胞内的连接与区室化机制。活动于2026年9月21日13:00至14:30在金光101报告厅举行，面向校内师生开放，无需预约。",
+    "reason": "来自学院官网的讲座信息，包含时间地点和主讲人，属于硬核学术讲座。",
+    "registrationUrl": "",
+    "eventType": "讲座",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 3,
+    "qualityScore": 4,
+    "undergradScore": 3,
+    "prominenceScore": 3,
+    "confidence": 0.9,
+    "region": "北大校内",
+    "policyScore": 3.087,
+    "id": "L029",
+    "status": "pending",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "sourceUrl": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19072.html",
+    "verifiedAt": "2026-09-09T04:34:33+00:00",
+    "discoveredAt": "2026-09-09T04:34:33+00:00",
+    "discoveredOn": "2026-09-09",
+    "reviewNotes": "规则分 3.09，进入人工审核"
   }
 ]
