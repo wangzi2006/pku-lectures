@@ -1818,5 +1818,47 @@
     "contentHash": "f880f72c095e815586afb6ba1214f8d88a885256b406dabc263b48b90592909a",
     "analyzedAt": "2026-09-08T01:11:06+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/17-4008.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "e6b6e4f84826c76a41088cd5e9f715d8e6cef5429f026c031c9dab41030b6df7",
+    "analyzedAt": "2026-09-09T01:14:42+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/43715.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "99a5dd32a7a0e22db2b4f9dd6578977ac305820b2d358dc7247c515f544872e2",
+    "analyzedAt": "2026-09-09T01:14:46+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4005.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "62910e3ef6e425cd1538dff51088094a53fc504140d28ce2adabd5b5a3ad9649",
+    "analyzedAt": "2026-09-09T01:14:50+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43705.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "d5aa112ca7cb579177a20a196fb652ae8422eeaeb3bfce75297774ba8ca34c16",
+    "analyzedAt": "2026-09-09T01:14:53+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/47-4007.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "61d964948c754e91c5bf4456e88b33aae3f6df3905c9fa38ed41b06037c52242",
+    "analyzedAt": "2026-09-09T01:14:57+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/50-4004.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "8382c918c6d65d042b60f850d54a3ebd6355a2d46a24cb7388a12c748393347e",
+    "analyzedAt": "2026-09-09T01:15:01+00:00",
+    "outcome": "pending"
   }
 ]
