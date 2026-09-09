@@ -6,13 +6,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://wangzi2006.github.io/pku-lectures/'),
   title: '未名讲座｜北大及周边未来 14 天讲座',
   description:
-    '北京大学校内及周边区域，经审核发布的未来 14 天公开讲座。',
+    '北京大学校内及周边区域，规则筛选后自动发布的未来 14 天公开讲座。',
   icons: {
     icon: '/pku-lectures/favicon.svg',
   },
   openGraph: {
     title: '未名讲座｜北大及周边未来 14 天讲座',
-    description: '北京大学校内及周边，经审核发布的未来 14 天公开讲座。',
+    description: '北京大学校内及周边，规则筛选后自动发布的未来 14 天公开讲座。',
     locale: 'zh_CN',
     siteName: '未名讲座',
     type: 'website',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '未名讲座｜北大及周边未来 14 天讲座',
-    description: '北京大学校内及周边，经审核发布的未来 14 天公开讲座。',
+    description: '北京大学校内及周边，规则筛选后自动发布的未来 14 天公开讲座。',
     images: ['https://wangzi2006.github.io/pku-lectures/og.png'],
   },
 };

@@ -1,9 +1,8 @@
 from __future__ import annotations
 
-import tempfile
 import unittest
-from pathlib import Path
 
+import auto_publish
 import crawl
 import policy
 import source_intake
@@ -133,40 +132,60 @@ class CrawlPolicyTests(unittest.TestCase):
         self.assertEqual(values["name"], "北大中文人")
         self.assertEqual(values["sourceType"], "微信公众号")
 
-    def test_issue_only_contains_current_batch(self) -> None:
-        old_data = crawl.DATA
-        with tempfile.TemporaryDirectory() as directory:
-            crawl.DATA = Path(directory)
-            try:
-                crawl.write_review_issue(
-                    [
-                        {
-                            "id": "L007",
-                            "status": "pending",
-                            "discoveredOn": "2026-09-02",
-                            "title": "new",
-                            "confidence": 4,
-                            "sourceUrl": "https://example.com/new",
-                        },
-                        {
-                            "id": "L008",
-                            "status": "pending",
-                            "discoveredOn": "2026-09-01",
-                            "title": "old",
-                            "confidence": 0.9,
-                            "sourceUrl": "https://example.com/old",
-                        },
-                    ],
-                    10,
-                    "2026-09-02",
-                )
-                body = (Path(directory) / "review-issue.md").read_text(encoding="utf-8")
-            finally:
-                crawl.DATA = old_data
-        self.assertIn("### L007", body)
-        self.assertNotIn("### L008", body)
-        self.assertIn("置信度 0.80", body)
-        self.assertIn("本次展示 1 条合格候选（上限 10 条）", body)
+    def test_rule_approved_candidates_are_published_without_review(self) -> None:
+        candidates = [
+            {
+                "id": "L007",
+                "status": "pending",
+                "title": "Probability Seminar",
+                "startAt": "2026-09-10T10:00:00+08:00",
+                "sourceUrl": "https://example.com/new",
+                "reviewNotes": "规则分 4.10，进入人工审核",
+            },
+            {
+                "id": "L008",
+                "status": "rejected",
+                "title": "招聘说明会",
+                "startAt": "2026-09-10T14:00:00+08:00",
+                "sourceUrl": "https://example.com/rejected",
+            },
+        ]
+
+        remaining, lectures, added, duplicates = auto_publish.prepare_publication(
+            candidates, []
+        )
+
+        self.assertEqual(added, 1)
+        self.assertEqual(duplicates, 0)
+        self.assertEqual([item["id"] for item in remaining], ["L008"])
+        self.assertEqual(lectures[0]["status"], "published")
+        self.assertEqual(lectures[0]["publicationMode"], "automatic")
+        self.assertIn("通过自动发布门槛", lectures[0]["reviewNotes"])
+
+    def test_automatic_publication_deduplicates_source_urls(self) -> None:
+        candidate = {
+            "id": "L010",
+            "status": "pending",
+            "title": "同一讲座",
+            "startAt": "2026-09-10T10:00:00+08:00",
+            "sourceUrl": "https://example.com/talk?utm_source=wechat",
+        }
+        existing = {
+            "id": "L009",
+            "status": "published",
+            "title": "同一讲座",
+            "startAt": "2026-09-10T10:00:00+08:00",
+            "sourceUrl": "https://example.com/talk",
+        }
+
+        remaining, lectures, added, duplicates = auto_publish.prepare_publication(
+            [candidate], [existing]
+        )
+
+        self.assertEqual(remaining, [])
+        self.assertEqual(len(lectures), 1)
+        self.assertEqual(added, 0)
+        self.assertEqual(duplicates, 1)
 
 
 if __name__ == "__main__":

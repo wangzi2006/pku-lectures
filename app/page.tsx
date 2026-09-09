@@ -20,7 +20,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import candidatesData from '@/data/candidates.json';
 import lecturesData from '@/data/lectures.json';
 import {
   distanceLabel,
@@ -33,9 +32,6 @@ import {
 const lecturesSource = lecturesData as Lecture[];
 const buildTimestamp = new Date().getTime();
 const windowEndTimestamp = buildTimestamp + 14 * 24 * 60 * 60 * 1000;
-const pendingCount = (candidatesData as Array<{ status: string }>).filter(
-  (item) => item.status === 'pending',
-).length;
 const visibleTopics = topicOrder.filter(
   (topic) =>
     topic === '全部' || lecturesSource.some((lecture) => lectureTopics(lecture).includes(topic)),
@@ -125,7 +121,7 @@ export default function Home() {
               <span className="text-primary">公开讲座</span>
             </h1>
             <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground sm:text-base">
-              北京大学校内及周边区域；条目经人工审核后发布。
+              北京大学校内及周边区域；规则筛选通过后自动发布。
             </p>
           </div>
           <div className="grid grid-cols-3 gap-px overflow-hidden rounded-xl border bg-border text-center shadow-xs">
@@ -174,7 +170,7 @@ export default function Home() {
             <div className="mb-4 flex items-center justify-between">
               <div>
                 <h2 className="font-serif text-xl font-semibold" id="lecture-list-title">
-                  已审核讲座
+                  未来讲座
                 </h2>
                 <p className="mt-0.5 text-xs text-muted-foreground">
                   已发布条目 · 未来 14 天
@@ -282,12 +278,12 @@ export default function Home() {
                   <Search className="mx-auto mb-3 size-6 text-muted-foreground" />
                   <p className="font-medium">
                     {lecturesSource.length === 0
-                      ? '首轮候选正在人工审核'
+                      ? '暂未发现未来讲座'
                       : '没有符合当前条件的讲座'}
                   </p>
                   <p className="mt-2 text-sm leading-6 text-muted-foreground">
                     {lecturesSource.length === 0
-                      ? `已有 ${pendingCount} 条候选等待确认；只有审核通过后才会出现在这里。`
+                      ? '每日抓取后自动更新，可以稍后再看。'
                       : '可以清除筛选查看全部已发布讲座。'}
                   </p>
                   {lecturesSource.length > 0 ? (
@@ -317,7 +313,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm leading-6 text-primary-foreground/78">
-                  官网每天 07:13 抓取，08:13 备用。时间、开放范围或质量不确定的条目进入 GitHub Issue 审核。
+                  官网每天 07:13 抓取，08:13 备用。去重并通过固定规则筛选后自动发布。
                 </p>
               </CardContent>
             </Card>

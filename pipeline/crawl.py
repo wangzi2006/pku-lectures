@@ -12,7 +12,8 @@ import requests
 from bs4 import BeautifulSoup
 from dateutil.parser import isoparse
 
-from common import DATA, canonical_url, iso_now, normalize_text, read_json, title_key, write_json
+from auto_publish import publish_candidates
+from common import canonical_url, iso_now, normalize_text, read_json, title_key, write_json
 from llm import (
     AIAPIError,
     API_URL,
@@ -175,7 +176,9 @@ def budget_allows_ai() -> bool:
     return float(usage.get("estimatedCny", 0)) < float(os.getenv("AI_HARD_BUDGET_CNY", "45"))
 
 
-def crawl(days: int, max_review: int) -> None:
+def crawl(days: int, max_publish: int) -> None:
+    # Publish any rule-approved backlog left by an interrupted older workflow.
+    publish_candidates()
     sources = [item for item in read_json("sources.json", []) if item.get("enabled")]
     candidates = read_json("candidates.json", [])
     published = read_json("lectures.json", [])
@@ -186,11 +189,11 @@ def crawl(days: int, max_review: int) -> None:
     batch_date = datetime.now(BEIJING).strftime("%Y-%m-%d")
     already_new_today = [
         item
-        for item in candidates
+        for item in candidates + published
         if item.get("discoveredOn") == batch_date
-        and item.get("status") in {"pending", "maybe"}
+        and item.get("status") in {"pending", "maybe", "published"}
     ]
-    review_capacity = max(0, max_review - len(already_new_today))
+    publish_capacity = max(0, max_publish - len(already_new_today))
     known_urls = {canonical_url(item["sourceUrl"]) for item in candidates + published}
     known_events = {
         f"{title_key(item.get('title', ''))}|{item.get('startAt', '')[:10]}"
@@ -199,21 +202,18 @@ def crawl(days: int, max_review: int) -> None:
     new_items: list[dict[str, Any]] = []
     tokens = {"input": 0, "output": 0}
     api_calls = 0
-    max_api_calls = int(os.getenv("MAX_AI_CALLS", str(max(1, min(30, max_review * 3)))))
+    max_api_calls = int(os.getenv("MAX_AI_CALLS", str(max(1, min(30, max_publish * 3)))))
     consecutive_api_failures = 0
     next_number = next_lecture_number(candidates, published, decisions)
 
     if not api_key():
-        print(f"未配置 {key_name()}；保留现有候选并跳过 AI 抽取。", flush=True)
-        write_review_issue(candidates, max_review, batch_date)
+        print(f"未配置 {key_name()}；跳过 AI 抽取。", flush=True)
         return
     if not budget_allows_ai():
         print("已达到 AI 硬预算，跳过抽取。", flush=True)
-        write_review_issue(candidates, max_review, batch_date)
         return
-    if review_capacity == 0:
-        print(f"今天已有 {len(already_new_today)} 条新候选，仅刷新 Issue。", flush=True)
-        write_review_issue(candidates, max_review, batch_date)
+    if publish_capacity == 0:
+        print(f"今天已有 {len(already_new_today)} 条新发布，达到当日上限。", flush=True)
         return
 
     print(f"校验 {PROVIDER_NAME} API：{API_URL}，模型：{MODEL}", flush=True)
@@ -248,7 +248,7 @@ def crawl(days: int, max_review: int) -> None:
 
     print(f"按来源轮流分析 {len(queues)} 个有新链接的来源。", flush=True)
     for source, url in round_robin(queues):
-        if api_calls >= max_api_calls or len(new_items) >= review_capacity:
+        if api_calls >= max_api_calls or len(new_items) >= publish_capacity:
             break
         try:
             html = fetch(url)
@@ -344,7 +344,7 @@ def crawl(days: int, max_review: int) -> None:
     merged = sorted(candidates + new_items, key=lambda item: item.get("startAt", ""))
     write_json("candidates.json", merged)
     write_json("seen-pages.json", seen_pages[-5000:])
-    write_review_issue(merged, max_review, batch_date)
+    published_count = publish_candidates()
     outcomes: dict[str, int] = {}
     for record in seen_pages[seen_count_before_run:]:
         outcome = record.get("outcome", "unknown")
@@ -353,56 +353,15 @@ def crawl(days: int, max_review: int) -> None:
         f"{name} {count}" for name, count in sorted(outcomes.items())
     )
     print(
-        f"完成：分析 {api_calls} 个页面，新增 {len(new_items)} 条，候选共 {len(merged)} 条。",
+        f"完成：分析 {api_calls} 个页面，新增 {len(new_items)} 条，自动发布 {published_count} 条。",
         flush=True,
     )
     print(f"筛选明细：{outcome_text or '没有新页面'}。", flush=True)
 
 
-def write_review_issue(
-    candidates: list[dict[str, Any]], max_review: int, batch_date: str
-) -> None:
-    pending = [
-        item
-        for item in candidates
-        if item.get("status") in {"pending", "maybe"}
-        and item.get("discoveredOn") == batch_date
-    ][:max_review]
-    lines = [
-        f"## 每日讲座审核 · {datetime.now(BEIJING):%Y-%m-%d}",
-        "",
-        f"本次展示 {len(pending)} 条合格候选（上限 {max_review} 条）。请直接评论：",
-        "",
-        "```text",
-        "收录：L001 L002",
-        "拒绝：L003",
-        "待定：L004",
-        "```",
-        "",
-    ]
-    for item in pending:
-        lines.extend(
-            [
-                f"### {item['id']} · {item.get('titleZh') or item.get('title')}",
-                f"- 时间：{item.get('startAt', '待核验')}",
-                f"- 讲者：{item.get('speaker', '待核验')}",
-                f"- 地点：{item.get('location', '待核验')}（{item.get('campus', '待核验')}）",
-                f"- 标签：{', '.join(item.get('subtopics', []))}",
-                f"- 简介：{item.get('summary', '')}",
-                f"- 值得听：{item.get('reason', '')}",
-                f"- 机器判断：{item.get('reviewNotes', '')}；置信度 {normalize_confidence(item.get('confidence')):.2f}",
-                f"- [原始来源]({item.get('sourceUrl')})",
-                "",
-            ]
-        )
-    if not pending:
-        lines.append("今天没有待审核的新条目。")
-    (DATA / "review-issue.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
-
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--days", type=int, default=14)
-    parser.add_argument("--max-review", type=int, default=10)
+    parser.add_argument("--max-publish", "--max-review", dest="max_publish", type=int, default=10)
     args = parser.parse_args()
-    crawl(args.days, args.max_review)
+    crawl(args.days, args.max_publish)

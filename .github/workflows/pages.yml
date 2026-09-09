@@ -8,8 +8,9 @@ on:
   # push event, so deploy again after workflows that can change public data.
   workflow_run:
     workflows:
-      - 每日抓取与审核
-      - 应用讲座审核
+      - 每日抓取与发布
+      - 导入公众号文章
+      - 应用来源审核
       - 应用 Owner 系统设置
     types: [completed]
     branches: [main]

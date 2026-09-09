@@ -1,4 +1,4 @@
-name: 应用讲座审核
+name: 应用来源审核
 
 on:
   issue_comment:
@@ -13,42 +13,6 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  apply:
-    if: >-
-      github.actor == github.repository_owner &&
-      contains(github.event.issue.title, '每日讲座审核')
-    runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ github.token }}
-      REVIEW_COMMENT: ${{ github.event.comment.body }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: main
-
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: 应用审核命令
-        run: python pipeline/review.py --comment "$REVIEW_COMMENT"
-
-      - name: 提交审核结果
-        id: commit
-        run: |
-          git config user.name "pku-lectures-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/lectures.json data/candidates.json data/decisions.json
-          if ! git diff --cached --quiet; then
-            git commit -m "data: apply lecture review #${{ github.event.issue.number }}"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: 回复处理结果
-        if: steps.commit.outputs.changed == 'true'
-        run: gh issue comment ${{ github.event.issue.number }} --body "审核结果已写入；网站正在自动部署，通常 1–2 分钟后更新，无需其他操作。"
-
   apply-source:
     if: >-
       github.actor == github.repository_owner &&
@@ -84,7 +48,7 @@ jobs:
 
       - name: 回复处理结果
         if: steps.commit.outputs.changed == 'true'
-        run: gh issue comment ${{ github.event.issue.number }} --body "来源审核已应用。新来源将从下一次每日抓取开始参与发现，但仍需讲座级人工审核。"
+        run: gh issue comment ${{ github.event.issue.number }} --body "来源审核已应用。新来源将从下一次每日抓取开始参与发现；通过固定规则筛选的讲座会自动发布。"
 
       - name: 刷新统一来源审核 Issue
         if: steps.commit.outputs.changed == 'true'

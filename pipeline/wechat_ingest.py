@@ -11,6 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 from rapidocr import RapidOCR
 
+from auto_publish import publish_candidates
 from common import canonical_url, iso_now, normalize_text, read_json, title_key, write_json
 from crawl import (
     BEIJING,
@@ -18,7 +19,6 @@ from crawl import (
     next_lecture_number,
     normalize_confidence,
     update_usage,
-    write_review_issue,
 )
 from llm import extract_event, verify_api
 from policy import apply_region, route
@@ -101,6 +101,7 @@ def ocr_images(urls: list[str]) -> str:
 
 
 def ingest(body: str, issue_url: str, days: int = 14) -> None:
+    publish_candidates()
     values = issue_sections(body)
     submitted_urls = values.get("公众号文章链接", "").split()
     article_url = canonical_url(submitted_urls[0]) if submitted_urls else ""
@@ -151,7 +152,6 @@ def ingest(body: str, issue_url: str, days: int = 14) -> None:
     decisions = read_json("decisions.json", [])
     if not item.get("isEvent") or not in_window(item, days):
         print("文章中没有未来 14 天内可确认的活动", flush=True)
-        write_review_issue(candidates, 10, batch_date)
         return
     known_urls = {canonical_url(value.get("sourceUrl", "")) for value in candidates + lectures}
     known_events = {
@@ -161,12 +161,10 @@ def ingest(body: str, issue_url: str, days: int = 14) -> None:
     event_key = f"{title_key(item.get('title', ''))}|{item.get('startAt', '')[:10]}"
     if article_url in known_urls or event_key in known_events:
         print("该讲座已经存在", flush=True)
-        write_review_issue(candidates, 10, batch_date)
         return
     status, note = route(item, source)
     if status == "rejected":
         print(f"公众号讲座未通过规则预筛：{note}", flush=True)
-        write_review_issue(candidates, 10, batch_date)
         return
     item.update(
         {
@@ -185,8 +183,8 @@ def ingest(body: str, issue_url: str, days: int = 14) -> None:
     candidates.append(item)
     candidates.sort(key=lambda value: value.get("startAt", ""))
     write_json("candidates.json", candidates)
-    write_review_issue(candidates, 10, batch_date)
-    print(f"新增公众号候选 {item['id']}", flush=True)
+    publish_candidates()
+    print(f"新增并自动发布公众号讲座 {item['id']}", flush=True)
 
 
 if __name__ == "__main__":

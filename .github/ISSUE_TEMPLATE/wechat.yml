@@ -30,4 +30,4 @@ body:
     id: notes
     attributes:
       label: 补充文字或说明
-      description: 可补充时间、地点、讲者或为什么值得审核。
+      description: 可补充时间、地点、讲者或为什么值得收录。

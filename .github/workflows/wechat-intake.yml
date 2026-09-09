@@ -48,30 +48,17 @@ jobs:
           --body "$WECHAT_BODY"
           --issue-url "${{ github.event.issue.html_url }}"
 
-      - name: 提交候选变化
+      - name: 提交发布变化
         id: commit
         run: |
           git config user.name "pku-lectures-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/candidates.json data/review-issue.md data/usage.json
+          git add data/candidates.json data/lectures.json data/usage.json
           if ! git diff --cached --quiet; then
             git commit -m "data: ingest wechat article #${{ github.event.issue.number }}"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: 创建或刷新每日审核 Issue
-        if: steps.commit.outputs.changed == 'true'
-        run: |
-          REVIEW_DATE=$(TZ=Asia/Shanghai date +%F)
-          TITLE="每日讲座审核 · ${REVIEW_DATE}"
-          EXISTING=$(gh issue list --state open --search "${TITLE} in:title" --json number --jq '.[0].number // empty')
-          if [ -n "$EXISTING" ]; then
-            gh issue edit "$EXISTING" --body-file data/review-issue.md
-          elif grep -q '^### L' data/review-issue.md; then
-            gh issue create --title "$TITLE" --body-file data/review-issue.md --label "lecture-review" || \
-              gh issue create --title "$TITLE" --body-file data/review-issue.md
-          fi
-
       - name: 回复提交结果
-        run: gh issue comment ${{ github.event.issue.number }} --body "公众号文章已处理。若识别出未来活动，它已进入当日讲座审核 Issue。"
+        run: gh issue comment ${{ github.event.issue.number }} --body "公众号文章已处理。通过固定规则筛选的未来讲座已自动发布，网站正在更新。"

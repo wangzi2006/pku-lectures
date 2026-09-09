@@ -1,4 +1,4 @@
-name: 每日抓取与审核
+name: 每日抓取与发布
 
 on:
   schedule:
@@ -8,8 +8,8 @@ on:
     - cron: '13 0 * * *'   # 08:13 Asia/Shanghai backup/catch-up
   workflow_dispatch:
     inputs:
-      max_review:
-        description: 合格候选上限（不保证凑满；最多分析 30 页）
+      max_publish:
+        description: 当日自动发布上限（不保证凑满；最多分析 30 页）
         required: true
         default: '30'
 
@@ -50,7 +50,7 @@ jobs:
         run: pip install -r pipeline/requirements.txt
 
       - name: 抓取未来十四天
-        run: python pipeline/crawl.py --days 14 --max-review ${{ github.event_name == 'workflow_dispatch' && inputs.max_review || '10' }}
+        run: python pipeline/crawl.py --days 14 --max-publish ${{ github.event_name == 'workflow_dispatch' && inputs.max_publish || '10' }}
 
       - name: 从讲座回顾发现预告来源
         run: python pipeline/discover_sources.py
@@ -67,18 +67,6 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "data: daily lecture update"
             git push
-          fi
-
-      - name: 创建每日审核 Issue
-        run: |
-          REVIEW_DATE=$(TZ=Asia/Shanghai date +%F)
-          TITLE="每日讲座审核 · ${REVIEW_DATE}"
-          EXISTING=$(gh issue list --state open --search "${TITLE} in:title" --json number --jq '.[0].number // empty')
-          if [ -n "$EXISTING" ]; then
-            gh issue edit "$EXISTING" --body-file data/review-issue.md
-          elif grep -q '^### L' data/review-issue.md; then
-            gh issue create --title "$TITLE" --body-file data/review-issue.md --label "lecture-review" || \
-              gh issue create --title "$TITLE" --body-file data/review-issue.md
           fi
 
       - name: 创建来源审核 Issue

@@ -98,6 +98,4 @@ def route(item: dict[str, Any], source: dict[str, Any]) -> tuple[str, str]:
 
     if score < threshold:
         return "rejected", f"规则分 {score:.2f} 低于门槛 {threshold:.2f}"
-    # The first phase is intentionally review-only. Later this can be relaxed
-    # for tier-1, high-confidence, non-exceptional items after calibration.
-    return "pending", f"规则分 {score:.2f}，进入人工审核"
+    return "pending", f"规则分 {score:.2f}，通过自动发布门槛"
