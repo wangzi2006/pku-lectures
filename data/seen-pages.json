@@ -1867,5 +1867,54 @@
     "contentHash": "bdfce2a3afd14d6e1d50c2ebf624cf310bbfd72febfd7fc7f42b08312309a274",
     "analyzedAt": "2026-09-09T04:34:33+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/1c4189603cfe4a7b9f94d63cff5cb97b.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "1a8e2a9965e348cd5a3ad2162f3c90381eb504f7e399fb19efbb457be1cd3059",
+    "analyzedAt": "2026-09-10T01:03:12+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20311.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "891ed3aecf67f1fca8ff7465146c446d1dfb01f96b84d212dc280bc5ea2195d9",
+    "analyzedAt": "2026-09-10T01:03:15+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19073.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "0d7f05b4fa5d49f69aa46269f1b50b52ef5e97edddc36b66ef5153c01b10442b",
+    "analyzedAt": "2026-09-10T01:03:19+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43735.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "84044a77ad4370346d518d58bda23989e4372a9b911f0c75ccd366b28375a01c",
+    "analyzedAt": "2026-09-10T01:03:21+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20221.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "ec4c0cf82702b1e86ce3508eab9078e5643f93e7a9b4dcdede862df257073088",
+    "analyzedAt": "2026-09-10T01:03:25+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20211.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "9f65835105c2127b672860ac770c2a7ede521f349c99a38f222711b274cf26b4",
+    "analyzedAt": "2026-09-10T01:03:27+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20301.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "5904f20a7bbb7937ec871935aec3e1c7eced87184f7174039665b2bcf274a36a",
+    "analyzedAt": "2026-09-10T01:03:30+00:00",
+    "outcome": "non-event"
   }
 ]
