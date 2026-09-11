@@ -1916,5 +1916,26 @@
     "contentHash": "5904f20a7bbb7937ec871935aec3e1c7eced87184f7174039665b2bcf274a36a",
     "analyzedAt": "2026-09-10T01:03:30+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4009.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "d8ac32ab013f6e3228c659163a49149a7c29b093f040acef4d25770a13c55937",
+    "analyzedAt": "2026-09-11T01:03:32+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/43755.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "8c3575f646d2387a7508f072268469c95acbc025f7909fb3c63244d446c459f7",
+    "analyzedAt": "2026-09-11T01:03:37+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/43745.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "6b0bb948924499bea042e2d9974dedff0e9bd9c23d4cc60bacf624727bac4f4b",
+    "analyzedAt": "2026-09-11T01:03:42+00:00",
+    "outcome": "non-event"
   }
 ]
