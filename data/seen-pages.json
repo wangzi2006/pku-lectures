@@ -1937,5 +1937,12 @@
     "contentHash": "6b0bb948924499bea042e2d9974dedff0e9bd9c23d4cc60bacf624727bac4f4b",
     "analyzedAt": "2026-09-11T01:03:42+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20321.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "4da2bbf37d6a076bd4f8e7a0225a6638636ce9cb1a05b328db35e8b167305f03",
+    "analyzedAt": "2026-09-11T04:31:43+00:00",
+    "outcome": "non-event"
   }
 ]
