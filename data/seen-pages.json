@@ -2014,5 +2014,47 @@
     "contentHash": "f050a591eddd143db31cf27157c6cea970d312aff8bc4d3504f6103eeea779c3",
     "analyzedAt": "2026-09-14T04:41:00+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/45-4010.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "24794aa9e8929ded4dcb8d13cbe0c9d3d99899d52dfab628b6cf3e943d4c5ec8",
+    "analyzedAt": "2026-09-15T01:25:56+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/69334afe9e6547809f7fa783f0ac64de.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "fb8b4b2748b6147315776825f35c6e1613c2ba266470afb0bf91f62f7b1bd7f1",
+    "analyzedAt": "2026-09-15T01:26:00+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19084.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "21cc5e848645166fe6dd80f81041b4607c93d94e549ee1ab0dfde7923fb43869",
+    "analyzedAt": "2026-09-15T01:26:03+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/ab927669eb4f42409a7d072e022b98f6.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "d29ab786c03cd3a5c7d03b2d9dcb7aced1d6a0631fe82f05021309bb6e2487ca",
+    "analyzedAt": "2026-09-15T01:26:07+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19085.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "5373928d650eecb09bf655d29ae25ca54c9611d9e329430ae76aa2bd64feb92b",
+    "analyzedAt": "2026-09-15T01:26:11+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19082.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "879a1db1c202b80668720a70e5aca581b3d074c506f9753aefc4aba82a85ee44",
+    "analyzedAt": "2026-09-15T01:26:15+00:00",
+    "outcome": "pending"
   }
 ]
