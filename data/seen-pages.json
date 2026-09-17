@@ -2224,5 +2224,19 @@
     "contentHash": "0e304321921c10277c2a54129cec385db2f7216c3b0c882acae5f30373fcb3e6",
     "analyzedAt": "2026-09-17T01:24:16+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/47-4014.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "ac3ae89181c436983c8e4e762910595c9ddf785f52384e0b2a7b89c68e594c2b",
+    "analyzedAt": "2026-09-17T04:47:25+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/46-4015.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "86c4301ed8c236f99c8923253389b659627025e73eb07d1c39caaa15d969718a",
+    "analyzedAt": "2026-09-17T04:47:29+00:00",
+    "outcome": "pending"
   }
 ]
