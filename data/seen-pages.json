@@ -2238,5 +2238,26 @@
     "contentHash": "86c4301ed8c236f99c8923253389b659627025e73eb07d1c39caaa15d969718a",
     "analyzedAt": "2026-09-17T04:47:29+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/172810.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "64662efd9a66b52033bfb1584c127ca77b2a37d29f6063a5e57deb3f52a79121",
+    "analyzedAt": "2026-09-18T01:17:07+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/89cd0da0fa664d96a5fe409e25b658bc.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "a58b8bfee14935a6f32bee99c75ee99977f10352a33b1c8b4923dca916fcad60",
+    "analyzedAt": "2026-09-18T01:17:09+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172807.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "f3f6e285f2d6ac8272c65c4e8a7ae69eb82d624b193158f4d9d9e8e74a2fb396",
+    "analyzedAt": "2026-09-18T01:17:13+00:00",
+    "outcome": "pending"
   }
 ]
