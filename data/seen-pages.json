@@ -2315,5 +2315,12 @@
     "contentHash": "657151a536e8f3cb1878b4945df91830c674bd173d7ef42217f24924d770fcd8",
     "analyzedAt": "2026-09-19T04:32:32+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/mathematical/172827.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "a4acda20c1582a5b867125504b4660d60b0be26e05d594065949890569dced09",
+    "analyzedAt": "2026-09-20T04:49:09+00:00",
+    "outcome": "pending"
   }
 ]
