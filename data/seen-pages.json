@@ -2322,5 +2322,54 @@
     "contentHash": "a4acda20c1582a5b867125504b4660d60b0be26e05d594065949890569dced09",
     "analyzedAt": "2026-09-20T04:49:09+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/content/show/18-3997.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "af26d053fa33362c71bee21418b6ec16c95d078d312e6a2b670d9603d52796f1",
+    "analyzedAt": "2026-09-21T04:49:33+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/172831.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "2a6aa8c045215dbaa5c38aed2091790fcfa493e34d6391486a381b8b7359a7dc",
+    "analyzedAt": "2026-09-21T04:49:36+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20441.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "9d5d8fb96259c116dab6fd25848c866a0f046236e5d2e9f19738e1f795d480b6",
+    "analyzedAt": "2026-09-21T04:49:39+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1573/5408.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "81fc1ffb3d62233efbdf3373172b9ab70e2de9f4e5f84822b9da6b3da3b8a47d",
+    "analyzedAt": "2026-09-21T04:49:40+00:00",
+    "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/content/show/18-3996.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "c4f3305584fe5e9f7364c7239c6f61ce0d6692a1b8859486147a9bb75cd0109a",
+    "analyzedAt": "2026-09-21T04:49:43+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/172835.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "2a6aa8c045215dbaa5c38aed2091790fcfa493e34d6391486a381b8b7359a7dc",
+    "analyzedAt": "2026-09-21T04:49:47+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20431.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "14629669132a1cc94cb285ba33195a4a3e9b3804ec2e1ab26903a0af73de53e9",
+    "analyzedAt": "2026-09-21T04:49:50+00:00",
+    "outcome": "duplicate"
   }
 ]
