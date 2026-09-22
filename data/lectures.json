@@ -1962,5 +1962,43 @@
     "reviewNotes": "规则分 3.55，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-09-17T04:47:29+00:00"
+  },
+  {
+    "title": "Function Theory on Several Classes of Noncompact Complex Manifolds",
+    "titleZh": "几类非紧复流形上的函数论",
+    "speaker": "Bo Yang (Xiamen University)",
+    "startAt": "2026-09-30T09:00:00+08:00",
+    "endAt": "2026-09-30T10:00:00+08:00",
+    "location": "线上",
+    "campus": "线上",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "数学"
+    ],
+    "flags": [],
+    "summary": "本讲座由厦门大学Bo Yang主讲，主题为几类非紧复流形上的函数论。报告将介绍非紧Kähler或Hermitian流形上全纯函数的研究成果，包括增长估计、多项式增长全纯函数的维数估计，以及在适当曲率假设下的刚性结果。所研究的流形包括紧Kähler流形上某些向量丛的全空间，以及具有平坦Chern联络的完备Hermitian流形。主讲人2013年获加州大学圣地亚哥分校博士学位，曾在Rutgers和Cornell从事博士后研究。活动通过Zoom线上举行，提供会议链接、ID和密码。",
+    "reason": "该网页明确列出讨论班的时间、地点、主讲人和摘要，属于可确认的未来学术活动。",
+    "registrationUrl": "",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "unknown",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 3,
+    "confidence": 0.95,
+    "region": "线上",
+    "policyScore": 3.724,
+    "id": "L053",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/43-4018.html",
+    "verifiedAt": "2026-09-22T01:36:57+00:00",
+    "discoveredAt": "2026-09-22T01:36:57+00:00",
+    "discoveredOn": "2026-09-22",
+    "reviewNotes": "规则分 3.72，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-09-22T01:37:01+00:00"
   }
 ]
