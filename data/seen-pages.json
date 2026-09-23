@@ -2385,5 +2385,26 @@
     "contentHash": "eb39269d7838c5d323b3f385abbc0615adfc735e3ef117b2f99622127ab65f50",
     "analyzedAt": "2026-09-22T01:37:01+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4019.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "7a6d7210250e9c9a2c3275c76de196471b25680e8c0f8684e3898aecc165fbc3",
+    "analyzedAt": "2026-09-23T01:29:38+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/tzgg/92874ee9d2fc4b0ebaba7a0d660a5246.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "28ea7f31a4d5b84a0939751bb85afb545c0201edc9904157ab6c98895be3e77a",
+    "analyzedAt": "2026-09-23T01:29:40+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19099.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "0f5869b6414e7a6c6cfa7a0b192a3c5f722903b4d497e677258b972bf495062e",
+    "analyzedAt": "2026-09-23T01:29:44+00:00",
+    "outcome": "outside-window"
   }
 ]
