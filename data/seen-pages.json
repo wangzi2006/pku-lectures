@@ -2406,5 +2406,12 @@
     "contentHash": "0f5869b6414e7a6c6cfa7a0b192a3c5f722903b4d497e677258b972bf495062e",
     "analyzedAt": "2026-09-23T01:29:44+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/0841cf13a1bc47dea69c993eb95c2f9e.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "1a33099dd400c2ee7477043eabf427968691ecc3163f9e5655b3bb6aba17c1d0",
+    "analyzedAt": "2026-09-23T04:39:47+00:00",
+    "outcome": "pending"
   }
 ]
