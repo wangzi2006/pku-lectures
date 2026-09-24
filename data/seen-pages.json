@@ -2413,5 +2413,19 @@
     "contentHash": "1a33099dd400c2ee7477043eabf427968691ecc3163f9e5655b3bb6aba17c1d0",
     "analyzedAt": "2026-09-23T04:39:47+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/172877.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "b9ebee4a94632086ef87e42e333fbfa862f2284d45f94f6fa0660306a94ac2ba",
+    "analyzedAt": "2026-09-24T01:22:29+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/172880.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "34e70a250a4abbb70b0ed6d7dc96cefe5b9726397fa1caadfa5163eab8ce779b",
+    "analyzedAt": "2026-09-24T01:22:33+00:00",
+    "outcome": "pending"
   }
 ]
