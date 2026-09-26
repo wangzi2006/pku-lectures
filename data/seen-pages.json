@@ -2490,5 +2490,12 @@
     "contentHash": "05bc60158e9319bf66771616a23f9b1d60a9eb953ecea5430a5a9a78161aa729",
     "analyzedAt": "2026-09-25T01:28:46+00:00",
     "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19106.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "98dd0805b2df89b954e5950c26f4f4fc6022d6960aa40611c3d8e0cbffbe4a42",
+    "analyzedAt": "2026-09-26T01:31:31+00:00",
+    "outcome": "outside-window"
   }
 ]
