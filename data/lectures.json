@@ -2160,5 +2160,43 @@
     "reviewNotes": "规则分 4.67，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-09-24T01:22:33+00:00"
+  },
+  {
+    "title": "Geometry and Topology Seminar —— Nielsen Realization Problem and Homotopy Coherent Action",
+    "titleZh": "几何与拓扑讨论班——Nielsen实现问题与同伦相干作用",
+    "speaker": "沙熠（北京大学）",
+    "startAt": "2026-09-30T15:10:00+08:00",
+    "endAt": "2026-09-30T17:00:00+08:00",
+    "location": "智华楼四元厅",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "数学物理"
+    ],
+    "flags": [],
+    "summary": "这是北京大学数学科学学院几何与拓扑讨论班的一场学术报告，报告人为北京大学的沙熠。报告主题为Nielsen实现问题与同伦相干作用。Nielsen实现问题探讨映射类群的有限子群能否实现为流形上的真实群作用。从同伦论角度看，可以考虑更灵活的同伦相干作用概念，并自然追问当子群无法实现为真实作用时能否由同伦相干作用实现。报告将综述这些问题的近期进展，并介绍关于K3型四维流形的研究结果，主要工具为族Seiberg-Witten不变量。该工作是与林宇杰的合作。",
+    "reason": "网页列出了明确的未来讲座时间地点、报告人及主题，是一场几何与拓扑讨论班。",
+    "registrationUrl": "",
+    "eventType": "学术报告",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 3,
+    "prominenceScore": 3,
+    "confidence": 0.98,
+    "region": "北大校内",
+    "policyScore": 4.038,
+    "id": "L058",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/172885.htm",
+    "verifiedAt": "2026-09-28T01:38:39+00:00",
+    "discoveredAt": "2026-09-28T01:38:39+00:00",
+    "discoveredOn": "2026-09-28",
+    "reviewNotes": "规则分 4.04，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-09-28T01:38:39+00:00"
   }
 ]

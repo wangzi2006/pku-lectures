@@ -2504,5 +2504,12 @@
     "contentHash": "102472f7d442413d7bbc6d7ac0f76cedab6c58c1246330a2c4828f0fc5f505b6",
     "analyzedAt": "2026-09-27T01:25:26+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/172885.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "2c928cd6fbce86183a3341463b889c849cc3c19fee2bdee2666138ead5d08237",
+    "analyzedAt": "2026-09-28T01:38:39+00:00",
+    "outcome": "pending"
   }
 ]
