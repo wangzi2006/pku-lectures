@@ -2511,5 +2511,12 @@
     "contentHash": "2c928cd6fbce86183a3341463b889c849cc3c19fee2bdee2666138ead5d08237",
     "analyzedAt": "2026-09-28T01:38:39+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172889.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "90848c5c7e9ec1cbe888efe48db50f01280f33c244d84b96924e5a7b7d211956",
+    "analyzedAt": "2026-09-28T05:16:47+00:00",
+    "outcome": "pending"
   }
 ]
