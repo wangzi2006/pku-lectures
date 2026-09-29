@@ -2518,5 +2518,26 @@
     "contentHash": "90848c5c7e9ec1cbe888efe48db50f01280f33c244d84b96924e5a7b7d211956",
     "analyzedAt": "2026-09-28T05:16:47+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4020.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "695e2723e19cd4d328a456c1c9e1d92cec84fb124ac6a35a953dcb2eb1e1b1e6",
+    "analyzedAt": "2026-09-29T02:34:47+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/172895.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "5ab08e177371943fa2b36567de1b76e5abb4ffae27bbd03598f9da28b553d943",
+    "analyzedAt": "2026-09-29T02:34:50+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/5e70434906454d07930e31ebf97c8f0d.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "986c386b186b6a90ee94e24044560cd7e4ff8ded6768544e2046d1b69f0fcc0c",
+    "analyzedAt": "2026-09-29T02:34:53+00:00",
+    "outcome": "outside-window"
   }
 ]
