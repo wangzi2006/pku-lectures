@@ -2276,5 +2276,43 @@
     "reviewNotes": "规则分 3.50，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-09-29T02:34:53+00:00"
+  },
+  {
+    "title": "Reproducing Kernels, Theta Functions, and Fundamental Inequalities",
+    "titleZh": "再生核、Theta 函数与基本不等式",
+    "speaker": "Saburou Saitoh（Gunma University）",
+    "startAt": "2026-10-03T09:00:00+08:00",
+    "endAt": "2026-10-03T11:00:00+08:00",
+    "location": "智华楼412",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "应用数学"
+    ],
+    "flags": [],
+    "summary": "本讲座由群马大学Saburou Saitoh教授主讲，聚焦再生核与Theta函数在紧黎曼曲面上的深刻联系。内容涵盖Hejhal、Fay与Yamada的经典公式，包括三割线恒等式和域不变量的Theta函数表示，并由此导出Suita猜想等基本不等式，其中Theta Hessian矩阵的正定性起决定性作用。讲座还将讨论关启安教授开创的现代方法，完全不同于经典Theta函数途径，为Suita猜想、Saitoh猜想及其加权与乘积域版本提供完整证明。这些结果在复分析、算子理论与几何函数论中开辟了新路径。",
+    "reason": "网页明确列出该讨论班的时间、地点、报告人及摘要，属于可确认的未来学术报告。",
+    "registrationUrl": "",
+    "eventType": "学术报告",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 3,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 3,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 3.496,
+    "id": "L061",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/172899.htm",
+    "verifiedAt": "2026-09-30T02:05:56+00:00",
+    "discoveredAt": "2026-09-30T02:05:56+00:00",
+    "discoveredOn": "2026-09-30",
+    "reviewNotes": "规则分 3.50，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-09-30T02:05:59+00:00"
   }
 ]
