@@ -2314,5 +2314,47 @@
     "reviewNotes": "规则分 3.50，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-09-30T02:05:59+00:00"
+  },
+  {
+    "title": "Workshop on Group Actions in Algebraic Geometry",
+    "titleZh": "代数几何中的群作用研讨会",
+    "speaker": "Ivan Arzhantsev 等",
+    "startAt": "2026-10-14T10:00:00+08:00",
+    "endAt": "2026-10-16T16:40:00+08:00",
+    "location": "智华楼四元厅",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "数学"
+    ],
+    "flags": [
+      "需报名",
+      "有午餐",
+      "中俄合作"
+    ],
+    "summary": "北京大学中俄数学中心将于2026年10月14日至16日在智华楼四元厅举办代数几何中的群作用研讨会。会议由俄罗斯高等经济大学Ivan Arzhantsev教授领衔，邀请来自俄罗斯高等经济大学、北京大学、中国科学院数学与系统科学研究院、深圳大学、韩国基础科学研究院、巴西坎皮纳斯州立大学等机构的13位学者作报告。内容涵盖自同构群的Borel子群、加性作用与Hassett–Tschinkel对应、单幂群等变紧化、McKay对应、Heisenberg对称簇、无限维局部幂零李代数、有理齐性空间、柔性簇与辐射环簇等前沿主题。报名截止2026年10月10日，欢迎感兴趣的师生参加。",
+    "reason": "数学学院官网发布的代数几何群作用研讨会报名通知，含明确时间地点与报名方式。",
+    "registrationUrl": "https://v.wjx.cn/vm/OfWY8AB.aspx#",
+    "eventType": "学术会议",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 5,
+    "qualityScore": 5,
+    "undergradScore": 3,
+    "prominenceScore": 4,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 4.579,
+    "id": "L062",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xzky/172914.htm",
+    "verifiedAt": "2026-09-30T05:26:35+00:00",
+    "discoveredAt": "2026-09-30T05:26:35+00:00",
+    "discoveredOn": "2026-09-30",
+    "reviewNotes": "规则分 4.58，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-09-30T05:26:35+00:00"
   }
 ]
