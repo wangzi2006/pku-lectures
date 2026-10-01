@@ -2574,5 +2574,61 @@
     "contentHash": "efc0d2f441bed75221b5269afba8e45b354e3ae3aefd05a47b777cf87e62527a",
     "analyzedAt": "2026-09-30T05:26:35+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4022.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "569d6e62d4378b49d512f99ae290c9e70ff35ff8402206dfc5bd39d3a70728d5",
+    "analyzedAt": "2026-10-01T02:07:57+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/172903.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "68d1f26da3b17ef3a16363185fca9c9df3cab9b7f80d9c1bddd6a1b89aa1c475",
+    "analyzedAt": "2026-10-01T02:08:01+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19111.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "0319fd2dedd01e849dca3c11d232e6d2799f03208790301f2ec0db58c9c35733",
+    "analyzedAt": "2026-10-01T02:08:04+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/44015.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "33e8de8ffa0c347418046ae3bfb491d68655d1de216e56cd92f85d1849ac9500",
+    "analyzedAt": "2026-10-01T02:08:07+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172892.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "7eff8a3abd81fd594a6fc2251e1062e99732c8f623da059fed06ece1d64a08cc",
+    "analyzedAt": "2026-10-01T02:08:11+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19113.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "3fc2e3ea2e6a6674b8a0736d995b84bcd8f0919a046aa3304a36a5446145f4e0",
+    "analyzedAt": "2026-10-01T02:08:13+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/43995.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "f95f26983c9eba3d598f118cffb77eec00f516ad19f279569bd28b9ffe39fce1",
+    "analyzedAt": "2026-10-01T02:08:16+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1573/5410.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "8d45bc422f155866c203bca2ea559170c2378d0a764f46c03666c3c0272b4333",
+    "analyzedAt": "2026-10-01T02:08:17+00:00",
+    "outcome": "non-event"
   }
 ]
