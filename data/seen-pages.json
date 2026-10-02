@@ -2630,5 +2630,12 @@
     "contentHash": "8d45bc422f155866c203bca2ea559170c2378d0a764f46c03666c3c0272b4333",
     "analyzedAt": "2026-10-01T02:08:17+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/172917.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "744f4ad5db0abbd34a70e5896fcd097fb1771f2c75e1a4f330e4765c36729261",
+    "analyzedAt": "2026-10-02T02:13:20+00:00",
+    "outcome": "pending"
   }
 ]
