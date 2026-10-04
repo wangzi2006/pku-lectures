@@ -2637,5 +2637,19 @@
     "contentHash": "744f4ad5db0abbd34a70e5896fcd097fb1771f2c75e1a4f330e4765c36729261",
     "analyzedAt": "2026-10-02T02:13:20+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172842.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "5ddc07cc73069541ae2cd093f4628fafef0a6f7636a508d2f34eabd4a0414876",
+    "analyzedAt": "2026-10-04T02:35:43+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19116.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "a2943f0cb64d718bd66be47b125943099c0d7ef0aabc25d9426c0742c41d1460",
+    "analyzedAt": "2026-10-04T02:35:46+00:00",
+    "outcome": "outside-window"
   }
 ]
