@@ -2658,5 +2658,40 @@
     "contentHash": "c442a9a83444e988393d16f771962a7c312e9c0a098e75e726f0675387ac9eed",
     "analyzedAt": "2026-10-07T02:21:56+00:00",
     "outcome": "rejected"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/47-4023.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "1441df57f24aeff3f5ed34eee6ca8aa35e6f3d9db17bbe4739bf716864e0f499",
+    "analyzedAt": "2026-10-08T02:41:52+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20571.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "bc8beb1a3b55f82702e300b383803b8182d4e2d232f679d6bc9565ae0974fc0b",
+    "analyzedAt": "2026-10-08T02:41:56+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19121.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "1fc1f2be2910d575e1b4ae7b8feb5958c5f4f7e21e4d65a06f6503977aae90bf",
+    "analyzedAt": "2026-10-08T02:41:59+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4024.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "5e0a1ed9c9a6dcf933956d7897f7f35751e7f558e098b726d6bc611f47758a3e",
+    "analyzedAt": "2026-10-08T02:42:03+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19119.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "fcd8c4f3dc20af4adccd7795692d7b15878f6d8c3388efec25ec5dd1b5de01bf",
+    "analyzedAt": "2026-10-08T02:42:07+00:00",
+    "outcome": "pending"
   }
 ]
