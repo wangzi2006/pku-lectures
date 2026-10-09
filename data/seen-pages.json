@@ -2763,5 +2763,40 @@
     "contentHash": "0ea93f51694959ced6aad7e230c2ed95cc7469cbf928fdedf6e8076cdc944e50",
     "analyzedAt": "2026-10-09T02:56:45+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/49-4026.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "72bcc2c2eda7d0e732182451566ec5d369d296209f1ebea830917e287d08ee46",
+    "analyzedAt": "2026-10-09T06:01:53+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/dynamicsystems/172936.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "d402d00d4bcaa54605f874083ac5329169e59b9c445a86183e809d1e43857fd5",
+    "analyzedAt": "2026-10-09T06:01:57+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/tzgg/292173c2c0fc46dd8b0227dc02002796.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "abdc1e132b8e152b22a38f4ec5ab44825f9cb445eec469d9cf216b95d05ca148",
+    "analyzedAt": "2026-10-09T06:02:00+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19127.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "ebf606dd871487eb3380b036726659c224031dd9cb9116c467d730f235201247",
+    "analyzedAt": "2026-10-09T06:02:04+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/dynamicsystems/172940.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "344c7dc285aed6bffc2001977a6df2cca9955564ced6d1689767d0cc75421fcb",
+    "analyzedAt": "2026-10-09T06:02:08+00:00",
+    "outcome": "pending"
   }
 ]
