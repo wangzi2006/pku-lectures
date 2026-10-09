@@ -2693,5 +2693,75 @@
     "contentHash": "fcd8c4f3dc20af4adccd7795692d7b15878f6d8c3388efec25ec5dd1b5de01bf",
     "analyzedAt": "2026-10-08T02:42:07+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/49-4025.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "663f47a65dcd282560101524bc5c4853851a564b771a0384253a9616aa296d3c",
+    "analyzedAt": "2026-10-09T02:56:14+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/172923.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "1649177f6a84ab8e3f2a6f42d66e5a29fc9d270903405f8065cad1ae2c687b09",
+    "analyzedAt": "2026-10-09T02:56:18+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/5cbd8ced18614e0ab6e2e3e931d0963c.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "149440d97106941e610ba0a90249990f728e3a048d37c76227d1876d597d40f7",
+    "analyzedAt": "2026-10-09T02:56:21+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/24bbf93dd4724769a078f6e43b098107.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "e883089187854a11d84d044bc173a4a846fdbbe0b3422b29edd9d34177313927",
+    "analyzedAt": "2026-10-09T02:56:25+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1351/20581.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "0c5d08ce6fc561745c99996e3dd336f3f23242d3080b85766e0522851657eff9",
+    "analyzedAt": "2026-10-09T02:56:29+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19123.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "586b200bb68cdd537ebd85795054d9107bf837c40249d26dcf7b0a367c68a0fd",
+    "analyzedAt": "2026-10-09T02:56:33+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/c98651a376fb41ab885a7deb4e5de786.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "9492c782e2efbb3d0cae3aff2a31ab504e3990bbde4eca89b6246ac21884514c",
+    "analyzedAt": "2026-10-09T02:56:36+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/58f9fbd4e8204075a0079e5a4e514b58.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "c38fdace037c26dff7d27133ee73e8174795a0b31aea87ceec1c3e8793971032",
+    "analyzedAt": "2026-10-09T02:56:39+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20601.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "d134c6c2c9f76345f05529fadc58f920dec34bc9989b0a57419febdac585ed14",
+    "analyzedAt": "2026-10-09T02:56:42+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20591.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "0ea93f51694959ced6aad7e230c2ed95cc7469cbf928fdedf6e8076cdc944e50",
+    "analyzedAt": "2026-10-09T02:56:45+00:00",
+    "outcome": "outside-window"
   }
 ]
