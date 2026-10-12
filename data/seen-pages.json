@@ -2819,5 +2819,26 @@
     "contentHash": "045afbb1f80b57fc76034c31b8f22e881c974bd1898c32ac4935987aae99e248",
     "analyzedAt": "2026-10-10T02:19:08+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/172948.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "fad88a2300e1d7155637e1f33e6388cf47e45e094ce5443dd80bc5b0791b1610",
+    "analyzedAt": "2026-10-12T02:22:00+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19018.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "5a709976ee35b48341e032c8d91cf3d400983e43998db856a7fdcb4c7183306c",
+    "analyzedAt": "2026-10-12T02:22:04+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44055.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "474b647c726153c061f1ce8123164ad7c18f078c49d37040462a6ed0c6123c04",
+    "analyzedAt": "2026-10-12T02:22:08+00:00",
+    "outcome": "pending"
   }
 ]
