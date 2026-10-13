@@ -2889,5 +2889,12 @@
     "contentHash": "3e02625726a4a2eefbb7d33115c65e0a014c9613fbf57a40859a215be608bad7",
     "analyzedAt": "2026-10-13T03:32:20+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/docs/20261013142612415685.pdf",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "34411f67a413f788fb62695555dddb04468ab00cd78803d34dccb0428a9ef51d",
+    "analyzedAt": "2026-10-13T06:43:03+00:00",
+    "outcome": "insufficient-signal"
   }
 ]
