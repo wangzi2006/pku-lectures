@@ -2847,5 +2847,47 @@
     "contentHash": "61e1f2c656c75e44bc5091dc168def336cb2c25a51fdf4ebd7d5f8ea2bc36219",
     "analyzedAt": "2026-10-12T05:49:16+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4030.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "525df07227513e76a15276cfef7be1d8341038aa77e45f0948a10577749a443a",
+    "analyzedAt": "2026-10-13T03:32:03+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/0feef9fde6b940139662732c0b951f7d.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "301a5f0d1d57bd46f668617499a701cf9c62ab1873da9694504977340c16ac4b",
+    "analyzedAt": "2026-10-13T03:32:07+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/8844054a01be49cdb029673d777049ed.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "766737bea96449268c4abc8df98e73564099dde99bc3ca4bf6db0dc31ec327fb",
+    "analyzedAt": "2026-10-13T03:32:09+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20671.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "8e121940d7fb372134de02c5df379405e95414793b0ddaf076cbb0766c6709fc",
+    "analyzedAt": "2026-10-13T03:32:13+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19132.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "f282325093cb6881b68c52f2711af1819b789e87c400e9027c222ab9cbdb9806",
+    "analyzedAt": "2026-10-13T03:32:17+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20661.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "3e02625726a4a2eefbb7d33115c65e0a014c9613fbf57a40859a215be608bad7",
+    "analyzedAt": "2026-10-13T03:32:20+00:00",
+    "outcome": "non-event"
   }
 ]
