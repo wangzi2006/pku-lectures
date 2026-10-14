@@ -2959,5 +2959,19 @@
     "contentHash": "6d6dcd28f98e81a3eb2f611950c7053cbc536ad1c2d3cb8bbd9943ac0f5f6baa",
     "analyzedAt": "2026-10-14T01:53:53+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/algebra/172963.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "cfc2214ad94779715b9316898d2ef9af41d0a8767940979ebae76ab3f098e467",
+    "analyzedAt": "2026-10-14T04:46:40+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/algebra/172967.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "f26dd8c5956cb84b1eec95c66a3ecc2a2e9d7d5e44d194cab2097f57d6d4140b",
+    "analyzedAt": "2026-10-14T04:46:45+00:00",
+    "outcome": "pending"
   }
 ]
