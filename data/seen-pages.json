@@ -2896,5 +2896,68 @@
     "contentHash": "34411f67a413f788fb62695555dddb04468ab00cd78803d34dccb0428a9ef51d",
     "analyzedAt": "2026-10-13T06:43:03+00:00",
     "outcome": "insufficient-signal"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4031.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "b147d28d80be0dbf4c0da99a7e72603e873796ebd46715d1bdc63cf8b87fd805",
+    "analyzedAt": "2026-10-14T01:53:23+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/zwbg/school/172952.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "5e8cbb9817fa547de4216a4f6dbb3757e542bbb95d636ccb932f6ee119657405",
+    "analyzedAt": "2026-10-14T01:53:27+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/17c5925a630e47d1831fdda95074eeef.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "311946476e80d730f6cb6441d90e667e4ab0d7c8c6ff282275c665fbf18b4201",
+    "analyzedAt": "2026-10-14T01:53:31+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/40c795957f1d4fb8b3511c1b33382ff6.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "d83f29efcb8c766642e455d351ae387483aed7e02b48b846aaa54464fc67b236",
+    "analyzedAt": "2026-10-14T01:53:34+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44085.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "6293f003550c4c2149a5e162fd6e24967ba861798328ba7b5e57c43b92c920a5",
+    "analyzedAt": "2026-10-14T01:53:38+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/52-4029.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "706933b28786a40d68eac9e29b5bd3805e225e1ac6d2f0bc55e53df9297e0ed7",
+    "analyzedAt": "2026-10-14T01:53:41+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/172944.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "90270bf21d93c111f2abc68f4129781fa216c9026346b7aa1435f52848d12acf",
+    "analyzedAt": "2026-10-14T01:53:46+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/db1e44fdb4204e58b93bbe29cb800e3a.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "9f9fc3de7d3e4a5942266ce69ea8977c3f05a0e5af75ba22fdb245250e65e687",
+    "analyzedAt": "2026-10-14T01:53:50+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/60934e2e15974b41878a860cc68aa855.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "6d6dcd28f98e81a3eb2f611950c7053cbc536ad1c2d3cb8bbd9943ac0f5f6baa",
+    "analyzedAt": "2026-10-14T01:53:53+00:00",
+    "outcome": "non-event"
   }
 ]
