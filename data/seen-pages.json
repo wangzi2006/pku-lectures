@@ -2973,5 +2973,103 @@
     "contentHash": "f26dd8c5956cb84b1eec95c66a3ecc2a2e9d7d5e44d194cab2097f57d6d4140b",
     "analyzedAt": "2026-10-14T04:46:45+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/47-4032.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "f242132614517897b84cec9175995c583765cbab249204b29463171234655cf2",
+    "analyzedAt": "2026-10-16T01:18:55+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172930.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "b2c5053bbaff4f055a9bea50a86955794d1f8f45a931edc42c05c284400e853e",
+    "analyzedAt": "2026-10-16T01:19:00+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/4e2a15b12c46409f8643e060ed33ac75.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "27ac15a41568e1434028facdebb0bdba64dfd99116f672c3876139728c84da0b",
+    "analyzedAt": "2026-10-16T01:19:03+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19151.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "f13cfb1583b5eae9d997e6e358aa24ccfac247ee043ddbff05ffc166e7cb43f3",
+    "analyzedAt": "2026-10-16T01:19:07+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://lib.chinese.pku.edu.cn/node/172170",
+    "sourceName": "北京大学中文系图书馆讲座信息",
+    "contentHash": "884a64bc501674121a6c40bd25e3eba120edcb96ebd42bc03392b48c03a41ffc",
+    "analyzedAt": "2026-10-16T01:19:09+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44095.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "ecb61b6a5e3e0eeabc6bad0b4642e8a77fb365d546bf1360670e8b0008967847",
+    "analyzedAt": "2026-10-16T01:19:13+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4034.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "8a802f8c1c377acfef4a807d8a525f7bd184a4ff7f680dea923431f54bdf4857",
+    "analyzedAt": "2026-10-16T01:19:17+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/172973.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "ce04548247ceb69c2fbe108142f71e31600a9d9ed9629e4b4e029000535c3233",
+    "analyzedAt": "2026-10-16T01:19:21+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/63755ebe69014777a02709d1142fbe31.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "a78c9a1383c6323a67532df16406e6d151f1f6746bf3995b78c21307e9a103f8",
+    "analyzedAt": "2026-10-16T01:19:25+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19154.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "db799eecac223d1c903307e748ca7db51b02ca073e69121ff678cafaeac1641d",
+    "analyzedAt": "2026-10-16T01:19:28+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/44115.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "959f208c894f27258373c6ef2d86f769bb337865b25269c2001712895230c649",
+    "analyzedAt": "2026-10-16T01:19:33+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4033.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "c0fbd46aae9990b30d8d36d299ec0e10a564572b8858da182a0bc888b88b7d8b",
+    "analyzedAt": "2026-10-16T01:19:37+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19026.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "03bc02fd749e92efe3c2b428bf0add183c03daf025bf6c24b98bea4fbe0a6306",
+    "analyzedAt": "2026-10-16T01:19:41+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/46-4028.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "224106d8f844ec27825cd4c2f1e68b1ad2e85398483fb6f55b104ebdd6e61af9",
+    "analyzedAt": "2026-10-16T01:19:44+00:00",
+    "outcome": "pending"
   }
 ]
