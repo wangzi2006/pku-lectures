@@ -3071,5 +3071,26 @@
     "contentHash": "224106d8f844ec27825cd4c2f1e68b1ad2e85398483fb6f55b104ebdd6e61af9",
     "analyzedAt": "2026-10-16T01:19:44+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/172981.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "4fac7b3d557456ebbc0b733af6c5b94dde971a7ac46e0d2f79fba46cfcd72896",
+    "analyzedAt": "2026-10-17T01:17:46+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/53f4be95fe8f4da28addc79472618e17.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "155d0d437ec46b74776385618dde202a4d61384b3621ccd8e1734112e7f94053",
+    "analyzedAt": "2026-10-17T01:17:50+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/172977.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "b4ee3bcb1782794391f1c3759d45937cbb8e0f97503d6dc1a67221898fcb63e3",
+    "analyzedAt": "2026-10-17T01:17:54+00:00",
+    "outcome": "pending"
   }
 ]
