@@ -3099,5 +3099,47 @@
     "contentHash": "8fb06b23db38ba7e7c109300f978c88034cb08c30fecbe6533190ff97ce96d8e",
     "analyzedAt": "2026-10-18T01:00:44+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172986.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "ff517b915731dfbd314fc27ffede5292a41cb15b119b12425006b425b6b71773",
+    "analyzedAt": "2026-10-19T04:32:45+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20751.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "7de269bb2a688e78623009448f9898e10885b2890dcc20b645355ff727096184",
+    "analyzedAt": "2026-10-19T04:32:49+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/87b4e1ae9b9f492ca99746c548662c97.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "9bea08da71b92beda8f489b71341a7219152ad6b52b89da66cc383a2429b98e4",
+    "analyzedAt": "2026-10-19T04:32:51+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xzky/172989.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "583c2869fd6b2171d9094435b6f416164e79e27bd3b52b8ce483aeda2b8c0a0b",
+    "analyzedAt": "2026-10-19T04:32:55+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20741.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "cc515dd9e61eecc31efea65033ffaf45a40d2f7ce7cccd82568175c0b49c5bb6",
+    "analyzedAt": "2026-10-19T04:32:59+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20731.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "7c69115b3932e57a9d78f83c94cd89508dbeca3a634c03df73b46c2cd89c297b",
+    "analyzedAt": "2026-10-19T04:33:02+00:00",
+    "outcome": "duplicate"
   }
 ]
