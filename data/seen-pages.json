@@ -3169,5 +3169,12 @@
     "contentHash": "a682d4ae4895c3b7784d27a8cbdca95d80078941243f6d9f8ac56bec59f1d61a",
     "analyzedAt": "2026-10-20T01:48:31+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/173000.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "29c4b43f0f87cdb49382c74fc57dca4a0e0b37532b35f581fd8e1eec189365f9",
+    "analyzedAt": "2026-10-20T04:42:08+00:00",
+    "outcome": "rejected"
   }
 ]
