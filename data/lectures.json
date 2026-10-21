@@ -4077,6 +4077,47 @@
     "publishedAt": "2026-10-16T01:19:44+00:00"
   },
   {
+    "title": "Acceleration with Inexact Gradients: Convergence Rates and Error Accumulation",
+    "titleZh": "不精确梯度下的加速：收敛率与误差累积",
+    "speaker": "刘茵（数学中心）",
+    "startAt": "2026-10-23T15:00:00+08:00",
+    "endAt": "2026-10-23T16:00:00+08:00",
+    "location": "北京国际数学研究中心，全斋全29教室",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "应用数学",
+    "subtopics": [
+      "概率",
+      "计算机与 AI"
+    ],
+    "flags": [
+      "postdoc-seminar"
+    ],
+    "summary": "该报告由数学中心刘茵主讲，聚焦光滑凸优化中加速梯度方法在不精确梯度下的收敛性。报告解释在绝对误差条件下误差累积的机制，并借助性能估计问题（PEP）框架推导非渐近收敛界，量化梯度估计误差对整体收敛的影响。结果揭示加速与误差累积之间的权衡关系，为算法参数选择提供理论依据。属于优化理论与数值算法交叉方向，适合有凸优化与机器学习基础的师生参加。",
+    "reason": "网页明确给出讲座题目、主讲人、时间与地点，且为未来可确认的学术报告。",
+    "registrationUrl": "",
+    "eventType": "学术讨论班",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 3,
+    "prominenceScore": 2,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 3.743,
+    "id": "L110",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/47-4040.html",
+    "verifiedAt": "2026-10-21T04:36:43+00:00",
+    "discoveredAt": "2026-10-21T04:36:43+00:00",
+    "discoveredOn": "2026-10-21",
+    "reviewNotes": "规则分 3.74，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-10-21T04:36:43+00:00"
+  },
+  {
     "title": "Kahler type forms and holomorphically tamed forms",
     "titleZh": "Kähler型形式与全纯驯化形式",
     "speaker": "Tian-Jun Li (University of Minnesota)",
