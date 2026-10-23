@@ -3288,5 +3288,12 @@
     "contentHash": "9646dfca2caa32290eee061938b6cf2cc09013abdca25a77ee12d8217a8c2781",
     "analyzedAt": "2026-10-23T01:28:35+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/zwbg/school/173031.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "c9255938a5ee4a76884389e2cc6a458f288195a2aef069f84c7f71158f5f3477",
+    "analyzedAt": "2026-10-23T04:40:42+00:00",
+    "outcome": "outside-window"
   }
 ]
