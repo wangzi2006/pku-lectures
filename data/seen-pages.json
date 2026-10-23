@@ -3246,5 +3246,47 @@
     "contentHash": "87eb5e62a450b53e3a5e9ebaa1a3f82a67b7bd97a52348d517d99e442fe5ceb3",
     "analyzedAt": "2026-10-22T01:29:35+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/173004.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "cb0eb9dca981cacbd813ead7eb21e80815ce2eeb63c1fea6263433c7967a38cd",
+    "analyzedAt": "2026-10-23T01:28:12+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44245.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "ab7b0b61683fe364c2630968a3e72d8fe503519dda8ee7118eb011083f1658ef",
+    "analyzedAt": "2026-10-23T01:28:16+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/173018.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "afa623069adf2f32ee7b120c469e7b84bd13e2a736ad1764f61365eddf2edf4f",
+    "analyzedAt": "2026-10-23T01:28:21+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/172927.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "74e8a69c02700a3bafd9d61ccecde344846d4cfc54d8bf595e34855c264854a9",
+    "analyzedAt": "2026-10-23T01:28:25+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/173024.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "0349569f642a0b38b998b679864644ea6fb3c67ee2fa07a97412910f2da1ae22",
+    "analyzedAt": "2026-10-23T01:28:30+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/173021.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "9646dfca2caa32290eee061938b6cf2cc09013abdca25a77ee12d8217a8c2781",
+    "analyzedAt": "2026-10-23T01:28:35+00:00",
+    "outcome": "outside-window"
   }
 ]
