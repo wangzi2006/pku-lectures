@@ -3295,5 +3295,75 @@
     "contentHash": "c9255938a5ee4a76884389e2cc6a458f288195a2aef069f84c7f71158f5f3477",
     "analyzedAt": "2026-10-23T04:40:42+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4039.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "44273559ec965c88562a4ae9354f23cae6f522de0ba7d57b3284dfebd19f8af0",
+    "analyzedAt": "2026-10-24T01:34:04+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/173038.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "bd99e3e639554b6d46955aa6bf2c3dcbab7bc9bf9a78a0762406c47d69094d88",
+    "analyzedAt": "2026-10-24T01:34:07+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/c65256f969d34cadb9193edb7589fd69.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "2217f650148e1b1c8eb5f85aab5c9898aa020979399be6bdc785954d02c794ba",
+    "analyzedAt": "2026-10-24T01:34:10+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/97ba0d38e71f4d548134067a0b86d349.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "b54eb14f7ef108ffef7303d6214f97a8c1b25a096316f8a36c2ec2b6a48e36e9",
+    "analyzedAt": "2026-10-24T01:34:13+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/tzgg/b62c0ee5a8514750a98a5d15aa5e899f.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "ce5222ab55597b4e20ed93b46bb1921bbd7933dbc471a9077d0e996ee5684c47",
+    "analyzedAt": "2026-10-24T01:34:16+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19174.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "56df95f97e4311b888bdb2ee1beae0eb83bf12a41d4dfa33ab65b65ddf2e4654",
+    "analyzedAt": "2026-10-24T01:34:19+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/tzgg/ba274ff4d8ed44729cfe512617d51a31.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "9edc8ba94f36085a3414930995e7669951f948ee38111941f0324654e8e00b9e",
+    "analyzedAt": "2026-10-24T01:34:22+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/tzgg/91792b5f682646e78f8fd89a84f88304.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "bbbb31ca760f34fdd204fa9546de07331804bab9950163cb0f8fe34953c55b99",
+    "analyzedAt": "2026-10-24T01:34:27+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19172.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "851e708579347f06dab3706c0cfeb95157fdc8d2bfe8d4b3e43feb2d25c1293c",
+    "analyzedAt": "2026-10-24T01:34:30+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/tzgg/4806f23fe8564443b754c4ac69b44b57.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "d6f07dc4420ff095c650826a7d25fd765ef7e39bd6beec99e4ff49d2a714fb19",
+    "analyzedAt": "2026-10-24T01:34:33+00:00",
+    "outcome": "non-event"
   }
 ]
