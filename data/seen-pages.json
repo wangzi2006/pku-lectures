@@ -3365,5 +3365,26 @@
     "contentHash": "d6f07dc4420ff095c650826a7d25fd765ef7e39bd6beec99e4ff49d2a714fb19",
     "analyzedAt": "2026-10-24T01:34:33+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4043.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "a98dd85194a5624c64ba80a9c8083e2b68e45600881f9039d651d1a524e7d477",
+    "analyzedAt": "2026-10-26T04:38:21+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/173050.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "3e1bb05acf7dddca9c88e60506c7be256b905bf46db95e3e247c7e0fb44fe2b6",
+    "analyzedAt": "2026-10-26T04:38:25+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/173039.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "c58516a9c1d8dec9e07348ccbc17502b3a2ed83ef03ec99a464b24b8f52970e5",
+    "analyzedAt": "2026-10-26T04:38:30+00:00",
+    "outcome": "pending"
   }
 ]
