@@ -3386,5 +3386,40 @@
     "contentHash": "c58516a9c1d8dec9e07348ccbc17502b3a2ed83ef03ec99a464b24b8f52970e5",
     "analyzedAt": "2026-10-26T04:38:30+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/content/show/18-4041.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "5f453b2faa6e79602ebff11c9370362a3dda5b60dd2ad1eeadf0a5a4a9dafce3",
+    "analyzedAt": "2026-10-27T02:02:41+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/analysisforpde/173042.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "43d41fc3d30ef73005664e88b4b71d9f9259aaf516c4b341e28123586b3de7d0",
+    "analyzedAt": "2026-10-27T02:02:46+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/52c0aa115a064fefab1d4d53292c14ee.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "3d697eda595bd15af621a2e6a3d30e74b05ddb8ebd84e5fdaa2041877e0d2c45",
+    "analyzedAt": "2026-10-27T02:02:50+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19176.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "19acda0abc7070c16b9316c7683f0208c901422810beca3f875026d92df7e591",
+    "analyzedAt": "2026-10-27T02:02:54+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4046.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "23044df064482227a276bfeecf78a62cad125cd745eceb83eb26542d2e839b05",
+    "analyzedAt": "2026-10-27T02:02:58+00:00",
+    "outcome": "pending"
   }
 ]
