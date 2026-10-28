@@ -3435,5 +3435,33 @@
     "contentHash": "b2154ae938fafd55a6fc4dfa1eb357f2d42106ff6d11a2ddde0e8837c9d47496",
     "analyzedAt": "2026-10-28T02:12:19+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20841.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "9483c9a82dc4bfe92d0ef31b2bb7016f6e6aef2b86e50f8e5ee070d210d86f29",
+    "analyzedAt": "2026-10-28T05:31:09+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20831.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "d8d16a5fad742509810fb3b848b14ee8d285acc948fe2f38f0c8d845b9a786ee",
+    "analyzedAt": "2026-10-28T05:31:12+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20821.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "45e2d202bdbb821df99b2cbefa925df91086e96236be7a59a53a093166ad5f7a",
+    "analyzedAt": "2026-10-28T05:31:15+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20811.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "93c717dc90291f723e9ec779a908e30c5b189cb664ce18dee5ed329c3e435469",
+    "analyzedAt": "2026-10-28T05:31:18+00:00",
+    "outcome": "rejected"
   }
 ]
