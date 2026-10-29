@@ -3463,5 +3463,89 @@
     "contentHash": "93c717dc90291f723e9ec779a908e30c5b189cb664ce18dee5ed329c3e435469",
     "analyzedAt": "2026-10-28T05:31:18+00:00",
     "outcome": "rejected"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/45-4044.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "a6a4ae84e0d6064a089ba86e0ee414929cb50a63e654f6ba8db07fa9a00e1a86",
+    "analyzedAt": "2026-10-29T02:24:47+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/analysisforpde/173046.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "d441058c32589c46b63c01f59f3a1d053ae447dabfcbd3818c4519f8be8eae98",
+    "analyzedAt": "2026-10-29T02:24:51+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/6d643bd4d8154c1d9775993a149dbbc3.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "f8a18fd2706d8720dc2b14d056bd87a58a954740638416cdc1bbe86f4170c55f",
+    "analyzedAt": "2026-10-29T02:24:55+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/c8a4f71c702a44679210bebee0faff9e.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "8bea05f01e440047559afd041c69447afb882fe764a09c7a062d154c1b46cf53",
+    "analyzedAt": "2026-10-29T02:24:59+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/ddbc9a88e3a4498593726c3fbf2f5f86.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "716883fde3f6ef09191bd8c27ef1d56483b2c71ceea1f3f6fdce440f99614318",
+    "analyzedAt": "2026-10-29T02:25:06+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/tzgg/3b802b4e77d74765b8784eae026b6dd3.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "10665e2e747c73ef49a65a5a0dc2488e656d0c51f6c3e79d450e753d46445fc5",
+    "analyzedAt": "2026-10-29T02:25:09+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/70-4048.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "8b2d4b29ce359cca91b0c2b338f7dbec2bf853e7554a46e9e2aa241787cbc138",
+    "analyzedAt": "2026-10-29T02:25:13+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xzky/173055.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "413eaa1e505ee73bbe9eb2387f4c6524374d9369784639073d7183b916eb9726",
+    "analyzedAt": "2026-10-29T02:25:18+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/a116694fa289466081c5622e98dccd30.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "445acc17b7b730edbf32eb6dfc456fd05a3373dd005f0fe8d213395c449ddd10",
+    "analyzedAt": "2026-10-29T02:25:21+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/60e0c815b7284aa189abf5950878f4c8.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "a85f4bce22f8cb75e6bdfac49e378bd0520467e685c5ed07edf699b119dc7c72",
+    "analyzedAt": "2026-10-29T02:25:25+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/38d6dac3a4b4414396f22088c81b9d8a.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "011ada90f59d4bb6b85b36debcde989302382c56d74e309de251ff179af8287a",
+    "analyzedAt": "2026-10-29T02:25:29+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/c269764dfe0e4efeabdfc58882856377.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "34cb943904e75991965b974fb4cdc24869d73160d026bb318a989f8afcd1aa6d",
+    "analyzedAt": "2026-10-29T02:25:32+00:00",
+    "outcome": "duplicate"
   }
 ]
