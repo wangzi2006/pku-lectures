@@ -3547,5 +3547,26 @@
     "contentHash": "34cb943904e75991965b974fb4cdc24869d73160d026bb318a989f8afcd1aa6d",
     "analyzedAt": "2026-10-29T02:25:32+00:00",
     "outcome": "duplicate"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20851.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "ffe7b01381e66449589bff125f105f21d803636d0371727fa819529fbf340b88",
+    "analyzedAt": "2026-10-29T05:40:38+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19184.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "62e93944021b0c8749c4dacfa402075732b94944bb4fa06914f78acb6c0b239c",
+    "analyzedAt": "2026-10-29T05:40:42+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19186.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "9dfcda52de3a9d84e2a8f7f3ac9e56791fd58fe208a7c78a4f7fb18b103b2201",
+    "analyzedAt": "2026-10-29T05:40:45+00:00",
+    "outcome": "rejected"
   }
 ]
