@@ -3568,5 +3568,54 @@
     "contentHash": "9dfcda52de3a9d84e2a8f7f3ac9e56791fd58fe208a7c78a4f7fb18b103b2201",
     "analyzedAt": "2026-10-29T05:40:45+00:00",
     "outcome": "rejected"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/92-4042.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "08b1a852c3e4495b9e5a5f36741d247db1f89d6fe2cbcb36508b89663d6df81e",
+    "analyzedAt": "2026-10-30T02:34:57+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/173057.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "5e2a79fdc93f83a2edb31b202f216f462e4bae1af625354355c2d062c23cb701",
+    "analyzedAt": "2026-10-30T02:35:01+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/c8409f77bf6548848a4bc994b7ed0028.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "04f00727c90b29ac4f3d931c973345e4e6580aa64e9fb6ca613c752d1588bacd",
+    "analyzedAt": "2026-10-30T02:35:04+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/e0e6954deb8d42089cbcf6ea97727217.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "93a5a814b7b3582de66b2335b7330430decc411003560934820447f9588ce5a0",
+    "analyzedAt": "2026-10-30T02:35:07+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19190.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "17282c526bb8c70f46139ac557f3fad92b666524bb1b3e3da175900077385cd3",
+    "analyzedAt": "2026-10-30T02:35:11+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/173061.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "b84c91ab49e8ae0af51217be9072118778bffca485f471ecca475462928ecfba",
+    "analyzedAt": "2026-10-30T02:35:15+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/2f262c129f8b4d36949d6c1f9da84277.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "4537e972ae0bd531e741dd980377b36d5e2f4cdf7581c4f6e3f0f7b0215edddd",
+    "analyzedAt": "2026-10-30T02:35:19+00:00",
+    "outcome": "non-event"
   }
 ]
