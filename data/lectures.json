@@ -4997,6 +4997,48 @@
     "publishedAt": "2026-10-23T01:28:35+00:00"
   },
   {
+    "title": "Learning-Based Methods for Combinatorial Optimization: Feasibility, Efficiency, and Optimality",
+    "titleZh": "基于学习的组合优化方法：可行性、效率与最优性",
+    "speaker": "邹海军（中国科学院数学与系统科学研究院）",
+    "startAt": "2026-11-03T12:15:00+08:00",
+    "endAt": "2026-11-03T13:00:00+08:00",
+    "location": "智华楼-109",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "应用数学",
+    "subtopics": [
+      "计算机与 AI",
+      "理论计算机"
+    ],
+    "flags": [
+      "午餐会",
+      "需报名"
+    ],
+    "summary": "本报告为北京大学数学科学学院应用数学青年讨论班（午餐会），讲者邹海军为中国科学院数学与系统科学研究院博士生，师从袁亚湘研究员，2024年获北京大学数学科学学院学士学位。报告围绕基于学习的方法求解组合优化问题，探讨复杂约束下的解可行性、有限探索导致的解质量不足、决策空间与解空间不匹配带来的最优性间隙，以及自回归求解器的累积次优性等问题。讲者将结合受限路径规划、二次分配问题、异构 DAG 调度和柔性作业车间调度四项研究，介绍兼顾可行性、效率与泛化性的学习型优化方法设计思路。午餐12:00开始，需提前填写问卷报名。",
+    "reason": "网页明确给出讲者、2026年11月3日12:15-13:00的时间与智华楼-109地点及摘要，属可确认的未来校内学术讲座。",
+    "registrationUrl": "https://v.wjx.cn/vm/Q0pnh9i.aspx#",
+    "eventType": "讨论班/学术报告",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 3,
+    "prominenceScore": 2,
+    "confidence": 0.9,
+    "region": "北大校内",
+    "policyScore": 3.546,
+    "id": "L142",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/173065.htm",
+    "verifiedAt": "2026-10-30T05:39:21+00:00",
+    "discoveredAt": "2026-10-30T05:39:21+00:00",
+    "discoveredOn": "2026-10-30",
+    "reviewNotes": "规则分 3.55，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-10-30T05:39:21+00:00"
+  },
+  {
     "title": "Designing the Neuro-Electronic Interface: From Nanostructured to Flexible Electrodes",
     "titleZh": "设计神经-电子界面：从纳米结构电极到柔性电极",
     "speaker": "Prof. Dr. Andreas Offenhäusser",

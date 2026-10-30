@@ -3617,5 +3617,12 @@
     "contentHash": "4537e972ae0bd531e741dd980377b36d5e2f4cdf7581c4f6e3f0f7b0215edddd",
     "analyzedAt": "2026-10-30T02:35:19+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/173065.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "2615a08c300ff7df4fd06332da1f9ebfb35148116d4201e4fd8ce37f9a86df71",
+    "analyzedAt": "2026-10-30T05:39:21+00:00",
+    "outcome": "pending"
   }
 ]
