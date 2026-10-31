@@ -3624,5 +3624,117 @@
     "contentHash": "2615a08c300ff7df4fd06332da1f9ebfb35148116d4201e4fd8ce37f9a86df71",
     "analyzedAt": "2026-10-30T05:39:21+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/bba3a1e55b34456eb839095dc828ab50.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "699e262f38853ef30f99cc08286dcb09f773fd16f7fa88ed3af716e6079de13d",
+    "analyzedAt": "2026-10-31T02:20:12+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20871.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "d00e38e9af19f2030c2ce4c8169ca62decec7d8f38d6e333589afe116af2f22b",
+    "analyzedAt": "2026-10-31T02:20:16+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/analysisforpde/1081math173042.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "ef8afbb0408b768fc1090415a4daeb32ec22cffecdea7ac1f8e26179463ec6b4",
+    "analyzedAt": "2026-10-31T02:20:19+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/1081math173024.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "6cc4409b5f03b676efcc756b1eb2292bd204c7d8f7300a95b53d8e332bc77ae1",
+    "analyzedAt": "2026-10-31T02:20:23+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/analysisforpde/1081math173046.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "9d8bd37adfdd683703923b71b940939ca0c09124997e242336f0878e552c325a",
+    "analyzedAt": "2026-10-31T02:20:27+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/081d959e8f7f4e3dae70d42ef7811171.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "f70e3553aa91c9824c76c2c5843e8f86c2f685ec54a24bd9e10dd87a4495ec52",
+    "analyzedAt": "2026-10-31T02:20:31+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math173038.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "b07eec7d97441b33b7ba4037b97ab7b29eb2271f5a6d932c579751a69e04e823",
+    "analyzedAt": "2026-10-31T02:20:33+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math172744.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "70b6a8032e16038b0bb7d3a7a1c248c7492a25e0ab4eeb3ae976f58237b9830a",
+    "analyzedAt": "2026-10-31T02:20:36+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math172719.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "9ac3ffe1bdbd9e6a49e325ccba69a3f817f415329cfdf1c6ca71a4d2f909152f",
+    "analyzedAt": "2026-10-31T02:20:39+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math172681.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "9f988b3e4c60fc5402118e876ba9f579b401dafac2cfcd6678c6952ecdfbb157",
+    "analyzedAt": "2026-10-31T02:20:42+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math172436.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "a17f4460250b26b1740f2cdf344161b4d87eb04c819bdd12e65afd007de0a111",
+    "analyzedAt": "2026-10-31T02:20:45+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math172254.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "21c74ab6b818918695b135398d6ce9925b5b91b61b3ae5f1445f66dd7f28acc9",
+    "analyzedAt": "2026-10-31T02:20:48+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/zygg/1081math172131.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "639ade0c23560fd5115b2424fc5453fa4354afe1378b1f96749f1d6b24ca4fa4",
+    "analyzedAt": "2026-10-31T02:20:51+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xzky/52f15a7f66334998ab51455d29ddfe2d.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "1c9c9d8ecf84fce43d98af97e91311878efd42bbbf38c5e1983d17506b44f401",
+    "analyzedAt": "2026-10-31T02:20:55+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xzky/1081math172999.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "f070537b260c25683678f8b3176ad43064c89f79b6587104b7a7e452449dd67e",
+    "analyzedAt": "2026-10-31T02:20:58+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xzky/1081math172989.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "eceba2750f5e97b34a1e30a995cee2a5596186597a89537a9e8c91d2ab863d38",
+    "analyzedAt": "2026-10-31T02:21:02+00:00",
+    "outcome": "outside-window"
   }
 ]

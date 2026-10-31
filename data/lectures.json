@@ -5039,6 +5039,48 @@
     "publishedAt": "2026-10-30T05:39:21+00:00"
   },
   {
+    "title": "应用数学青年讨论班(午餐会)-- Learning-Based Methods for Combinatorial Optimization: Feasibility, Efficiency, and Optimality",
+    "titleZh": "应用数学青年讨论班（午餐会）——基于学习的组合优化方法：可行性、效率与最优性",
+    "speaker": "邹海军（中国科学院数学与系统科学研究院）",
+    "startAt": "2026-11-03T12:15:00+08:00",
+    "endAt": "2026-11-03T13:00:00+08:00",
+    "location": "智华楼-109",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "应用数学",
+    "subtopics": [
+      "计算机与 AI",
+      "数学"
+    ],
+    "flags": [
+      "需报名",
+      "提供午餐"
+    ],
+    "summary": "本报告由中国科学院数学与系统科学研究院博士生邹海军主讲，围绕基于学习的组合优化方法展开。他指出，学习型方法虽能高效求解困难组合优化问题，但将学习模型转化为有效求解器仍面临约束可行性受损、探索不足导致解质量下降、决策空间与解空间不匹配带来最优性差距、以及序贯决策累积次优性难以识别和纠正等挑战。报告将介绍四项研究：受约束路径规划中的复杂约束处理、二次分配问题达到元启发式级解质量、异构DAG调度中决策与解空间不匹配的最优性差距刻画，以及柔性作业车间调度中自回归求解器失效模式分析与选择性局部修正。",
+    "reason": "网页明确给出讲座标题、报告人、2026年11月3日12:15-13:00的时间地点及报名方式，属可确认的未来学术活动。",
+    "registrationUrl": "https://v.wjx.cn/vm/Q0pnh9i.aspx#",
+    "eventType": "讨论班/午餐会",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4.5,
+    "qualityScore": 4,
+    "undergradScore": 3.5,
+    "prominenceScore": 2.5,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 4.037,
+    "id": "L143",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/081d959e8f7f4e3dae70d42ef7811171.htm",
+    "verifiedAt": "2026-10-31T02:20:31+00:00",
+    "discoveredAt": "2026-10-31T02:20:31+00:00",
+    "discoveredOn": "2026-10-31",
+    "reviewNotes": "规则分 4.04，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-10-31T02:21:02+00:00"
+  },
+  {
     "title": "Designing the Neuro-Electronic Interface: From Nanostructured to Flexible Electrodes",
     "titleZh": "设计神经-电子界面：从纳米结构电极到柔性电极",
     "speaker": "Prof. Dr. Andreas Offenhäusser",
