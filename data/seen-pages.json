@@ -3764,5 +3764,19 @@
     "contentHash": "64ed38da3ad44da4ed30036e356202ee5cc9946b67124f8ffc5ce65dd4b57ee5",
     "analyzedAt": "2026-11-02T02:28:27+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44455.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "bb4a4002ace94231479c586cd660c9e9795ce1d2686bf6f05281678eb4f0cd70",
+    "analyzedAt": "2026-11-02T05:54:39+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44445.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "7c6f0838707e9c71aca67f9b315f1c13b9e9d9f7102187eb3ca342ab0bd0723a",
+    "analyzedAt": "2026-11-02T05:54:43+00:00",
+    "outcome": "outside-window"
   }
 ]
