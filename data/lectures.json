@@ -5123,6 +5123,46 @@
     "publishedAt": "2026-10-22T01:29:35+00:00"
   },
   {
+    "title": "A Gentle Introduction to KPT Correspondence",
+    "titleZh": "KPT对应关系简介",
+    "speaker": "Andy Zucker (University of Waterloo)",
+    "startAt": "2026-11-03T14:00:00+08:00",
+    "endAt": "2026-11-03T15:00:00+08:00",
+    "location": "Room 78201, Jingchunyuan 78, BICMR",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "数学",
+    "subtopics": [
+      "理论计算机"
+    ],
+    "flags": [
+      "英文讲座"
+    ],
+    "summary": "本讲座由滑铁卢大学的Andy Zucker主讲，主题为KPT对应关系的入门介绍。KPT理论源自Kechris、Pestov与Todorcevic在2005年发表的论文，该论文将自同构群的拓扑动力性质与称为Ramsey性质的组合原理联系起来。讲座将从基础出发，完整证明有理数上保持序的双射群Aut(Q)在逐点收敛拓扑下是极端顺从的。内容横跨拓扑动力系统、组合数学与群论，适合对动力系统或组合理论感兴趣的学生与研究者参加。",
+    "reason": "北京国际数学研究中心学术日历中明确列出的一场数学讨论班，时间地点与演讲者信息完整。",
+    "registrationUrl": "",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "public",
+    "relevanceScore": 3,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 2,
+    "confidence": 0.92,
+    "region": "北大校内",
+    "policyScore": 3.22,
+    "id": "L144",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/52-4052.html",
+    "verifiedAt": "2026-11-02T02:28:20+00:00",
+    "discoveredAt": "2026-11-02T02:28:20+00:00",
+    "discoveredOn": "2026-11-02",
+    "reviewNotes": "规则分 3.22，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-02T02:28:27+00:00"
+  },
+  {
     "title": "Revisiting Deformations in Haken Manifolds",
     "titleZh": "重新审视Haken流形中的形变",
     "speaker": "Gadde Swarup (University of Melbourne)",
@@ -5562,5 +5602,47 @@
     "reviewNotes": "规则分 3.87，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-10-30T02:35:19+00:00"
+  },
+  {
+    "title": "Shifted symplectic structures on derived higher Lie groupoids",
+    "titleZh": "派生高阶李群胚上的平移辛结构",
+    "speaker": "Chenchang Zhu (University of Göttingen)",
+    "startAt": "2026-11-13T14:00:00+08:00",
+    "endAt": "2026-12-04T16:00:00+08:00",
+    "location": "北京国际数学研究中心，全斋全29教室",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "数学物理",
+      "理论计算机"
+    ],
+    "flags": [
+      "短期课程",
+      "系列讲座"
+    ],
+    "summary": "这是哥廷根大学Chenchang Zhu在北京国际数学研究中心开设的短期课程，围绕派生高阶李群胚及其上的平移辛结构展开。课程从Kan单纯流形刻画高阶李群胚入手，说明其构成不完整的纤维对象范畴并由此得到无穷范畴，并介绍高阶李代数胚与NQ流形。随后引入派生流形与派生高阶李群胚，定义deRham形式、平移辛形式和平移拉格朗日结构，并讨论基于这些结构的经典场论以及各类辛约化中的例子。",
+    "reason": "网页明确给出主讲人、2026年11月13日起的系列课程时间与全斋教室地点，属可确认的未来数学短期课程。",
+    "registrationUrl": "",
+    "eventType": "短期课程",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 3,
+    "confidence": 0.9,
+    "region": "北大校内",
+    "policyScore": 3.528,
+    "id": "L145",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/70-4054.html",
+    "verifiedAt": "2026-11-02T02:28:27+00:00",
+    "discoveredAt": "2026-11-02T02:28:27+00:00",
+    "discoveredOn": "2026-11-02",
+    "reviewNotes": "规则分 3.53，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-02T02:28:27+00:00"
   }
 ]

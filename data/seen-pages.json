@@ -3743,5 +3743,26 @@
     "contentHash": "e0563a7a90e296b57da63d61de02087f9c410e4bf16e819189c1669b5e6ed2a9",
     "analyzedAt": "2026-11-01T02:10:57+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/52-4052.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "308f1c6f1f4987a519a74023dd23f772bc1265fd5cc6b4b4d402fbaf9d199489",
+    "analyzedAt": "2026-11-02T02:28:20+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/20891.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "2bef28a5564c0122515cc0391d0b41a1c12da16be6d29b078bb9df60661fb5f2",
+    "analyzedAt": "2026-11-02T02:28:24+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/70-4054.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "64ed38da3ad44da4ed30036e356202ee5cc9946b67124f8ffc5ce65dd4b57ee5",
+    "analyzedAt": "2026-11-02T02:28:27+00:00",
+    "outcome": "pending"
   }
 ]
