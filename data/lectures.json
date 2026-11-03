@@ -5480,6 +5480,48 @@
     "publishedAt": "2026-11-02T05:54:43+00:00"
   },
   {
+    "title": "One Day Workshop in Geometric PDEs",
+    "titleZh": "几何偏微分方程一日研讨会",
+    "speaker": "王文龙（南开大学）、朱晓宝（中国人民大学）、沈伟明（首都师范大学）",
+    "startAt": "2026-11-06T09:00:00+08:00",
+    "endAt": "2026-11-06T12:10:00+08:00",
+    "location": "智华楼217",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "应用数学",
+      "数学物理"
+    ],
+    "flags": [
+      "学术会议",
+      "需注册"
+    ],
+    "summary": "北京大学数学科学学院将于2026年11月6日在智华楼217举办几何偏微分方程一日研讨会。会议09:00开始注册，随后有三场学术报告：南开大学王文龙讲复Monge–Ampère方程的非常奇异解，中国人民大学朱晓宝讲变号给定函数下平衡湍流的临界平均场方程，首都师范大学沈伟明讲奇异Yamabe问题在奇异边界附近的解。12:10午餐，报告摘要涉及偏微分方程、几何分析与复分析交叉内容。",
+    "reason": "网页明确给出2026年11月6日的会议时间、地点与报告安排，属可确认的未来学术活动。",
+    "registrationUrl": "",
+    "eventType": "学术会议",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 3,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 3,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 3.496,
+    "id": "L147",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xzky/57aef26b6b894da4a260a29f34684e28.htm",
+    "verifiedAt": "2026-11-03T03:55:47+00:00",
+    "discoveredAt": "2026-11-03T03:55:47+00:00",
+    "discoveredOn": "2026-11-03",
+    "reviewNotes": "规则分 3.50，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-03T03:55:47+00:00"
+  },
+  {
     "title": "Pancreatic somatostatin secretion in health and disease",
     "titleZh": "健康与疾病状态下胰腺生长抑素分泌",
     "speaker": "Patrik Rorsman",

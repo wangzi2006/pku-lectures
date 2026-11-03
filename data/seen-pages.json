@@ -3778,5 +3778,12 @@
     "contentHash": "7c6f0838707e9c71aca67f9b315f1c13b9e9d9f7102187eb3ca342ab0bd0723a",
     "analyzedAt": "2026-11-02T05:54:43+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xzky/57aef26b6b894da4a260a29f34684e28.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "b73b3012e31f1a842603a3314072ba3e2607ce9e91529222b1f76a8d868967ed",
+    "analyzedAt": "2026-11-03T03:55:47+00:00",
+    "outcome": "pending"
   }
 ]
