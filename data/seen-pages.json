@@ -3785,5 +3785,68 @@
     "contentHash": "b73b3012e31f1a842603a3314072ba3e2607ce9e91529222b1f76a8d868967ed",
     "analyzedAt": "2026-11-03T03:55:47+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4050.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "4a0d4237f08a81653ca34b9592ab717d45045612c9d2cda8b27272e7aa0f50bc",
+    "analyzedAt": "2026-11-04T02:59:56+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20931.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "0cf773921c1549dd3b5b32f34bc06f61826474c74a5f1e342206ba4ea3c7c019",
+    "analyzedAt": "2026-11-04T02:59:59+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1031/44515.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "80452523318f6c76d9e8cdf7f1a9a198752065345dd6b269648e2258745dcc29",
+    "analyzedAt": "2026-11-04T03:00:03+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4058.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "81cd704508617ccfa2fdd648de6c67e52f2ff4f75493e7bbc712f1bd89be36c7",
+    "analyzedAt": "2026-11-04T03:00:06+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20921.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "2160ca612699402ab875280bacdd49581e1ca7712dc15b558a5d876dde6d758b",
+    "analyzedAt": "2026-11-04T03:00:10+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/44495.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "5dce67857ef3aee40c5c027a8cbcd885ea2156973692d6945876ebb9634f9f2d",
+    "analyzedAt": "2026-11-04T03:00:13+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/17-4057.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "90722846378a6a652e05ec39709519103f29f911fe4010e906d9581fa09db055",
+    "analyzedAt": "2026-11-04T03:00:16+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20911.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "8a45b79cc9be3103bf6e3a63cf467efdfd699f2ad33d7c0cf43252544c8348b2",
+    "analyzedAt": "2026-11-04T03:00:20+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/20901.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "e78a1a366e37c7c802d56b28a05335dfd1a36cf71673b27cd424ebbe2e65d910",
+    "analyzedAt": "2026-11-04T03:00:23+00:00",
+    "outcome": "outside-window"
   }
 ]
