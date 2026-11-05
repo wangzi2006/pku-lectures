@@ -3848,5 +3848,54 @@
     "contentHash": "e78a1a366e37c7c802d56b28a05335dfd1a36cf71673b27cd424ebbe2e65d910",
     "analyzedAt": "2026-11-04T03:00:23+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/35-4049.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "cc6d65e00f4f6ef16c95821ab60ad25c77d53493c9abe8c7e0577901c9862384",
+    "analyzedAt": "2026-11-05T03:29:18+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/6ce2d207b9b346ef8a4443888b503553.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "598d30c4f858f711ad8b327797d643168e0c21c4818bc143354d0f4f003562b6",
+    "analyzedAt": "2026-11-05T03:29:21+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/47-4056.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "2703596ece158c8a3128330c81246aee58e0aed364b87c7a0edb8536d6ebf91d",
+    "analyzedAt": "2026-11-05T03:29:25+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/df32ae713b3f4994af5c21c8bc2c6a8d.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "66c3e978c53cf652c0acf3b5b871f86eb8866c99276b856637f02cf1b31458c4",
+    "analyzedAt": "2026-11-05T03:29:29+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/46-4051.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "231e13dce750e1c7c417c80bc925ee07f85ad1dca92d51f6d59c6176e29b0e33",
+    "analyzedAt": "2026-11-05T03:29:33+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/1356275c53cf42b1810c318eaa2286c2.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "c6999c18423f4fdbd2467f3c3689b8888ff720497fb79690bf6b12115182165d",
+    "analyzedAt": "2026-11-05T03:29:36+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4045.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "f8b9ec247eb8f49740dfa7177854c49b838523f6af1d760d3f39a7cc539091b6",
+    "analyzedAt": "2026-11-05T03:29:39+00:00",
+    "outcome": "pending"
   }
 ]
