@@ -3897,5 +3897,47 @@
     "contentHash": "f8b9ec247eb8f49740dfa7177854c49b838523f6af1d760d3f39a7cc539091b6",
     "analyzedAt": "2026-11-05T03:29:39+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/0b3832a9301248d58539b943b522ad74.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "fd283867c5b8f10d7ce321045bd7e1825f5bc283eda6ce5591fcde504f0b42af",
+    "analyzedAt": "2026-11-05T06:36:07+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/dab4382f3f2a4f14aedc7a60106de859.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "5a397eab56b6a3f7b297a19344539b8c5a550f01e3c42a1567a40a8496a0a7ce",
+    "analyzedAt": "2026-11-05T06:36:10+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/zwbg/school/1081math173031.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "07744f493a936c2b0d874531406711bd1a3c88c2c6537e36808ebdebd5fdff76",
+    "analyzedAt": "2026-11-05T06:36:14+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/d590f5c6366f492493d34d9efcc68bed.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "4d75ef06afcac2c5efbb0a0437a86840f802923f46f6cd509ed79cbfb23fe056",
+    "analyzedAt": "2026-11-05T06:36:18+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/483750eca1f34c3c8fd2e42b8d66256c.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "ccae4a91f505aa60582cbe27003653afc443c081577539b70bc2c7fe5c93a474",
+    "analyzedAt": "2026-11-05T06:36:22+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/473ed3eda34542dabb9fe877bd5b5ff6.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "2c083febe2f0c44e3993e182454160f3e2943b3cdb1cf910c8ccd52644d1dad4",
+    "analyzedAt": "2026-11-05T06:36:25+00:00",
+    "outcome": "pending"
   }
 ]
