@@ -3939,5 +3939,19 @@
     "contentHash": "2c083febe2f0c44e3993e182454160f3e2943b3cdb1cf910c8ccd52644d1dad4",
     "analyzedAt": "2026-11-05T06:36:25+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/49-4060.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "82041d0dbd1d3a0bde1898d874c14fba366625c294b063b068fa895ef7da8285",
+    "analyzedAt": "2026-11-06T03:24:47+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19210.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "ed8c06582f6dfcc10235414cb82ea1188ead485914e36835afa60e60d584990d",
+    "analyzedAt": "2026-11-06T03:24:52+00:00",
+    "outcome": "outside-window"
   }
 ]

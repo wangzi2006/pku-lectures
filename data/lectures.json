@@ -5965,6 +5965,47 @@
     "publishedAt": "2026-11-05T06:36:25+00:00"
   },
   {
+    "title": "Combined asymptotics of disconnected stationary relative GW invariants",
+    "titleZh": "非连通稳定相对Gromov-Witten不变量的组合渐近性",
+    "speaker": "李想（中科大）",
+    "startAt": "2026-11-10T14:00:00+08:00",
+    "endAt": "2026-11-10T15:00:00+08:00",
+    "location": "北京国际数学研究中心，全斋全29教室",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "数学",
+    "subtopics": [
+      "数学物理",
+      "概率"
+    ],
+    "flags": [
+      "英文讲座"
+    ],
+    "summary": "本报告由中科大李想主讲，讨论亏格至少为2的光滑代数曲线上归一化非连通相对Gromov-Witten不变量的组合渐近性。报告利用Okounkov-Pandharipande关于稳定Gromov-Witten不变量与完成循环Hurwitz数之间的对应，推导模空间次数与亏格同时趋于无穷时的组合渐近展开。该展开按Okounkov-Pandharipande求和中分拆与全分歧分拆(d)的偏移分层，长首行分拆对应项在多项式层面贡献，其系数由分歧剖面各部分的特征多项式控制，其余项小于任意多项式阶。",
+    "reason": "网页明确给出讲座标题、主讲人、时间与地点，属可确认的未来学术报告。",
+    "registrationUrl": "",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 3,
+    "confidence": 0.9,
+    "region": "北大校内",
+    "policyScore": 3.528,
+    "id": "L157",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/49-4060.html",
+    "verifiedAt": "2026-11-06T03:24:47+00:00",
+    "discoveredAt": "2026-11-06T03:24:47+00:00",
+    "discoveredOn": "2026-11-06",
+    "reviewNotes": "规则分 3.53，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-06T03:24:52+00:00"
+  },
+  {
     "title": "Transformations in Fundamental Research Paradigms in the Age of AI",
     "titleZh": "人工智能时代基础研究范式的变革",
     "speaker": "孟德宇（西安交通大学）",
