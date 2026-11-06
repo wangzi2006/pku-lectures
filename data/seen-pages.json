@@ -3953,5 +3953,19 @@
     "contentHash": "ed8c06582f6dfcc10235414cb82ea1188ead485914e36835afa60e60d584990d",
     "analyzedAt": "2026-11-06T03:24:52+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4055.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "555950c5df5e972b713857d62ec32e26c7bab53ba7b06a92b5964a2a50e56749",
+    "analyzedAt": "2026-11-06T06:31:13+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/6b27c6d08456438c9d8904a62da293d3.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "31f59ce6669bc9e7463176668431013caff52e388208fc6feab1d62b2f48a877",
+    "analyzedAt": "2026-11-06T06:31:17+00:00",
+    "outcome": "pending"
   }
 ]

@@ -6046,6 +6046,48 @@
     "publishedAt": "2026-11-05T03:29:39+00:00"
   },
   {
+    "title": "The J-Equation: Singular Solutions and Numerical Obstructions",
+    "titleZh": "J-方程：奇异解与数值障碍",
+    "speaker": "Junbang Liu (The Hong Kong University of Science and Technology)",
+    "startAt": "2026-11-11T09:00:00+08:00",
+    "endAt": "2026-11-11T10:00:00+08:00",
+    "location": "Zoom: link ID: 882 7049 2281 Password: 509184",
+    "campus": "线上",
+    "distanceKm": null,
+    "topic": "纯数学",
+    "subtopics": [
+      "应用数学"
+    ],
+    "flags": [
+      "线上",
+      "英文讲座",
+      "需密码"
+    ],
+    "summary": "本讲座由香港科技大学博士后Junbang Liu主讲，围绕紧致Kähler流形上J-方程的光滑可解性与Kähler类数值正性的关系展开。当数值条件退化或失效时，报告将讨论退化J-方程是否存在典范奇异解，重点介绍双有理极小斜率处解的存在性、唯一性与部分正则性等近期进展，并说明J-nef情形下的相关结果，包括J-零轨迹的解析刻画以及J-零子簇的有限性，从而澄清数值障碍与解析退化之间的联系。",
+    "reason": "北京国际数学研究中心几何分析讨论班发布的线上学术报告，题目与摘要明确，时间地点可确认。",
+    "registrationUrl": "",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "public",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 2,
+    "confidence": 0.95,
+    "region": "线上",
+    "policyScore": 3.553,
+    "id": "L158",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/43-4055.html",
+    "verifiedAt": "2026-11-06T06:31:13+00:00",
+    "discoveredAt": "2026-11-06T06:31:13+00:00",
+    "discoveredOn": "2026-11-06",
+    "reviewNotes": "规则分 3.55，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-06T06:31:17+00:00"
+  },
+  {
     "title": "Towards a Foundational Brain Model of Intelligence",
     "titleZh": "迈向智能的基础大脑模型",
     "speaker": "Xiao-Jing Wang",
@@ -6125,5 +6167,46 @@
     "reviewNotes": "规则分 3.53，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-11-02T02:28:27+00:00"
+  },
+  {
+    "title": "New strategy to reveal new concepts into three types of diabetes islet biology",
+    "titleZh": "揭示三类糖尿病胰岛生物学新概念的新策略",
+    "speaker": "Herbert Gaisano, PhD 教授",
+    "startAt": "2026-11-16T14:00:00+08:00",
+    "endAt": "2026-11-16T15:00:00+08:00",
+    "location": "北京大学综合科研二号楼·B117会议室",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "生命科学",
+    "subtopics": [
+      "医学"
+    ],
+    "flags": [
+      "英文讲座",
+      "校外讲者"
+    ],
+    "summary": "多伦多大学医学与生理学教授Herbert Gaisano将报告其利用人胰腺薄切片原位活细胞高分辨成像研究三类糖尿病胰岛生物学的新进展：一是抑制性SNARE蛋白Syntaxin-2调控胰岛β细胞胞吐机制，干预后可改善2型糖尿病的双相胰岛素分泌；二是CD4辅助性与CD8杀伤性T淋巴细胞向胰岛募集及β细胞损伤启动的时空动态；三是囊性纤维化相关糖尿病中，CFTR缺陷的胰腺导管上皮细胞释放异常分泌组，经旁分泌直接诱导β细胞功能障碍并促进外分泌与胰岛区纤维化。",
+    "reason": "网页明确给出讲座标题、讲者、时间与校内会议室地点，属可确认的未来学术讲座。",
+    "registrationUrl": "",
+    "eventType": "学术讲座",
+    "isPaid": false,
+    "audience": "public",
+    "relevanceScore": 4,
+    "qualityScore": 5,
+    "prominenceScore": 4,
+    "undergradScore": 3,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 3.923,
+    "id": "L159",
+    "status": "published",
+    "sourceName": "北京大学未来技术学院讲座",
+    "sourceUrl": "https://future.pku.edu.cn/kxyj/jz/6b27c6d08456438c9d8904a62da293d3.htm",
+    "verifiedAt": "2026-11-06T06:31:17+00:00",
+    "discoveredAt": "2026-11-06T06:31:17+00:00",
+    "discoveredOn": "2026-11-06",
+    "reviewNotes": "规则分 3.92，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-06T06:31:17+00:00"
   }
 ]
