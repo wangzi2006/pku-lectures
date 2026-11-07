@@ -3967,5 +3967,12 @@
     "contentHash": "31f59ce6669bc9e7463176668431013caff52e388208fc6feab1d62b2f48a877",
     "analyzedAt": "2026-11-06T06:31:17+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/487e00f9cc0a48218dafaf4db13c6fc3.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "7e6c6e55ac4e31bce9dfd4a0df5627164700457e2220b4d26fb6ba134eaf0ab5",
+    "analyzedAt": "2026-11-07T02:46:18+00:00",
+    "outcome": "duplicate"
   }
 ]
