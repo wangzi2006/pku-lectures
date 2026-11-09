@@ -6088,6 +6088,48 @@
     "publishedAt": "2026-11-06T06:31:17+00:00"
   },
   {
+    "title": "Inference for Stochastic Gradient Descent: Beyond Finite Variance",
+    "titleZh": "超越有限方差的随机梯度下降推断",
+    "speaker": "Prof. Wenhao Yang (Peking University)",
+    "startAt": "2026-11-11T10:00:00+08:00",
+    "endAt": "2026-11-11T11:30:00+08:00",
+    "location": "Room 9, Quan Zhai, BICMR",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "概率/统计",
+    "subtopics": [
+      "计算机与 AI",
+      "应用数学"
+    ],
+    "flags": [
+      "英文讲座",
+      "讨论班"
+    ],
+    "summary": "本讲座由北京大学杨文浩教授主讲，聚焦随机梯度下降（SGD）在真实训练环境中的行为超出经典有限方差理论假设的问题。经验研究表明，梯度噪声可能高度不规则，伴有偶发大幅波动和非高斯模式，这对优化动态与模型校准至关重要。报告将讨论超越传统有限方差范式的SGD推断方法：首先描述现实噪声条件下SGD的渐近行为及其与标准视角的关键差异，然后介绍一种适用于梯度噪声无有限方差情形的不确定性量化与置信域构建通用方法，为现代学习系统中随机优化的可靠性评估提供实用工具，最后探讨实际影响及优化行为与推断程序联系的开放方向。",
+    "reason": "网页明确给出讲座标题、主讲人、时间与场地，属北京国际数学研究中心的学术讨论班活动。",
+    "registrationUrl": "",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 3,
+    "prominenceScore": 3,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 4.579,
+    "id": "L160",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/45-4059.html",
+    "verifiedAt": "2026-11-09T02:39:05+00:00",
+    "discoveredAt": "2026-11-09T02:39:05+00:00",
+    "discoveredOn": "2026-11-09",
+    "reviewNotes": "规则分 4.58，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-09T02:39:05+00:00"
+  },
+  {
     "title": "Towards a Foundational Brain Model of Intelligence",
     "titleZh": "迈向智能的基础大脑模型",
     "speaker": "Xiao-Jing Wang",

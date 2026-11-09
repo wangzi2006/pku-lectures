@@ -3974,5 +3974,12 @@
     "contentHash": "7e6c6e55ac4e31bce9dfd4a0df5627164700457e2220b4d26fb6ba134eaf0ab5",
     "analyzedAt": "2026-11-07T02:46:18+00:00",
     "outcome": "duplicate"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/45-4059.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "0820530e413f772412ce2ce068c2bf14c8f7997252f8487ef6e9a6db573298d0",
+    "analyzedAt": "2026-11-09T02:39:05+00:00",
+    "outcome": "pending"
   }
 ]
