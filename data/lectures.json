@@ -6288,6 +6288,46 @@
     "publishedAt": "2026-11-10T04:37:32+00:00"
   },
   {
+    "title": "Rigidity on solutions to the cohomological equation for analytic potentials",
+    "titleZh": "解析势函数上同调方程解的刚性",
+    "speaker": "高睿（曲阜师范大学）",
+    "startAt": "2026-11-12T10:00:00+08:00",
+    "endAt": "2026-11-12T11:00:00+08:00",
+    "location": "智华楼四元厅-224,225室",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "应用数学",
+    "subtopics": [
+      "纯数学"
+    ],
+    "flags": [
+      "讨论班"
+    ],
+    "summary": "本报告研究整数 d≥2 时倍乘映射 T(x)=dx mod 1 上的解析上同调方程。报告人证明：若实解析函数 f 在某个具有正拓扑熵的 T-不变紧集上可写成 f=g∘T−g，其中 g 仅为 Hölder 连续，则 f 必为实解析上边界。这是高睿与 Bing Gao 的合作成果，属于动力系统与遍历理论中的刚性现象研究，报告将在北京大学数学科学学院 Dynamic Systems 讨论班上进行。",
+    "reason": "网页明确给出报告题目、报告人、2026年11月12日时间及智华楼地点，可确认为学术报告。",
+    "registrationUrl": "",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 3,
+    "undergradScore": 2,
+    "prominenceScore": 2,
+    "confidence": 0.9,
+    "region": "北大校内",
+    "policyScore": 3.114,
+    "id": "L164",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/dynamicsystems/26997626f8f14730bae48d04c3630ac4.htm",
+    "verifiedAt": "2026-11-10T07:09:39+00:00",
+    "discoveredAt": "2026-11-10T07:09:39+00:00",
+    "discoveredOn": "2026-11-10",
+    "reviewNotes": "规则分 3.11，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-10T07:09:39+00:00"
+  },
+  {
     "title": "Shifted symplectic structures on derived higher Lie groupoids",
     "titleZh": "派生高阶李群胚上的平移辛结构",
     "speaker": "Chenchang Zhu (University of Göttingen)",

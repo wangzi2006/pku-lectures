@@ -4009,5 +4009,19 @@
     "contentHash": "a23fc048cc50ed0f88637899f32b4c2f6127f916f2e53bb86cf16e63fb3e2830",
     "analyzedAt": "2026-11-10T04:37:31+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4062.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "929ddb440a6b27e48e0decc7409614279954d66fc21b6f99fcc1b7ee371fcf7b",
+    "analyzedAt": "2026-11-10T07:09:35+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/dynamicsystems/26997626f8f14730bae48d04c3630ac4.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "f195c5561700684ada285e2e7fa74c4bc8bb8e73790bad92330c1b78082ee72b",
+    "analyzedAt": "2026-11-10T07:09:39+00:00",
+    "outcome": "pending"
   }
 ]
