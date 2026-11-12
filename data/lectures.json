@@ -6525,5 +6525,47 @@
     "reviewNotes": "规则分 4.19，通过自动发布门槛",
     "publicationMode": "automatic",
     "publishedAt": "2026-11-11T02:46:16+00:00"
+  },
+  {
+    "title": "Service-Induced Congestion in Memory-Constrained LLM Serving",
+    "titleZh": "内存受限的大语言模型服务中的服务诱发拥塞",
+    "speaker": "董婧 (哥伦比亚商学院)",
+    "startAt": "2026-11-16T16:00:00+08:00",
+    "endAt": "2026-11-16T17:00:00+08:00",
+    "location": "王选报告厅",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "概率/统计",
+    "subtopics": [
+      "计算机与 AI",
+      "应用数学"
+    ],
+    "flags": [
+      "讨论班",
+      "英文讲座"
+    ],
+    "summary": "报告研究大语言模型推理服务中，每个请求的键值缓存随生成token增长，导致聚合内存占用内源性上升，服务本身制造未来容量压力，突破经典稳定性分析的单调性假设，形成“服务诱发拥塞”。作者建立离散时间动力学模型刻画准入、内存增长与吞吐的交互，在饱和输入下系统存在无驱逐不动点与周期极限环；同质作业规模下无驱逐均衡不稳定，收敛到唯一渐近稳定最坏极限环，吞吐损失可达50%；异质作业规模下给出锐利稳定性二分：大提示缩放时无驱逐均衡渐近稳定当且仅当解码长度互素，从而刻画异质性何时稳定系统。",
+    "reason": "网页明确给出报告题目、报告人、时间地点及摘要，属可确认的未来学术报告。",
+    "registrationUrl": "",
+    "eventType": "学术报告/讨论班",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 4,
+    "undergradScore": 3,
+    "prominenceScore": 4,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 4.085,
+    "id": "L168",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/1081math173021.htm",
+    "verifiedAt": "2026-11-12T03:48:02+00:00",
+    "discoveredAt": "2026-11-12T03:48:02+00:00",
+    "discoveredOn": "2026-11-12",
+    "reviewNotes": "规则分 4.08，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-12T03:48:06+00:00"
   }
 ]
