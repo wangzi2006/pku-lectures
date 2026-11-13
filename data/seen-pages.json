@@ -4107,5 +4107,61 @@
     "contentHash": "828482eab383576c885749993e92c18fe50ffa743112a0ae207e6f62d0f7160d",
     "analyzedAt": "2026-11-12T03:48:06+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/47-4066.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "bedbeb9481b6b999ece41788e3fb743dea3cddb561d41a2d4701661724089502",
+    "analyzedAt": "2026-11-13T03:24:31+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/21401.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "c3c4f5469e874ac2624f88a344a2cb1b1576ec0d7e8a316a14f3d90cc412ec7b",
+    "analyzedAt": "2026-11-13T03:24:35+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/9f04d82a1d8c409299d75b096135cd06.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "722bf8f3c37f0e4f82a41e81fd896b30c8d7acf19ae5c91eafe9ab0d79b2c808",
+    "analyzedAt": "2026-11-13T03:24:39+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/45-4068.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "c15fd2d8c0b4cbc322fb769695a9f5ece8ef7fd0669d28451f6c60dc99cf219d",
+    "analyzedAt": "2026-11-13T03:24:43+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/683841b7061f46be8033cbf222e37fdb.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "c4dccb2233e88304a62cfa8fb6bde9090c5af0cdd4bf6017c14d1370d874903b",
+    "analyzedAt": "2026-11-13T03:24:47+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/49-4061.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "ecefa37887792941781805e2ebd00759412642190833ada64ff78520bd2d8ac3",
+    "analyzedAt": "2026-11-13T03:24:51+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4063.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "641fb748a524d6c6636712678754e50880677beb8aa5a0a32a3be1d170db3e48",
+    "analyzedAt": "2026-11-13T03:24:55+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4067.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "da9459aaefaa6de029d784e5f7f3b2e52209ce246e0bf44df34d9b69eb05196c",
+    "analyzedAt": "2026-11-13T03:24:59+00:00",
+    "outcome": "pending"
   }
 ]
