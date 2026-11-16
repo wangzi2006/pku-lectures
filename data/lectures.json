@@ -6649,6 +6649,48 @@
     "publishedAt": "2026-11-13T03:24:59+00:00"
   },
   {
+    "title": "Sharp Sobolev Approximation by Linearized Shallow Networks with Analytic Activations",
+    "titleZh": "解析激活线性化浅层网络的Sharp Sobolev逼近",
+    "speaker": "李佳（北京大学）",
+    "startAt": "2026-11-17T12:15:00+08:00",
+    "endAt": "2026-11-17T13:00:00+08:00",
+    "location": "智华楼-四元厅-225",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "应用数学",
+    "subtopics": [
+      "计算机与 AI",
+      "数学"
+    ],
+    "flags": [
+      "需报名",
+      "提供午餐"
+    ],
+    "summary": "本报告研究解析激活函数下线性化浅层神经网络在球面与一般有界区域上的Sobolev逼近能力。报告人指出，固定内层参数虽将训练化为凸优化问题，但可能削弱逼近能力；受Liu、Mao与Xu关于ReLU^k激活最优Sobolev逼近率工作启发，报告证明在适当假设下，合理分布的内层参数可独立于目标函数固定，同时仍达到最优Sobolev逼近率；对解析目标还可获得次指数收敛率。结果覆盖tanh、logistic sigmoid、arctan及若干有理函数等实解析激活。报告人为北京大学数学科学学院2025级博士生，导师吴朔男，研究兴趣为偏微分方程数值解与神经网络逼近理论。",
+    "reason": "网页明确给出2026年11月17日12:15-13:00在智华楼四元厅的午餐讨论班信息及摘要。",
+    "registrationUrl": "https://v.wjx.cn/vm/Ywwtn7v.aspx",
+    "eventType": "讨论班/午餐会",
+    "isPaid": false,
+    "audience": "pku-students",
+    "relevanceScore": 4,
+    "qualityScore": 3,
+    "undergradScore": 2,
+    "prominenceScore": 2,
+    "confidence": 0.95,
+    "region": "北大校内",
+    "policyScore": 3.287,
+    "id": "L174",
+    "status": "published",
+    "sourceName": "北京大学数学科学学院",
+    "sourceUrl": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/a4b9c8a535574adf983321a1abf4fced.htm",
+    "verifiedAt": "2026-11-16T02:43:41+00:00",
+    "discoveredAt": "2026-11-16T02:43:41+00:00",
+    "discoveredOn": "2026-11-16",
+    "reviewNotes": "规则分 3.29，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-16T02:43:51+00:00"
+  },
+  {
     "title": "Categorifying spectral asymmetry",
     "titleZh": "谱不对称性的范畴化",
     "speaker": "Alex Taylor (BICMR)",

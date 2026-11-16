@@ -4170,5 +4170,33 @@
     "contentHash": "d170c56b7fd2cb20705383597c4318726e07455b51c750ea338eb74eb32df90c",
     "analyzedAt": "2026-11-13T06:32:33+00:00",
     "outcome": "rejected"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/computationaandappliedmath/a4b9c8a535574adf983321a1abf4fced.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "e3ce3e84b097f705ed102e0fcc944b6a708751a8b8f988d90a72b1e96f88cf25",
+    "analyzedAt": "2026-11-16T02:43:41+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/tzgg/f893df1dcb8a4d328378214c0cba470e.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "92dcaea9f84e697b017e3b74f9033b7790c90e30a465b0960197867be7875e1f",
+    "analyzedAt": "2026-11-16T02:43:44+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1043/44565.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "35a259b8c3bd4dba3c12f6d727a8b9634449e36a3b2d4f8c96b646ba74650dff",
+    "analyzedAt": "2026-11-16T02:43:47+00:00",
+    "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/1081math172933.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "465ff41dfbb4f11c840110cd612422629ee73f29fa8c0b3889501258f4e31e32",
+    "analyzedAt": "2026-11-16T02:43:51+00:00",
+    "outcome": "outside-window"
   }
 ]
