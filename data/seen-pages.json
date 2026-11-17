@@ -4254,5 +4254,12 @@
     "contentHash": "eef31dd6ec4d7608715a82769d85649dc797cc6a03e2c7d00366af57660177e9",
     "analyzedAt": "2026-11-17T05:04:20+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://archaeology.pku.edu.cn/info/1042/44625.htm",
+    "sourceName": "北京大学考古文博学院讲座会议",
+    "contentHash": "dc3ab63e61ad27fb7c4e0ead966328892d52897eee7023edb8ce41e7cf4754ee",
+    "analyzedAt": "2026-11-17T07:48:33+00:00",
+    "outcome": "non-event"
   }
 ]
