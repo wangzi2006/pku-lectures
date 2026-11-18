@@ -4289,5 +4289,26 @@
     "contentHash": "332592aa7c5baac7c67e1ee1e834e5cd1a4d9720d14efdb6f547170864606142",
     "analyzedAt": "2026-11-18T04:14:57+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometry/b307a62cde4045e8b0cba5ac253bf2dd.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "3a66193a10e6ad19b24c9b31e8e0aa6d59ef384cf98f18bbd8645bbfaee8aa76",
+    "analyzedAt": "2026-11-18T07:16:51+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1062/21431.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "4beb117de0112a19abde20d694a49c8f48b85883e9ff5d1544e8acec598062fc",
+    "analyzedAt": "2026-11-18T07:16:53+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/informationsciences/a3e3c3675cd64b77b98d8e46cea201ea.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "be70af363e3db97d682b88f4a8583f0ce198763fad940a90aa6d936c5358b71d",
+    "analyzedAt": "2026-11-18T07:16:57+00:00",
+    "outcome": "pending"
   }
 ]
