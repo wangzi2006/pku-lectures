@@ -4261,5 +4261,33 @@
     "contentHash": "dc3ab63e61ad27fb7c4e0ead966328892d52897eee7023edb8ce41e7cf4754ee",
     "analyzedAt": "2026-11-17T07:48:33+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/d323cf18d14c42c9a51398673270a54b.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "bb61297772376777b1d64bf0394821ca33a06ecfe53ddeb8f19c0c0d146038ad",
+    "analyzedAt": "2026-11-18T04:14:44+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://www.aais.pku.edu.cn/info/1356/21411.htm",
+    "sourceName": "北京大学人工智能研究院",
+    "contentHash": "3872c064a676cd385cb753b88082916671d0e3abe5df7e3e00f24c97a8fbff3a",
+    "analyzedAt": "2026-11-18T04:14:47+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19233.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "208d3c0e61f9378a123ca0d5ca2d58db0e3186a79e99f2fa708cb21caa2967d4",
+    "analyzedAt": "2026-11-18T04:14:53+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/xwgg/xzxw/xzdt/c63bb5e3998c4f99bb13bcfff304e49d.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "332592aa7c5baac7c67e1ee1e834e5cd1a4d9720d14efdb6f547170864606142",
+    "analyzedAt": "2026-11-18T04:14:57+00:00",
+    "outcome": "non-event"
   }
 ]
