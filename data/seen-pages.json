@@ -4408,5 +4408,33 @@
     "contentHash": "b8c7e384365a505b6760ccd2f18016d456d0b4a9cd7e21cb1137c4471a68af5f",
     "analyzedAt": "2026-11-20T07:04:35+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/geometricanalysis/b1ea1c238eb44da89eb4f0918748c46c.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "8e68a94ca614d536920c2f8999b933a6e799149e21ed7e9741a370d27b02517c",
+    "analyzedAt": "2026-11-21T03:57:22+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19242.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "5bac7938c04fa6d007121f4fd173556d2408b78974952ed7f18d929d4d534198",
+    "analyzedAt": "2026-11-21T03:57:27+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://math.pku.edu.cn/kxyj/xsbg/tlb/probabilityandstatistics/fb6a209c73e245e18c47132d60146bbe.htm",
+    "sourceName": "北京大学数学科学学院",
+    "contentHash": "3a274c32dcb0dbb81374491ee02290fd3aeb789da156290b34abb992158e4716",
+    "analyzedAt": "2026-11-21T03:57:30+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19241.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "cab5a46960b79123e103035b8ea1975f289887489c07a4f21f7b4e3349e54fab",
+    "analyzedAt": "2026-11-21T03:57:34+00:00",
+    "outcome": "rejected"
   }
 ]
