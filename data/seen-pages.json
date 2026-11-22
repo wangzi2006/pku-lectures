@@ -4436,5 +4436,40 @@
     "contentHash": "cab5a46960b79123e103035b8ea1975f289887489c07a4f21f7b4e3349e54fab",
     "analyzedAt": "2026-11-21T03:57:34+00:00",
     "outcome": "rejected"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/46-4081.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "fd32d34fa389688720c7327868afbbec11dabc61c7b0036d8d5b22c6ab7a82d2",
+    "analyzedAt": "2026-11-22T06:36:50+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/7f909bc77aef411696df8fbcdfbb336b.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "56797561eb2937fe59417cb3849913b6a80451730c1af5ad405ff7d9b8c767f7",
+    "analyzedAt": "2026-11-22T06:36:54+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/93-4080.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "6207bae3f0667f4545daf26fddee80c00be16b6e9148859a3bf6b48a70d39985",
+    "analyzedAt": "2026-11-22T06:36:57+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/43-4079.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "a0761da12cf8212fd6bb2d439159cf51a35a7ee1b41027eec473f3e01f63e6fc",
+    "analyzedAt": "2026-11-22T06:37:00+00:00",
+    "outcome": "duplicate"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/18-4053.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "01adda951af4a3edb4511f923cff85145f90ff219f2a57d90ccff5460391d25d",
+    "analyzedAt": "2026-11-22T06:37:03+00:00",
+    "outcome": "pending"
   }
 ]
