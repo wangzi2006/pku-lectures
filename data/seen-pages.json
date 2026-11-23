@@ -4471,5 +4471,33 @@
     "contentHash": "01adda951af4a3edb4511f923cff85145f90ff219f2a57d90ccff5460391d25d",
     "analyzedAt": "2026-11-22T06:37:03+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/50-4082.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "d806c22356d8d4569dc2debdd4e564fb5a9fee0f606e523e0a0384e29eff028b",
+    "analyzedAt": "2026-11-23T03:42:32+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://nbic.pku.edu.cn/xwdt/0676e6c364d446a4b7395f85af329806.htm",
+    "sourceName": "北京大学国家生物医学成像科学中心",
+    "contentHash": "28b6b72b9d3adbfc1e10cad37f08182fa3a29ca6a53c39276a4a558debabec3e",
+    "analyzedAt": "2026-11-23T03:42:35+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/479b55dcefa9480fb54317aa9b2854d7.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "ce604485e1021b1369a89d683c4b1aa9f270ee364d05baed14ce6576d53edc45",
+    "analyzedAt": "2026-11-23T03:42:40+00:00",
+    "outcome": "outside-window"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/873e3ca24a104d8993a1358391fceb09.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "63665f2f52757f0859f842c5277fae1e3624539d91f97845f1c24880a22708b6",
+    "analyzedAt": "2026-11-23T03:42:44+00:00",
+    "outcome": "non-event"
   }
 ]
