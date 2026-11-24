@@ -4506,5 +4506,19 @@
     "contentHash": "ee7758237ebe7591284aa62dd3a132a48f5d35e177d3f72e235c28ed605888a7",
     "analyzedAt": "2026-11-24T06:57:32+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://bicmr.pku.edu.cn/cn/content/show/83-4083.html",
+    "sourceName": "北京国际数学研究中心",
+    "contentHash": "20a4627ef2b7c2884d16e57f18684bfdf37c24f8dd3fe47035fc51a543ef69c9",
+    "analyzedAt": "2026-11-24T09:46:20+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xyxw/d65959c32f254a01b61cf9f931c1e2ab.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "04fa1c094a9626e0b3dc6298dbf86fc93a17e43da29f849f62b00245f53d0ed9",
+    "analyzedAt": "2026-11-24T09:46:24+00:00",
+    "outcome": "non-event"
   }
 ]

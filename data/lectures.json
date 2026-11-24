@@ -7534,6 +7534,48 @@
     "publishedAt": "2026-11-22T06:37:03+00:00"
   },
   {
+    "title": "Particle systems with singular profile (I): hard sphere gas",
+    "titleZh": "具有奇异剖面的粒子系统（I）：硬球气体",
+    "speaker": "Chenjiayue Qi (IHES, France)",
+    "startAt": "2026-12-01T16:00:00+08:00",
+    "endAt": "2026-12-01T17:00:00+08:00",
+    "location": "腾讯会议 958-336-737（密码 261123）",
+    "campus": "线上",
+    "distanceKm": null,
+    "topic": "应用数学",
+    "subtopics": [
+      "概率",
+      "数学物理"
+    ],
+    "flags": [
+      "需报名/会议链接",
+      "英文讲座"
+    ],
+    "summary": "本讲座由法国 IHES 的 Chenjiayue Qi 主讲，介绍其近期关于奇异初值下玻尔兹曼方程局部适定性的工作，以及首次对具有奇异初值的硬球气体建立的局部时间动理学极限；报告还将给出玻尔兹曼方程与硬球气体在奇异初值下的弱稳定性结果，其证明核心是基于碰撞几何的平均化方法。讲座以线上腾讯会议方式举行，需使用会议号与密码加入，属于数学研究中心讨论班系列。",
+    "reason": "网页明确给出主讲人、2026-12-01 16:00–17:00 的线上讨论班时间与会议信息。",
+    "registrationUrl": "https://meeting.tencent.com/dm/X7RBMVskHjqv",
+    "eventType": "讨论班",
+    "isPaid": false,
+    "audience": "unknown",
+    "relevanceScore": 3,
+    "qualityScore": 4,
+    "undergradScore": 2,
+    "prominenceScore": 3,
+    "confidence": 0.9,
+    "region": "线上",
+    "policyScore": 3.312,
+    "id": "L194",
+    "status": "published",
+    "sourceName": "北京国际数学研究中心",
+    "sourceUrl": "https://bicmr.pku.edu.cn/cn/content/show/83-4083.html",
+    "verifiedAt": "2026-11-24T09:46:20+00:00",
+    "discoveredAt": "2026-11-24T09:46:20+00:00",
+    "discoveredOn": "2026-11-24",
+    "reviewNotes": "规则分 3.31，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-24T09:46:24+00:00"
+  },
+  {
     "title": "Some recent advances on regression analysis of failure time data",
     "titleZh": "失效时间数据回归分析的一些最新进展",
     "speaker": "孙建国（南方科技大学）",
