@@ -4499,5 +4499,12 @@
     "contentHash": "63665f2f52757f0859f842c5277fae1e3624539d91f97845f1c24880a22708b6",
     "analyzedAt": "2026-11-23T03:42:44+00:00",
     "outcome": "non-event"
+  },
+  {
+    "url": "https://phil.pku.edu.cn/tpxw/738265dbdc144fe8898ab61fb8f1f08d.htm",
+    "sourceName": "北京大学哲学系宗教学系学术信息",
+    "contentHash": "ee7758237ebe7591284aa62dd3a132a48f5d35e177d3f72e235c28ed605888a7",
+    "analyzedAt": "2026-11-24T06:57:32+00:00",
+    "outcome": "non-event"
   }
 ]
