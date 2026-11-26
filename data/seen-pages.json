@@ -4534,5 +4534,19 @@
     "contentHash": "b61a3d6e7fc8854c3b5f4858fffa7327e4d3b5d389871cc9b4bbe15c0bae7a93",
     "analyzedAt": "2026-11-26T04:59:38+00:00",
     "outcome": "outside-window"
+  },
+  {
+    "url": "https://future.pku.edu.cn/kxyj/jz/d43bd857cd59451b9b11b59f18ba5e26.htm",
+    "sourceName": "北京大学未来技术学院讲座",
+    "contentHash": "5e595564e7d05bccf496d023662c0e4dd522efcd11e27fd2d4b7986fca9a3441",
+    "analyzedAt": "2026-11-26T08:06:30+00:00",
+    "outcome": "pending"
+  },
+  {
+    "url": "https://www.bio.pku.edu.cn/homes/Index/news_cont/31/19249.html",
+    "sourceName": "北京大学生命科学学院近期讲座",
+    "contentHash": "f595dc3155a6f23163259e438d51b3ccd659fc4ec3789f6ff5474e7748d135e5",
+    "analyzedAt": "2026-11-26T08:06:34+00:00",
+    "outcome": "rejected"
   }
 ]
