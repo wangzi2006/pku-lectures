@@ -7698,6 +7698,48 @@
     "publishedAt": "2026-11-27T05:00:24+00:00"
   },
   {
+    "title": "Boys' and Girls' Empathic Accuracy in Ongoing Parent-Child Interactions: Performance and (Mis)perception in Everyday Mind-Reading",
+    "titleZh": "男孩与女孩在持续亲子互动中的共情准确性：日常读心中的表现与误知觉",
+    "speaker": "Ivy Wong（香港中文大学副教授）",
+    "startAt": "2026-12-06T10:00:00+08:00",
+    "endAt": "2026-12-06T12:00:00+08:00",
+    "location": "Room1115, Wangkezhen Building（王克桢楼1115室）",
+    "campus": "校内",
+    "distanceKm": null,
+    "topic": "心理",
+    "subtopics": [
+      "认知科学",
+      "生命科学"
+    ],
+    "flags": [
+      "英文讲座",
+      "需核实日期"
+    ],
+    "summary": "本讲座由香港中文大学心理学系副教授Ivy Wong主讲，介绍共情准确性（Empathic Accuracy）概念及其研究传统，说明其与关系质量和幸福感的关系。报告将呈现一项以434名香港5–6岁及9–10岁儿童及其照护者为对象的追踪研究，考察儿童共情准确性的发展特点、语言与心理理论的支撑作用及其对同伴问题的预测，并揭示儿童与家长对共情表现的高估、追踪偏差及与数据不符的性别刻板印象，讨论对教育、养育与临床沟通的启示。",
+    "reason": "网页明确给出讲者、题目、时间地点与摘要，属可核实的学术讲座信息。",
+    "registrationUrl": "",
+    "eventType": "学术报告",
+    "isPaid": false,
+    "audience": "public",
+    "relevanceScore": 4,
+    "qualityScore": 4.5,
+    "undergradScore": 3,
+    "prominenceScore": 3.5,
+    "confidence": 0.85,
+    "region": "北大校内",
+    "policyScore": 3.697,
+    "id": "L198",
+    "status": "published",
+    "sourceName": "北京大学心理与认知科学学院",
+    "sourceUrl": "https://psy.pku.edu.cn/xwzx/xsbg/d452b30a3d31410892b84af43769e5c2.htm",
+    "verifiedAt": "2026-11-27T08:16:37+00:00",
+    "discoveredAt": "2026-11-27T08:16:37+00:00",
+    "discoveredOn": "2026-11-27",
+    "reviewNotes": "规则分 3.70，通过自动发布门槛",
+    "publicationMode": "automatic",
+    "publishedAt": "2026-11-27T08:16:37+00:00"
+  },
+  {
     "title": "Analysis and PDE Seminar—— 向量Allen Cahn方程中的 Pseudo Profile 椭圆解",
     "titleZh": "分析与偏微分方程讨论班——向量Allen-Cahn方程中的Pseudo Profile椭圆解",
     "speaker": "刘东衡 (法国索邦大学)",

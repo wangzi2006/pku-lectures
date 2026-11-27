@@ -4569,5 +4569,19 @@
     "contentHash": "bc579d944a895af5e1a19b95bb827e3c12796cc12711aa5c28a14edd591cb33f",
     "analyzedAt": "2026-11-27T05:00:24+00:00",
     "outcome": "pending"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/0097082598534972b23c9c852e3991c8.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "4f1545e08626699dc6f055f8f93da9b4360b27c0eb85a5bd2822c81642ec9c8e",
+    "analyzedAt": "2026-11-27T08:16:32+00:00",
+    "outcome": "rejected"
+  },
+  {
+    "url": "https://psy.pku.edu.cn/xwzx/xsbg/d452b30a3d31410892b84af43769e5c2.htm",
+    "sourceName": "北京大学心理与认知科学学院",
+    "contentHash": "89baa9c52e52fae72b3281e9bcdfcff9622020cc6c42aaa39f4287b1e8e336e0",
+    "analyzedAt": "2026-11-27T08:16:37+00:00",
+    "outcome": "pending"
   }
 ]
